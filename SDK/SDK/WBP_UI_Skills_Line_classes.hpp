@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_Skills_Line.WBP_UI_Skills_Line_C
-// 0x0088 (0x0318 - 0x0290)
+// 0x0090 (0x0320 - 0x0290)
 class UWBP_UI_Skills_Line_C final : public UUserWidget
 {
 public:
@@ -39,6 +39,7 @@ public:
 	class UWBP_UI_Skills_Menu_C*                  Skills_Menu;                                       // 0x02F0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 	struct FMargin                                Margin;                                            // 0x02F8(0x0010)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor)
 	TArray<class UWBP_UI_Skills_Button_C*>        SkillsButtonArray;                                 // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class USBZMenuButton*                         CurrentFocusedButton;                              // 0x0318(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Skills_Line(int32 EntryPoint);
@@ -53,8 +54,9 @@ public:
 	void SetResearched(bool IsResearched);
 	void CheckResearchMarker();
 	void WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigation_0);
-	void SetSkillLineDescriptionEnabled(bool bInFocused);
+	void SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton);
 	void UpdateSkillLineDescription();
+	void CheckLineStillFocused();
 
 public:
 	static class UClass* StaticClass()
@@ -67,7 +69,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_Skills_Line_C) == 0x000008, "Wrong alignment on UWBP_UI_Skills_Line_C");
-static_assert(sizeof(UWBP_UI_Skills_Line_C) == 0x000318, "Wrong size on UWBP_UI_Skills_Line_C");
+static_assert(sizeof(UWBP_UI_Skills_Line_C) == 0x000320, "Wrong size on UWBP_UI_Skills_Line_C");
 static_assert(offsetof(UWBP_UI_Skills_Line_C, UberGraphFrame) == 0x000290, "Member 'UWBP_UI_Skills_Line_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Skills_Line_C, BaseSkillButton) == 0x000298, "Member 'UWBP_UI_Skills_Line_C::BaseSkillButton' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Skills_Line_C, Image) == 0x0002A0, "Member 'UWBP_UI_Skills_Line_C::Image' has a wrong offset!");
@@ -83,6 +85,7 @@ static_assert(offsetof(UWBP_UI_Skills_Line_C, SkillLineData) == 0x0002E8, "Membe
 static_assert(offsetof(UWBP_UI_Skills_Line_C, Skills_Menu) == 0x0002F0, "Member 'UWBP_UI_Skills_Line_C::Skills_Menu' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Skills_Line_C, Margin) == 0x0002F8, "Member 'UWBP_UI_Skills_Line_C::Margin' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Skills_Line_C, SkillsButtonArray) == 0x000308, "Member 'UWBP_UI_Skills_Line_C::SkillsButtonArray' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Skills_Line_C, CurrentFocusedButton) == 0x000318, "Member 'UWBP_UI_Skills_Line_C::CurrentFocusedButton' has a wrong offset!");
 
 }
 

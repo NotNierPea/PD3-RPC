@@ -39,6 +39,7 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_MainMenu_Loadout_WeaponCustomizationNew(int32 EntryPoint);
+	void OnAddedToStack();
 	void OnRemovedFromStack();
 	void BndEvt__WBP_MainMenu_Loadout_WeaponCustomizationNew_TutorialPopup_Button_K2Node_ComponentBoundEvent_0_OnButtonClicked__DelegateSignature();
 	void OnTutorialHidden();

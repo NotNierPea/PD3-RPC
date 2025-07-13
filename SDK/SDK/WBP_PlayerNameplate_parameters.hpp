@@ -18,54 +18,81 @@
 namespace SDK::Params
 {
 
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.SetDisplayName
-// 0x0020 (0x0020 - 0x0000)
-struct WBP_PlayerNameplate_C_SetDisplayName final
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
+// 0x0708 (0x0708 - 0x0000)
+struct WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate final
 {
 public:
-	class FText                                   InDisplayName;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZLobbyCharacterInfoUi               K2Node_Event_InLobbyInfo;                          // 0x0008(0x02D8)(ConstParm)
+	struct FSBZUser                               K2Node_Event_InUserData;                           // 0x02E0(0x0380)(ConstParm)
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0660(0x0018)()
+	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0678(0x0018)()
+	int32                                         K2Node_Event_InfamyLevel;                          // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0698(0x0040)(HasGetValueTypeHash)
+	int32                                         K2Node_Event_RenownLevel;                          // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x06E0(0x0010)(ReferenceParm)
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x06F0(0x0018)()
 };
-static_assert(alignof(WBP_PlayerNameplate_C_SetDisplayName) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_SetDisplayName");
-static_assert(sizeof(WBP_PlayerNameplate_C_SetDisplayName) == 0x000020, "Wrong size on WBP_PlayerNameplate_C_SetDisplayName");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, InDisplayName) == 0x000000, "Member 'WBP_PlayerNameplate_C_SetDisplayName::InDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_bool_Variable) == 0x000018, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'WBP_PlayerNameplate_C_SetDisplayName::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_byte_Variable) == 0x00001A, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_byte_Variable_1) == 0x00001B, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, K2Node_Select_Default) == 0x00001C, "Member 'WBP_PlayerNameplate_C_SetDisplayName::K2Node_Select_Default' has a wrong offset!");
+static_assert(alignof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate");
+static_assert(sizeof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate) == 0x000708, "Wrong size on WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, EntryPoint) == 0x000000, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::EntryPoint' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InLobbyInfo) == 0x000008, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InLobbyInfo' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InUserData) == 0x0002E0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InUserData' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Conv_StringToText_ReturnValue) == 0x000660, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000678, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InfamyLevel) == 0x000690, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InfamyLevel' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_MakeStruct_FormatArgumentData) == 0x000698, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_RenownLevel) == 0x0006D8, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_RenownLevel' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_MakeArray_Array) == 0x0006E0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Format_ReturnValue) == 0x0006F0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.UpdatePlayer
-// 0x00C0 (0x00C0 - 0x0000)
-struct WBP_PlayerNameplate_C_UpdatePlayer final
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetRenownLevel
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PlayerNameplate_C_BP_SetRenownLevel final
 {
 public:
-	class FText                                   InDisplayName;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	class FText                                   InPlatformName;                                    // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
-	int32                                         InInfamyLevel;                                     // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         InRenownLevel;                                     // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   InfamyLevelString;                                 // 0x0038(0x0018)(Edit, BlueprintVisible)
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
-	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
+	int32                                         RenownLevel_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PlayerNameplate_C_UpdatePlayer) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_UpdatePlayer");
-static_assert(sizeof(WBP_PlayerNameplate_C_UpdatePlayer) == 0x0000C0, "Wrong size on WBP_PlayerNameplate_C_UpdatePlayer");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InDisplayName) == 0x000000, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InDisplayName' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InPlatformName) == 0x000018, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InPlatformName' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InInfamyLevel) == 0x000030, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InInfamyLevel' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InRenownLevel) == 0x000034, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InRenownLevel' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InfamyLevelString) == 0x000038, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InfamyLevelString' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, K2Node_MakeArray_Array) == 0x000090, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, CallFunc_Format_ReturnValue) == 0x0000A8, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_PlayerNameplate_C_BP_SetRenownLevel) == 0x000004, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetRenownLevel");
+static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetRenownLevel) == 0x000004, "Wrong size on WBP_PlayerNameplate_C_BP_SetRenownLevel");
+static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetRenownLevel, RenownLevel_0) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetRenownLevel::RenownLevel_0' has a wrong offset!");
+
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetInfamyLevel
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_PlayerNameplate_C_BP_SetInfamyLevel final
+{
+public:
+	int32                                         InfamyLevel;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_PlayerNameplate_C_BP_SetInfamyLevel) == 0x000004, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetInfamyLevel");
+static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetInfamyLevel) == 0x000004, "Wrong size on WBP_PlayerNameplate_C_BP_SetInfamyLevel");
+static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetInfamyLevel, InfamyLevel) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetInfamyLevel::InfamyLevel' has a wrong offset!");
+
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetUserData
+// 0x0380 (0x0380 - 0x0000)
+struct WBP_PlayerNameplate_C_BP_SetUserData final
+{
+public:
+	struct FSBZUser                               InUserData;                                        // 0x0000(0x0380)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_PlayerNameplate_C_BP_SetUserData) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetUserData");
+static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetUserData) == 0x000380, "Wrong size on WBP_PlayerNameplate_C_BP_SetUserData");
+static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetUserData, InUserData) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetUserData::InUserData' has a wrong offset!");
+
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetLobbyInfo
+// 0x02D8 (0x02D8 - 0x0000)
+struct WBP_PlayerNameplate_C_BP_SetLobbyInfo final
+{
+public:
+	struct FSBZLobbyCharacterInfoUi               InLobbyInfo;                                       // 0x0000(0x02D8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+};
+static_assert(alignof(WBP_PlayerNameplate_C_BP_SetLobbyInfo) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetLobbyInfo");
+static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetLobbyInfo) == 0x0002D8, "Wrong size on WBP_PlayerNameplate_C_BP_SetLobbyInfo");
+static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetLobbyInfo, InLobbyInfo) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetLobbyInfo::InLobbyInfo' has a wrong offset!");
 
 // Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.InitPlayer
 // 0x0098 (0x0098 - 0x0000)
@@ -123,81 +150,54 @@ static_assert(offsetof(WBP_PlayerNameplate_C_InitPlayer, CallFunc_GetSpriteForNe
 static_assert(offsetof(WBP_PlayerNameplate_C_InitPlayer, CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput) == 0x000078, "Member 'WBP_PlayerNameplate_C_InitPlayer::CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput' has a wrong offset!");
 static_assert(offsetof(WBP_PlayerNameplate_C_InitPlayer, CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1) == 0x000088, "Member 'WBP_PlayerNameplate_C_InitPlayer::CallFunc_SetBrushFromAtlasInterface_AtlasRegion_CastInput_1' has a wrong offset!");
 
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetLobbyInfo
-// 0x02D8 (0x02D8 - 0x0000)
-struct WBP_PlayerNameplate_C_BP_SetLobbyInfo final
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.UpdatePlayer
+// 0x00C0 (0x00C0 - 0x0000)
+struct WBP_PlayerNameplate_C_UpdatePlayer final
 {
 public:
-	struct FSBZLobbyCharacterInfoUi               InLobbyInfo;                                       // 0x0000(0x02D8)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   InDisplayName;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	class FText                                   InPlatformName;                                    // 0x0018(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	int32                                         InInfamyLevel;                                     // 0x0030(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         InRenownLevel;                                     // 0x0034(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   InfamyLevelString;                                 // 0x0038(0x0018)(Edit, BlueprintVisible)
+	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0050(0x0040)(HasGetValueTypeHash)
+	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x0090(0x0010)(ReferenceParm)
+	bool                                          CallFunc_Greater_IntInt_ReturnValue;               // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_A1[0x7];                                       // 0x00A1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Format_ReturnValue;                       // 0x00A8(0x0018)()
 };
-static_assert(alignof(WBP_PlayerNameplate_C_BP_SetLobbyInfo) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetLobbyInfo");
-static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetLobbyInfo) == 0x0002D8, "Wrong size on WBP_PlayerNameplate_C_BP_SetLobbyInfo");
-static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetLobbyInfo, InLobbyInfo) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetLobbyInfo::InLobbyInfo' has a wrong offset!");
+static_assert(alignof(WBP_PlayerNameplate_C_UpdatePlayer) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_UpdatePlayer");
+static_assert(sizeof(WBP_PlayerNameplate_C_UpdatePlayer) == 0x0000C0, "Wrong size on WBP_PlayerNameplate_C_UpdatePlayer");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InDisplayName) == 0x000000, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InDisplayName' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InPlatformName) == 0x000018, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InPlatformName' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InInfamyLevel) == 0x000030, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InInfamyLevel' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InRenownLevel) == 0x000034, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InRenownLevel' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, InfamyLevelString) == 0x000038, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::InfamyLevelString' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, K2Node_MakeStruct_FormatArgumentData) == 0x000050, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, K2Node_MakeArray_Array) == 0x000090, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, CallFunc_Greater_IntInt_ReturnValue) == 0x0000A0, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::CallFunc_Greater_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_UpdatePlayer, CallFunc_Format_ReturnValue) == 0x0000A8, "Member 'WBP_PlayerNameplate_C_UpdatePlayer::CallFunc_Format_ReturnValue' has a wrong offset!");
 
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetUserData
-// 0x0380 (0x0380 - 0x0000)
-struct WBP_PlayerNameplate_C_BP_SetUserData final
+// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.SetDisplayName
+// 0x0020 (0x0020 - 0x0000)
+struct WBP_PlayerNameplate_C_SetDisplayName final
 {
 public:
-	struct FSBZUser                               InUserData;                                        // 0x0000(0x0380)(ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+	class FText                                   InDisplayName;                                     // 0x0000(0x0018)(BlueprintVisible, BlueprintReadOnly, Parm)
+	bool                                          Temp_bool_Variable;                                // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_TextIsEmpty_ReturnValue;                  // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default;                             // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
-static_assert(alignof(WBP_PlayerNameplate_C_BP_SetUserData) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetUserData");
-static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetUserData) == 0x000380, "Wrong size on WBP_PlayerNameplate_C_BP_SetUserData");
-static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetUserData, InUserData) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetUserData::InUserData' has a wrong offset!");
-
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetInfamyLevel
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PlayerNameplate_C_BP_SetInfamyLevel final
-{
-public:
-	int32                                         InfamyLevel;                                       // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PlayerNameplate_C_BP_SetInfamyLevel) == 0x000004, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetInfamyLevel");
-static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetInfamyLevel) == 0x000004, "Wrong size on WBP_PlayerNameplate_C_BP_SetInfamyLevel");
-static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetInfamyLevel, InfamyLevel) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetInfamyLevel::InfamyLevel' has a wrong offset!");
-
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.BP_SetRenownLevel
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_PlayerNameplate_C_BP_SetRenownLevel final
-{
-public:
-	int32                                         RenownLevel_0;                                     // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_PlayerNameplate_C_BP_SetRenownLevel) == 0x000004, "Wrong alignment on WBP_PlayerNameplate_C_BP_SetRenownLevel");
-static_assert(sizeof(WBP_PlayerNameplate_C_BP_SetRenownLevel) == 0x000004, "Wrong size on WBP_PlayerNameplate_C_BP_SetRenownLevel");
-static_assert(offsetof(WBP_PlayerNameplate_C_BP_SetRenownLevel, RenownLevel_0) == 0x000000, "Member 'WBP_PlayerNameplate_C_BP_SetRenownLevel::RenownLevel_0' has a wrong offset!");
-
-// Function WBP_PlayerNameplate.WBP_PlayerNameplate_C.ExecuteUbergraph_WBP_PlayerNameplate
-// 0x0708 (0x0708 - 0x0000)
-struct WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FSBZLobbyCharacterInfoUi               K2Node_Event_InLobbyInfo;                          // 0x0008(0x02D8)(ConstParm)
-	struct FSBZUser                               K2Node_Event_InUserData;                           // 0x02E0(0x0380)(ConstParm)
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue;            // 0x0660(0x0018)()
-	class FText                                   CallFunc_Conv_StringToText_ReturnValue_1;          // 0x0678(0x0018)()
-	int32                                         K2Node_Event_InfamyLevel;                          // 0x0690(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_694[0x4];                                      // 0x0694(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FFormatArgumentData                    K2Node_MakeStruct_FormatArgumentData;              // 0x0698(0x0040)(HasGetValueTypeHash)
-	int32                                         K2Node_Event_RenownLevel;                          // 0x06D8(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6DC[0x4];                                      // 0x06DC(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FFormatArgumentData>            K2Node_MakeArray_Array;                            // 0x06E0(0x0010)(ReferenceParm)
-	class FText                                   CallFunc_Format_ReturnValue;                       // 0x06F0(0x0018)()
-};
-static_assert(alignof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate");
-static_assert(sizeof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate) == 0x000708, "Wrong size on WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, EntryPoint) == 0x000000, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InLobbyInfo) == 0x000008, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InLobbyInfo' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InUserData) == 0x0002E0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InUserData' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Conv_StringToText_ReturnValue) == 0x000660, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Conv_StringToText_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Conv_StringToText_ReturnValue_1) == 0x000678, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Conv_StringToText_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_InfamyLevel) == 0x000690, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_InfamyLevel' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_MakeStruct_FormatArgumentData) == 0x000698, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_MakeStruct_FormatArgumentData' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_Event_RenownLevel) == 0x0006D8, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_Event_RenownLevel' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, K2Node_MakeArray_Array) == 0x0006E0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate, CallFunc_Format_ReturnValue) == 0x0006F0, "Member 'WBP_PlayerNameplate_C_ExecuteUbergraph_WBP_PlayerNameplate::CallFunc_Format_ReturnValue' has a wrong offset!");
+static_assert(alignof(WBP_PlayerNameplate_C_SetDisplayName) == 0x000008, "Wrong alignment on WBP_PlayerNameplate_C_SetDisplayName");
+static_assert(sizeof(WBP_PlayerNameplate_C_SetDisplayName) == 0x000020, "Wrong size on WBP_PlayerNameplate_C_SetDisplayName");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, InDisplayName) == 0x000000, "Member 'WBP_PlayerNameplate_C_SetDisplayName::InDisplayName' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_bool_Variable) == 0x000018, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, CallFunc_TextIsEmpty_ReturnValue) == 0x000019, "Member 'WBP_PlayerNameplate_C_SetDisplayName::CallFunc_TextIsEmpty_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_byte_Variable) == 0x00001A, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, Temp_byte_Variable_1) == 0x00001B, "Member 'WBP_PlayerNameplate_C_SetDisplayName::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_PlayerNameplate_C_SetDisplayName, K2Node_Select_Default) == 0x00001C, "Member 'WBP_PlayerNameplate_C_SetDisplayName::K2Node_Select_Default' has a wrong offset!");
 
 }
 

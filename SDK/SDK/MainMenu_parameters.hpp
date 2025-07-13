@@ -18,56 +18,38 @@
 namespace SDK::Params
 {
 
-// Function MainMenu.MainMenu_C.SetActiveCamera
-// 0x0048 (0x0048 - 0x0000)
-struct MainMenu_C_SetActiveCamera final
+// Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
+// 0x0018 (0x0018 - 0x0000)
+struct MainMenu_C_ExecuteUbergraph_MainMenu final
 {
 public:
-	class FName                                   NewValue;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   PreviousValue;                                     // 0x000C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_2;        // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_3;        // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_4;        // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EViewTargetBlendFunction                      Temp_byte_Variable;                                // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EViewTargetBlendFunction                      Temp_byte_Variable_1;                              // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	EViewTargetBlendFunction                      K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_SetActiveCamera) == 0x000008, "Wrong alignment on MainMenu_C_SetActiveCamera");
-static_assert(sizeof(MainMenu_C_SetActiveCamera) == 0x000048, "Wrong size on MainMenu_C_SetActiveCamera");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, NewValue) == 0x000000, "Member 'MainMenu_C_SetActiveCamera::NewValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, PreviousValue) == 0x00000C, "Member 'MainMenu_C_SetActiveCamera::PreviousValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000018, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000019, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_2) == 0x00001A, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_3) == 0x00001B, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_4) == 0x00001C, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_4' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, K2Node_SwitchName_CmpSuccess) == 0x00001D, "Member 'MainMenu_C_SetActiveCamera::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue) == 0x00001E, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_byte_Variable) == 0x00001F, "Member 'MainMenu_C_SetActiveCamera::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_1) == 0x000020, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_2) == 0x000021, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_byte_Variable_1) == 0x000022, "Member 'MainMenu_C_SetActiveCamera::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_3) == 0x000023, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000028, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_bool_Variable) == 0x000030, "Member 'MainMenu_C_SetActiveCamera::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, K2Node_Select_Default) == 0x000031, "Member 'MainMenu_C_SetActiveCamera::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetPlayerController_ReturnValue_1) == 0x000038, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000040, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(alignof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000008, "Wrong alignment on MainMenu_C_ExecuteUbergraph_MainMenu");
+static_assert(sizeof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000018, "Wrong size on MainMenu_C_ExecuteUbergraph_MainMenu");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, EntryPoint) == 0x000000, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::EntryPoint' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000004, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetGameStateMachine_ReturnValue) == 0x000008, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetGameStateMachine_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_DeltaSeconds' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsDedicatedServer_ReturnValue) == 0x000014, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+
+// Function MainMenu.MainMenu_C.ReceiveTick
+// 0x0004 (0x0004 - 0x0000)
+struct MainMenu_C_ReceiveTick final
+{
+public:
+	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(MainMenu_C_ReceiveTick) == 0x000004, "Wrong alignment on MainMenu_C_ReceiveTick");
+static_assert(sizeof(MainMenu_C_ReceiveTick) == 0x000004, "Wrong size on MainMenu_C_ReceiveTick");
+static_assert(offsetof(MainMenu_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'MainMenu_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
 
 // Function MainMenu.MainMenu_C.TickRotation
 // 0x0120 (0x0120 - 0x0000)
@@ -139,38 +121,56 @@ static_assert(offsetof(MainMenu_C_TickRotation, CallFunc_IsInputKeyDown_ReturnVa
 static_assert(offsetof(MainMenu_C_TickRotation, CallFunc_IsValid_ReturnValue) == 0x000089, "Member 'MainMenu_C_TickRotation::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 static_assert(offsetof(MainMenu_C_TickRotation, CallFunc_K2_AddLocalRotation_SweepHitResult) == 0x00008C, "Member 'MainMenu_C_TickRotation::CallFunc_K2_AddLocalRotation_SweepHitResult' has a wrong offset!");
 
-// Function MainMenu.MainMenu_C.ReceiveTick
-// 0x0004 (0x0004 - 0x0000)
-struct MainMenu_C_ReceiveTick final
+// Function MainMenu.MainMenu_C.SetActiveCamera
+// 0x0048 (0x0048 - 0x0000)
+struct MainMenu_C_SetActiveCamera final
 {
 public:
-	float                                         DeltaSeconds;                                      // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   NewValue;                                          // 0x0000(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   PreviousValue;                                     // 0x000C(0x000C)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue;          // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_1;        // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_2;        // 0x001A(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_3;        // 0x001B(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_NameName_ReturnValue_4;        // 0x001C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x001D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x001E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EViewTargetBlendFunction                      Temp_byte_Variable;                                // 0x001F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_1;                  // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue_2;                  // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EViewTargetBlendFunction                      Temp_byte_Variable_1;                              // 0x0022(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanOR_ReturnValue_3;                  // 0x0023(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_24[0x4];                                       // 0x0024(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue;          // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	EViewTargetBlendFunction                      K2Node_Select_Default;                             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_32[0x6];                                       // 0x0032(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class APlayerController*                      CallFunc_GetPlayerController_ReturnValue_1;        // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
-static_assert(alignof(MainMenu_C_ReceiveTick) == 0x000004, "Wrong alignment on MainMenu_C_ReceiveTick");
-static_assert(sizeof(MainMenu_C_ReceiveTick) == 0x000004, "Wrong size on MainMenu_C_ReceiveTick");
-static_assert(offsetof(MainMenu_C_ReceiveTick, DeltaSeconds) == 0x000000, "Member 'MainMenu_C_ReceiveTick::DeltaSeconds' has a wrong offset!");
-
-// Function MainMenu.MainMenu_C.ExecuteUbergraph_MainMenu
-// 0x0018 (0x0018 - 0x0000)
-struct MainMenu_C_ExecuteUbergraph_MainMenu final
-{
-public:
-	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZGameStateMachine*                   CallFunc_GetGameStateMachine_ReturnValue;          // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         K2Node_Event_DeltaSeconds;                         // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsDedicatedServer_ReturnValue;            // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-};
-static_assert(alignof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000008, "Wrong alignment on MainMenu_C_ExecuteUbergraph_MainMenu");
-static_assert(sizeof(MainMenu_C_ExecuteUbergraph_MainMenu) == 0x000018, "Wrong size on MainMenu_C_ExecuteUbergraph_MainMenu");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, EntryPoint) == 0x000000, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::EntryPoint' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000004, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000005, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_GetGameStateMachine_ReturnValue) == 0x000008, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_GetGameStateMachine_ReturnValue' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, K2Node_Event_DeltaSeconds) == 0x000010, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::K2Node_Event_DeltaSeconds' has a wrong offset!");
-static_assert(offsetof(MainMenu_C_ExecuteUbergraph_MainMenu, CallFunc_IsDedicatedServer_ReturnValue) == 0x000014, "Member 'MainMenu_C_ExecuteUbergraph_MainMenu::CallFunc_IsDedicatedServer_ReturnValue' has a wrong offset!");
+static_assert(alignof(MainMenu_C_SetActiveCamera) == 0x000008, "Wrong alignment on MainMenu_C_SetActiveCamera");
+static_assert(sizeof(MainMenu_C_SetActiveCamera) == 0x000048, "Wrong size on MainMenu_C_SetActiveCamera");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, NewValue) == 0x000000, "Member 'MainMenu_C_SetActiveCamera::NewValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, PreviousValue) == 0x00000C, "Member 'MainMenu_C_SetActiveCamera::PreviousValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue) == 0x000018, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_1) == 0x000019, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_2) == 0x00001A, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_3) == 0x00001B, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_NameName_ReturnValue_4) == 0x00001C, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_NameName_ReturnValue_4' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, K2Node_SwitchName_CmpSuccess) == 0x00001D, "Member 'MainMenu_C_SetActiveCamera::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue) == 0x00001E, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_byte_Variable) == 0x00001F, "Member 'MainMenu_C_SetActiveCamera::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_1) == 0x000020, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_2) == 0x000021, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_byte_Variable_1) == 0x000022, "Member 'MainMenu_C_SetActiveCamera::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_BooleanOR_ReturnValue_3) == 0x000023, "Member 'MainMenu_C_SetActiveCamera::CallFunc_BooleanOR_ReturnValue_3' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetPlayerController_ReturnValue) == 0x000028, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetPlayerController_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, Temp_bool_Variable) == 0x000030, "Member 'MainMenu_C_SetActiveCamera::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, K2Node_Select_Default) == 0x000031, "Member 'MainMenu_C_SetActiveCamera::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetPlayerController_ReturnValue_1) == 0x000038, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetPlayerController_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000040, "Member 'MainMenu_C_SetActiveCamera::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(MainMenu_C_SetActiveCamera, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000041, "Member 'MainMenu_C_SetActiveCamera::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
 
 }
 

@@ -17,26 +17,70 @@ namespace SDK::Params
 {
 
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.ExecuteUbergraph_WBP_UI_Overskill_Container
-// 0x0070 (0x0070 - 0x0000)
+// 0x0088 (0x0088 - 0x0000)
 struct WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0004(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	const class USBZOverskillData*                K2Node_Event_InOverskillData;                      // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	float                                         K2Node_Event_InProgress;                           // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class UBorder*, class UImage*>           K2Node_MakeMap_Map;                                // 0x0018(0x0050)(ContainsInstancedReference)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0068(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0018(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1C[0x4];                                       // 0x001C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class UBorder*, class UImage*>           K2Node_MakeMap_Map;                                // 0x0038(0x0050)(ContainsInstancedReference)
 };
 static_assert(alignof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container) == 0x000008, "Wrong alignment on WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container");
-static_assert(sizeof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container) == 0x000070, "Wrong size on WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container");
+static_assert(sizeof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container) == 0x000088, "Wrong size on WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container");
 static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, EntryPoint) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_ComponentBoundEvent_NewIndex) == 0x000004, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_ComponentBoundEvent_NewIndex' has a wrong offset!");
 static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_Event_InOverskillData) == 0x000008, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_Event_InOverskillData' has a wrong offset!");
 static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_Event_InProgress) == 0x000010, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_Event_InProgress' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_MakeMap_Map) == 0x000018, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, CallFunc_IsValid_ReturnValue) == 0x000068, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, CallFunc_IsValid_ReturnValue) == 0x000014, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_ComponentBoundEvent_NewIndex) == 0x000018, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_ComponentBoundEvent_NewIndex' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_ComponentBoundEvent_Button_1) == 0x000020, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_ComponentBoundEvent_bIsEnabled) == 0x000028, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_ComponentBoundEvent_bIsEnabled' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_ComponentBoundEvent_Button) == 0x000030, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container, K2Node_MakeMap_Map) == 0x000038, "Member 'WBP_UI_Overskill_Container_C_ExecuteUbergraph_WBP_UI_Overskill_Container::K2Node_MakeMap_Map' has a wrong offset!");
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
+// 0x0008 (0x0008 - 0x0000)
+struct WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature) == 0x000008, "Wrong alignment on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
+static_assert(sizeof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature) == 0x000008, "Wrong size on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature, Button) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature::Button' has a wrong offset!");
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature) == 0x000008, "Wrong alignment on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
+static_assert(sizeof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature) == 0x000010, "Wrong size on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature, Button) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature::Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature, bIsEnabled_0) == 0x000008, "Member 'WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature::bIsEnabled_0' has a wrong offset!");
+
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// 0x0004 (0x0004 - 0x0000)
+struct WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
+{
+public:
+	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+};
+static_assert(alignof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+static_assert(sizeof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
+static_assert(offsetof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature, NewIndex) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature::NewIndex' has a wrong offset!");
 
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.OnOverskillChanged
 // 0x0010 (0x0010 - 0x0000)
@@ -50,17 +94,6 @@ static_assert(alignof(WBP_UI_Overskill_Container_C_OnOverskillChanged) == 0x0000
 static_assert(sizeof(WBP_UI_Overskill_Container_C_OnOverskillChanged) == 0x000010, "Wrong size on WBP_UI_Overskill_Container_C_OnOverskillChanged");
 static_assert(offsetof(WBP_UI_Overskill_Container_C_OnOverskillChanged, InOverskillData) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_OnOverskillChanged::InOverskillData' has a wrong offset!");
 static_assert(offsetof(WBP_UI_Overskill_Container_C_OnOverskillChanged, InProgress) == 0x000008, "Member 'WBP_UI_Overskill_Container_C_OnOverskillChanged::InProgress' has a wrong offset!");
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// 0x0004 (0x0004 - 0x0000)
-struct WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature final
-{
-public:
-	int32                                         NewIndex;                                          // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-};
-static_assert(alignof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong alignment on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-static_assert(sizeof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature) == 0x000004, "Wrong size on WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-static_assert(offsetof(WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature, NewIndex) == 0x000000, "Member 'WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature::NewIndex' has a wrong offset!");
 
 // Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.UpdateLevelDetails
 // 0x00B0 (0x00B0 - 0x0000)

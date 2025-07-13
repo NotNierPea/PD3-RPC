@@ -18,135 +18,151 @@ namespace SDK::Params
 {
 
 // Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.ExecuteUbergraph_WBP_UI_SocialScreen
-// 0x01F8 (0x01F8 - 0x0000)
+// 0x0218 (0x0218 - 0x0000)
 struct WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable;                                // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0005(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_6[0x2];                                        // 0x0006(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Array_Index_Variable;                     // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0014(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_15[0x3];                                       // 0x0015(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_PreviousValue;                        // 0x0018(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x0024(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_32[0x2];                                       // 0x0032(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0034(0x0014)(ZeroConstructor, NoDestructor)
-	class ASBZMainMenuCameraManager*              CallFunc_GetMainMenuCameraManager_ReturnValue;     // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_53[0x5];                                       // 0x0053(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Social_ContextMenu_C*           CallFunc_IsContextMenuDisplayed_ContextMenu;       // 0x0058(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable;                                // 0x0060(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0061(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default;                             // 0x0062(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0063(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_64[0x4];                                       // 0x0064(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0068(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_71[0x7];                                       // 0x0071(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FName, class FText>                K2Node_MakeMap_Map;                                // 0x0078(0x0050)()
-	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x00C8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x00D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          Temp_bool_Variable_1;                              // 0x00D1(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_D2[0x2];                                       // 0x00D2(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(const class FText& Text)>      K2Node_CreateDelegate_OutputDelegate_1;            // 0x00D4(0x0014)(ZeroConstructor, NoDestructor)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_HasKeyboardFocus_ReturnValue_1;           // 0x00E9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_EA[0x6];                                       // 0x00EA(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   CallFunc_Array_Get_Item;                           // 0x00F0(0x0018)()
-	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x010C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0110(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_111[0x3];                                      // 0x0111(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	int32                                         Temp_int_Variable;                                 // 0x0114(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0118(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         Temp_int_Variable_1;                               // 0x011C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsGameStateInHeist_IsInHeist;             // 0x0120(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue_1;   // 0x0121(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0122(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_123[0x1];                                      // 0x0123(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0124(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_131[0x7];                                      // 0x0131(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0138(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0140(0x0030)()
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0170(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_17C[0x4];                                      // 0x017C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0180(0x0010)(ReferenceParm)
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x0190(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0198(0x0028)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x01C0(0x0014)(ZeroConstructor, NoDestructor)
-	ESlateVisibility                              K2Node_Select_Default_1;                           // 0x01D4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_1D5[0x3];                                      // 0x01D5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x01D8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_2;                              // 0x01E0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1E1[0x7];                                      // 0x01E1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x01E8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         K2Node_Select_Default_2;                           // 0x01F0(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZPartyManager*                       CallFunc_GetPartyManager_ReturnValue;              // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable;                                 // 0x0010(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetPartyPlayersNumber_ReturnValue;        // 0x0014(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_IntInt_ReturnValue;            // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_19[0x3];                                       // 0x0019(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         Temp_int_Variable_1;                               // 0x001C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable;                                // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESlateVisibility                              Temp_byte_Variable;                                // 0x0021(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_22[0x2];                                       // 0x0022(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default;                             // 0x0024(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Loop_Counter_Variable;                    // 0x0028(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Add_IntInt_ReturnValue;                   // 0x002C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Array_Index_Variable;                     // 0x0030(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_1;                              // 0x0034(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_35[0x3];                                       // 0x0035(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_PreviousValue;                        // 0x0038(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_ActionName;                     // 0x0044(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_52[0x2];                                       // 0x0052(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate;              // 0x0054(0x0014)(ZeroConstructor, NoDestructor)
+	class ASBZMainMenuCameraManager*              CallFunc_GetMainMenuCameraManager_ReturnValue;     // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_2;                              // 0x0070(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0071(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue;     // 0x0072(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0073(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_74[0x4];                                       // 0x0074(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_Social_ContextMenu_C*           CallFunc_IsContextMenuDisplayed_ContextMenu;       // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Temp_bool_Variable_1;                              // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsValid_ReturnValue_2;                    // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_2;                              // 0x0082(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_83[0x5];                                       // 0x0083(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button_1;               // 0x0088(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_ComponentBoundEvent_bIsEnabled;             // 0x0090(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_91[0x7];                                       // 0x0091(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class FName, class FText>                K2Node_MakeMap_Map;                                // 0x0098(0x0050)()
+	class USBZMenuButton*                         K2Node_ComponentBoundEvent_Button;                 // 0x00E8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsVisible_ReturnValue;                    // 0x00F0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_F1[0x3];                                       // 0x00F1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(const class FText& Text)>      K2Node_CreateDelegate_OutputDelegate_1;            // 0x00F4(0x0014)(ZeroConstructor, NoDestructor)
+	int32                                         Temp_int_Variable_2;                               // 0x0108(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue;             // 0x010C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_HasKeyboardFocus_ReturnValue_1;           // 0x010D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_10E[0x2];                                      // 0x010E(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   CallFunc_Array_Get_Item;                           // 0x0110(0x0018)()
+	int32                                         CallFunc_Array_Length_ReturnValue;                 // 0x0128(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_Array_Add_ReturnValue;                    // 0x012C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_Less_IntInt_ReturnValue;                  // 0x0130(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_131[0x3];                                      // 0x0131(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_ComponentBoundEvent_NewIndex;               // 0x0134(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         Temp_int_Variable_3;                               // 0x0138(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsGameStateInHeist_IsInHeist;             // 0x013C(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESBZGameStateMachineState                     CallFunc_GetGameStateMachineState_ReturnValue_1;   // 0x013D(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x013E(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          Temp_bool_Variable_3;                              // 0x013F(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_BooleanOR_ReturnValue;                    // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x3];                                      // 0x0141(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	int32                                         K2Node_Select_Default_1;                           // 0x0144(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0148(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_154[0x4];                                      // 0x0154(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0158(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0160(0x0030)()
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0190(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_19C[0x4];                                      // 0x019C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x01A0(0x0010)(ReferenceParm)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue_1;               // 0x01B0(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x01B8(0x0028)()
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_2;            // 0x01E0(0x0014)(ZeroConstructor, NoDestructor)
+	ESlateVisibility                              K2Node_Select_Default_2;                           // 0x01F4(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_1F5[0x3];                                      // 0x01F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue;       // 0x01F8(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              Temp_byte_Variable_3;                              // 0x0200(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_201[0x7];                                      // 0x0201(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationTimeRange_ReturnValue_1;     // 0x0208(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESlateVisibility                              K2Node_Select_Default_3;                           // 0x0210(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen) == 0x000008, "Wrong alignment on WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen");
-static_assert(sizeof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen) == 0x0001F8, "Wrong size on WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen");
+static_assert(sizeof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen) == 0x000218, "Wrong size on WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen");
 static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, EntryPoint) == 0x000000, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable) == 0x000004, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_1) == 0x000005, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Loop_Counter_Variable) == 0x000008, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Add_IntInt_ReturnValue) == 0x00000C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Array_Index_Variable) == 0x000010, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_2) == 0x000014, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Event_PreviousValue) == 0x000018, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Event_PreviousValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CustomEvent_ActionName) == 0x000024, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CustomEvent_ActionName' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_SwitchName_CmpSuccess) == 0x000030, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue) == 0x000031, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000034, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetMainMenuCameraManager_ReturnValue) == 0x000048, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetMainMenuCameraManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000050, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue_1) == 0x000051, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000052, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsContextMenuDisplayed_ContextMenu) == 0x000058, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsContextMenuDisplayed_ContextMenu' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable) == 0x000060, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue_2) == 0x000061, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default) == 0x000062, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_3) == 0x000063, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_Button_1) == 0x000068, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_bIsEnabled) == 0x000070, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_bIsEnabled' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeMap_Map) == 0x000078, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeMap_Map' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_Button) == 0x0000C8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsVisible_ReturnValue) == 0x0000D0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable_1) == 0x0000D1, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000D4, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_HasKeyboardFocus_ReturnValue) == 0x0000E8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_HasKeyboardFocus_ReturnValue_1) == 0x0000E9, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_HasKeyboardFocus_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Get_Item) == 0x0000F0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Get_Item' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Length_ReturnValue) == 0x000108, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Add_ReturnValue) == 0x00010C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Less_IntInt_ReturnValue) == 0x000110, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable) == 0x000114, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_NewIndex) == 0x000118, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_NewIndex' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable_1) == 0x00011C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsGameStateInHeist_IsInHeist) == 0x000120, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsGameStateInHeist_IsInHeist' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetGameStateMachineState_ReturnValue_1) == 0x000121, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetGameStateMachineState_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000122, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_MakeLiteralName_ReturnValue) == 0x000124, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_BooleanOR_ReturnValue) == 0x000130, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetUIManager_ReturnValue) == 0x000138, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeStruct_SBZButtonControlReference) == 0x000140, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeStruct_SBZButtonControlReference' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PopStack_ReturnValue) == 0x000170, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PopStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeArray_Array) == 0x000180, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetUIManager_ReturnValue_1) == 0x000190, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetUIManager_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeStruct_SBZButtonControlsReference) == 0x000198, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeStruct_SBZButtonControlsReference' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001C0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default_1) == 0x0001D4, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x0001D8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable_2) == 0x0001E0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PlayAnimationTimeRange_ReturnValue_1) == 0x0001E8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PlayAnimationTimeRange_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default_2) == 0x0001F0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetPartyManager_ReturnValue) == 0x000008, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetPartyManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable) == 0x000010, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetPartyPlayersNumber_ReturnValue) == 0x000014, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetPartyPlayersNumber_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_EqualEqual_IntInt_ReturnValue) == 0x000018, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_EqualEqual_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable_1) == 0x00001C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable) == 0x000020, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable) == 0x000021, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default) == 0x000024, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Loop_Counter_Variable) == 0x000028, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Loop_Counter_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Add_IntInt_ReturnValue) == 0x00002C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Add_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Array_Index_Variable) == 0x000030, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Array_Index_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_1) == 0x000034, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Event_PreviousValue) == 0x000038, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Event_PreviousValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CustomEvent_ActionName) == 0x000044, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CustomEvent_ActionName' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_SwitchName_CmpSuccess) == 0x000050, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue) == 0x000051, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate) == 0x000054, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetMainMenuCameraManager_ReturnValue) == 0x000068, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetMainMenuCameraManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_2) == 0x000070, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue_1) == 0x000071, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetGameStateMachineState_ReturnValue) == 0x000072, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetGameStateMachineState_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000073, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsContextMenuDisplayed_ContextMenu) == 0x000078, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsContextMenuDisplayed_ContextMenu' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable_1) == 0x000080, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsValid_ReturnValue_2) == 0x000081, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsValid_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable_2) == 0x000082, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_Button_1) == 0x000088, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_Button_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_bIsEnabled) == 0x000090, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_bIsEnabled' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeMap_Map) == 0x000098, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeMap_Map' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_Button) == 0x0000E8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsVisible_ReturnValue) == 0x0000F0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsVisible_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x0000F4, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable_2) == 0x000108, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_HasKeyboardFocus_ReturnValue) == 0x00010C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_HasKeyboardFocus_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_HasKeyboardFocus_ReturnValue_1) == 0x00010D, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_HasKeyboardFocus_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Get_Item) == 0x000110, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Get_Item' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Length_ReturnValue) == 0x000128, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Length_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Array_Add_ReturnValue) == 0x00012C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Array_Add_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_Less_IntInt_ReturnValue) == 0x000130, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_Less_IntInt_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_ComponentBoundEvent_NewIndex) == 0x000134, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_ComponentBoundEvent_NewIndex' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_int_Variable_3) == 0x000138, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_int_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_IsGameStateInHeist_IsInHeist) == 0x00013C, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_IsGameStateInHeist_IsInHeist' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetGameStateMachineState_ReturnValue_1) == 0x00013D, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetGameStateMachineState_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x00013E, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_bool_Variable_3) == 0x00013F, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_bool_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_BooleanOR_ReturnValue) == 0x000140, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_BooleanOR_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default_1) == 0x000144, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_MakeLiteralName_ReturnValue) == 0x000148, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetUIManager_ReturnValue) == 0x000158, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeStruct_SBZButtonControlReference) == 0x000160, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeStruct_SBZButtonControlReference' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PopStack_ReturnValue) == 0x000190, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PopStack_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeArray_Array) == 0x0001A0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_GetUIManager_ReturnValue_1) == 0x0001B0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_GetUIManager_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_MakeStruct_SBZButtonControlsReference) == 0x0001B8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_MakeStruct_SBZButtonControlsReference' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_CreateDelegate_OutputDelegate_2) == 0x0001E0, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default_2) == 0x0001F4, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PlayAnimationTimeRange_ReturnValue) == 0x0001F8, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PlayAnimationTimeRange_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, Temp_byte_Variable_3) == 0x000200, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::Temp_byte_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, CallFunc_PlayAnimationTimeRange_ReturnValue_1) == 0x000208, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::CallFunc_PlayAnimationTimeRange_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen, K2Node_Select_Default_3) == 0x000210, "Member 'WBP_UI_SocialScreen_C_ExecuteUbergraph_WBP_UI_SocialScreen::K2Node_Select_Default_3' has a wrong offset!");
 
 // Function WBP_UI_SocialScreen.WBP_UI_SocialScreen_C.BndEvt__WBP_UI_SocialScreen_WBP_Local_Navbar_K2Node_ComponentBoundEvent_3_OnIndexChanged__DelegateSignature
 // 0x0004 (0x0004 - 0x0000)

@@ -37,6 +37,20 @@ void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::ExecuteUbergraph_WBP_MainMe
 }
 
 
+// Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnAddedToStack
+// (Event, Protected, BlueprintEvent)
+
+void UWBP_MainMenu_Loadout_WeaponCustomizationNew_C::OnAddedToStack()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_MainMenu_Loadout_WeaponCustomizationNew_C", "OnAddedToStack");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
 // Function WBP_MainMenu_Loadout_WeaponCustomizationNew.WBP_MainMenu_Loadout_WeaponCustomizationNew_C.OnRemovedFromStack
 // (Event, Protected, BlueprintEvent)
 

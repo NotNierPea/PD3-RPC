@@ -18,7 +18,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_RedKeycard.BP_RedKeycard_C
 // 0x0018 (0x0320 - 0x0308)
-class ABP_RedKeycard_C final : public ABP_KeycardBase_C
+class ABP_RedKeycard_C : public ABP_KeycardBase_C
 {
 public:
 	class FText                                   text;                                              // 0x0308(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)

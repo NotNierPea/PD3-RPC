@@ -22,38 +22,37 @@ struct WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0008(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class ASBZObjective*                          K2Node_Event_NewObjectiveActivated;                // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZTickingLootType                           K2Node_Event_InTickingLootType;                    // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_19[0x7];                                       // 0x0019(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class ASBZObjective*                          K2Node_Event_ObjectiveInit;                        // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsSubObjective;                      // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_NotEqual_ByteByte_ReturnValue;            // 0x0029(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_2A[0x6];                                       // 0x002A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0030(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          K2Node_Event_IsDesignTime;                         // 0x0041(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_42[0x6];                                       // 0x0042(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue_1;         // 0x0050(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_IsDesignTime;                         // 0x0004(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_5[0x3];                                        // 0x0005(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	class UMaterialInstanceDynamic*               CallFunc_GetDynamicMaterial_ReturnValue;           // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          K2Node_Event_ObjectiveActivated;                   // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	const class UWidgetAnimation*                 K2Node_Event_Animation;                            // 0x0018(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0020(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue;         // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_31[0x7];                                       // 0x0031(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationReverse_ReturnValue_1;       // 0x0038(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	ESBZTickingLootType                           K2Node_Event_InTickingLootType;                    // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class ASBZObjective*                          K2Node_Event_ObjectiveInit;                        // 0x0048(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsSubObjective;                      // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective) == 0x000008, "Wrong alignment on WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective");
 static_assert(sizeof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective) == 0x000058, "Wrong size on WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective");
 static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, EntryPoint) == 0x000000, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::EntryPoint' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_Animation) == 0x000008, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_Animation' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_NewObjectiveActivated) == 0x000010, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_NewObjectiveActivated' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_InTickingLootType) == 0x000018, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_InTickingLootType' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_ObjectiveInit) == 0x000020, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_ObjectiveInit' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_bIsSubObjective) == 0x000028, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_bIsSubObjective' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_NotEqual_ByteByte_ReturnValue) == 0x000029, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_NotEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000030, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_PlayAnimationForward_ReturnValue) == 0x000038, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000040, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_IsDesignTime) == 0x000041, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_IsDesignTime' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000048, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_GetDynamicMaterial_ReturnValue_1) == 0x000050, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_GetDynamicMaterial_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_IsDesignTime) == 0x000004, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_IsDesignTime' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_GetDynamicMaterial_ReturnValue) == 0x000008, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_GetDynamicMaterial_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_ObjectiveActivated) == 0x000010, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_ObjectiveActivated' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_Animation) == 0x000018, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_Animation' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_PlayAnimationForward_ReturnValue) == 0x000020, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_PlayAnimationReverse_ReturnValue) == 0x000028, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_PlayAnimationReverse_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000030, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, CallFunc_PlayAnimationReverse_ReturnValue_1) == 0x000038, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::CallFunc_PlayAnimationReverse_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_InTickingLootType) == 0x000040, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_InTickingLootType' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_ObjectiveInit) == 0x000048, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_ObjectiveInit' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_Event_bIsSubObjective) == 0x000050, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_Event_bIsSubObjective' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective, K2Node_SwitchEnum_CmpSuccess) == 0x000051, "Member 'WBP_UI_Widget_Objective_C_ExecuteUbergraph_WBP_UI_Widget_Objective::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
 
 // Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.PreConstruct
 // 0x0001 (0x0001 - 0x0000)
@@ -95,11 +94,11 @@ static_assert(offsetof(WBP_UI_Widget_Objective_C_OnTickingTypeChanged, InTicking
 struct WBP_UI_Widget_Objective_C_ObjectiveActivated final
 {
 public:
-	class ASBZObjective*                          NewObjectiveActivated;                             // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class ASBZObjective*                          Param_ObjectiveActivated_0;                        // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(WBP_UI_Widget_Objective_C_ObjectiveActivated) == 0x000008, "Wrong alignment on WBP_UI_Widget_Objective_C_ObjectiveActivated");
 static_assert(sizeof(WBP_UI_Widget_Objective_C_ObjectiveActivated) == 0x000008, "Wrong size on WBP_UI_Widget_Objective_C_ObjectiveActivated");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_ObjectiveActivated, NewObjectiveActivated) == 0x000000, "Member 'WBP_UI_Widget_Objective_C_ObjectiveActivated::NewObjectiveActivated' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_ObjectiveActivated, Param_ObjectiveActivated_0) == 0x000000, "Member 'WBP_UI_Widget_Objective_C_ObjectiveActivated::Param_ObjectiveActivated_0' has a wrong offset!");
 
 // Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.OnAnimationFinished
 // 0x0008 (0x0008 - 0x0000)
@@ -113,28 +112,29 @@ static_assert(sizeof(WBP_UI_Widget_Objective_C_OnAnimationFinished) == 0x000008,
 static_assert(offsetof(WBP_UI_Widget_Objective_C_OnAnimationFinished, Animation) == 0x000000, "Member 'WBP_UI_Widget_Objective_C_OnAnimationFinished::Animation' has a wrong offset!");
 
 // Function WBP_UI_Widget_Objective.WBP_UI_Widget_Objective_C.UpdateTickingLootType
-// 0x0020 (0x0020 - 0x0000)
+// 0x0028 (0x0028 - 0x0000)
 struct WBP_UI_Widget_Objective_C_UpdateTickingLootType final
 {
 public:
 	ESBZTickingLootType                           InType;                                            // 0x0000(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	bool                                          K2Node_SwitchEnum_CmpSuccess;                      // 0x0001(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0002(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3[0x5];                                        // 0x0003(0x0005)(Fixing Size After Last Property [ Dumper-7 ])
+	uint8                                         Pad_2[0x6];                                        // 0x0002(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
 	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue;                // 0x0008(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0010(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0018(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_2;         // 0x0019(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue;           // 0x0010(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_1;         // 0x0011(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_12[0x6];                                       // 0x0012(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimation_ReturnValue_1;              // 0x0018(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_IsAnimationPlaying_ReturnValue_2;         // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_UI_Widget_Objective_C_UpdateTickingLootType) == 0x000008, "Wrong alignment on WBP_UI_Widget_Objective_C_UpdateTickingLootType");
-static_assert(sizeof(WBP_UI_Widget_Objective_C_UpdateTickingLootType) == 0x000020, "Wrong size on WBP_UI_Widget_Objective_C_UpdateTickingLootType");
+static_assert(sizeof(WBP_UI_Widget_Objective_C_UpdateTickingLootType) == 0x000028, "Wrong size on WBP_UI_Widget_Objective_C_UpdateTickingLootType");
 static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, InType) == 0x000000, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::InType' has a wrong offset!");
 static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, K2Node_SwitchEnum_CmpSuccess) == 0x000001, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::K2Node_SwitchEnum_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000002, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_PlayAnimation_ReturnValue) == 0x000008, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_PlayAnimation_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_PlayAnimation_ReturnValue_1) == 0x000010, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000018, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000019, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue) == 0x000010, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue_1) == 0x000011, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_PlayAnimation_ReturnValue_1) == 0x000018, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_PlayAnimation_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_Widget_Objective_C_UpdateTickingLootType, CallFunc_IsAnimationPlaying_ReturnValue_2) == 0x000020, "Member 'WBP_UI_Widget_Objective_C_UpdateTickingLootType::CallFunc_IsAnimationPlaying_ReturnValue_2' has a wrong offset!");
 
 }
 

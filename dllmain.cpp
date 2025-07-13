@@ -25,6 +25,7 @@
 #include <thread>
 
 #include <algorithm>
+using namespace SDK;
 
 bool IsValid(const SDK::UObject* Object) {
     // can we fucking check if the object is a valid pointer before passing it? ffs
@@ -68,6 +69,17 @@ std::string GetDifficultyName(SDK::ESBZDifficulty Difficulty)
     case SDK::ESBZDifficulty::VeryHard:  return "Very Hard";
     case SDK::ESBZDifficulty::Overkill:  return "Overkill";
     default:                             return "Normal"; // fallback
+    }
+}
+
+std::string GetTacticName(SDK::ESBZHeistPlaystyle Difficulty)
+{
+    switch(Difficulty)
+    {
+    case SDK::ESBZHeistPlaystyle::Hybrid:    return "Any";
+    case SDK::ESBZHeistPlaystyle::LoudOnly:      return "Loud";
+    case SDK::ESBZHeistPlaystyle::StealthOnly:  return "Stealth";
+    default:                             return "Any"; // fallback
     }
 }
 
@@ -179,14 +191,19 @@ DWORD WINAPI MainThread(HMODULE Module)
             SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
             if(!obj) continue;
 
-            // don't check for blueprints, too much useage
-            if(obj->IsA(SDK::USBZMainMenuPrePlanningWidget::StaticClass()))
+            // don't check for blueprints, too much useage, never mind
+            if(obj->IsA(SDK::USBZMainMenuPrePlanningWidget::StaticClass()) && obj->IsA(SDK::UWBP_UI_Preplanning_MainMenu_C::StaticClass()))
             {
                 auto PrePlanningWidget = static_cast<SDK::UWBP_UI_Preplanning_MainMenu_C*>(obj);
 
+                /*
                 // if its active, PrePlanningWidget->IsAsyncLoadingDone() -> means if ready loading is completed, good way to check if you are in the screen.
-                if (IsValid(PrePlanningWidget) && PrePlanningWidget->IsAsyncLoadingDone()
-                    && IsValid(PrePlanningWidget->Text_Difficulty))
+                if (
+                    IsValid(PrePlanningWidget) 
+                    && PrePlanningWidget->IsAsyncLoadingDone()
+                    && IsValid(PrePlanningWidget->Text_Difficulty) 
+                    && IsValid(PrePlanningWidget->TacticType_T) 
+                    && IsValid(PrePlanningWidget->WBP_ScreenTitle))
                 {
                     PrintConsole("got preplanning, updating..");
 
@@ -214,6 +231,13 @@ DWORD WINAPI MainThread(HMODULE Module)
                         StateStatus = diff;
                     }
                 }
+                */
+
+                // sooo, if you use a mod, it fucking changes the offsets a lot, so support for preplanning is later i guess.
+                if(IsValid(PrePlanningWidget) && PrePlanningWidget->IsAsyncLoadingDone())
+                {
+                    StateDetails = "In Pre-Planning";
+                }
             }
         }
 
@@ -227,6 +251,8 @@ DWORD WINAPI MainThread(HMODULE Module)
 
             std::string HeistDisplayName = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistDisplayName).ToWString());
             //std::string HeistLocationName = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistLocation).ToWString());
+
+            tactic = GetTacticName(HeistData->HeistPlaystyle);
 
             // update heist
             StateDetails = "In " + HeistDisplayName;
