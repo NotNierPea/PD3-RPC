@@ -196,14 +196,23 @@ DWORD WINAPI MainThread(HMODULE Module)
                     std::string HeistDisplayName_Preplanning = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->WBP_ScreenTitle->TitleText).ToWString());
                     tactic = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->TacticType_T->Text).ToWString());
 
-                    StateDetails+= ": " + HeistDisplayName_Preplanning;
+                    // Starbreeze.. what the fuck?
+                    if (EqualsIgnoreCase(HeistDisplayName_Preplanning, "Heist name"))
+                    {
+                        // either joining or hosting, i dont fucking know, we will leave it to joining..
+                        StateDetails = "Joining a heist";
+                    }
+                    else
+                    {
+                        StateDetails += ": " + HeistDisplayName_Preplanning;
 
-                    LargePic = ToDiscordRPCKey(ToLower(HeistDisplayName_Preplanning));
-                    LargePicText = tactic;
+                        LargePic = ToDiscordRPCKey(ToLower(HeistDisplayName_Preplanning));
+                        LargePicText = tactic;
 
-                    // get diff
-                    diff = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->Text_Difficulty->Text).ToWString());
-                    StateStatus = diff;
+                        // get diff
+                        diff = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->Text_Difficulty->Text).ToWString());
+                        StateStatus = diff;
+                    }
                 }
             }
         }
