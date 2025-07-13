@@ -1,5 +1,5 @@
 # PD3-RPC
-a Discord RPC for Payday 3, using dumper-v7 to get info and stuff.
+a Discord RPC for Payday 3, using dumper-v7 to get info and stuff. also my second project with a dumped sdk so code might be dogshit.
 
 # Building
 Compile in release, never debug, to update the SDK, you can use [Dumper-V7](https://github.com/Encryqed/Dumper-7).
