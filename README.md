@@ -7,5 +7,5 @@ Compile in release, never debug, to update the SDK, you can use [Dumper-V7](http
 # TODO?
 - #### improve some low quality images of heists in discord dev
 - #### fix random crash that happen if you close the game (rare)
-- #### pre-planning support
+- #### ~~pre-planning support~~, added it back if mods don't break it lol
 - #### improve shit i guess
