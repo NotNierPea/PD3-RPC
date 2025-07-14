@@ -21,6 +21,7 @@
 #include "SDK/SDK/WBP_UI_Widget_RiskLevel_classes.hpp"
 #include "SDK/SDK/WBP_UI_Preplanning_MainMenu_classes.hpp"
 #include "SDK/SDK/WBP_ScreenTitle_classes.hpp"
+#include "SDK/SDK/WBP_ServerBrowser_Screen_classes.hpp"
 
 #include <thread>
 
@@ -83,6 +84,17 @@ std::string GetTacticName(SDK::ESBZHeistPlaystyle Difficulty)
     }
 }
 
+std::string GetTacticNameOnline(SDK::ESBZOnlineTacticType Difficulty)
+{
+    switch(Difficulty)
+    {
+    case SDK::ESBZOnlineTacticType::Any:    return "Any";
+    case SDK::ESBZOnlineTacticType::Loud:      return "Loud";
+    case SDK::ESBZOnlineTacticType::Stealth:  return "Stealth";
+    default:                             return "Any"; // fallback
+    }
+}
+
 std::string ToDiscordRPCKey(const std::string& input)
 {
     std::string result;
@@ -120,10 +132,10 @@ DWORD WINAPI MainThread(HMODULE Module)
     }
 
     // Open console
-    //AllocConsole();
-    //FILE* Dummy;
-    //freopen_s(&Dummy, "CONOUT$", "w", stdout);
-    //freopen_s(&Dummy, "CONIN$", "r", stdin);
+    AllocConsole();
+    FILE* Dummy;
+    freopen_s(&Dummy, "CONOUT$", "w", stdout);
+    freopen_s(&Dummy, "CONIN$", "r", stdin);
 
     std::cout << "starting.." << std::endl;
     //std::cout << "Press END to unload." << std::endl;
@@ -143,12 +155,12 @@ DWORD WINAPI MainThread(HMODULE Module)
         if(!g_Running)
             break;
 
-        //if(GetAsyncKeyState(VK_END) & 1) // Press END to unhook
-        //{
-        //    std::cout << "Unloading..." << std::endl;
-        //    g_Running = false;
-        //    break;
-        //}
+        if(GetAsyncKeyState(VK_END) & 1) // Press END to unhook
+        {
+            std::cout << "Unloading..." << std::endl;
+            g_Running = false;
+            break;
+        }
 
         SDK::UWorld* World = SDK::UWorld::GetWorld();
 
@@ -180,10 +192,43 @@ DWORD WINAPI MainThread(HMODULE Module)
         std::string StateStatus = "";
         std::string StateDetails = "In Menus";
 
-        static std::string tactic = "Any";
+        static std::string tactic = "";
         static std::string diff = "";
 
+        // last Server Browser info get
+        static std::string server_browser_heist = "";
+        static std::string server_browser_diff = "";
+
         // Info from SDK
+        // Menus, Server browser info to pre-planning
+        TArray<SDK::UUserWidget*> FoundWidgetsW;
+
+        SDK::UWidgetBlueprintLibrary::GetAllWidgetsOfClass(
+            World,
+            &FoundWidgetsW,
+            SDK::UWBP_ServerBrowser_Screen_C::StaticClass(),
+            false
+        );
+
+        for(auto* Widget : FoundWidgetsW)
+        {
+            auto* ServerBrowserScreen = static_cast<SDK::UWBP_ServerBrowser_Screen_C*>(Widget);
+
+            if(!IsValid(ServerBrowserScreen) || !IsValid(ServerBrowserScreen->Heist_Data))
+                continue;
+
+            auto* HeistData = ServerBrowserScreen->Heist_Data;
+
+            server_browser_heist = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistDisplayName).ToWString());
+            server_browser_diff = GetDifficultyName(ServerBrowserScreen->GetDifficultyPerHeistType());
+            
+            tactic = GetTacticNameOnline(ServerBrowserScreen->GetTacticPerHeistType());
+
+            //PrintConsole(server_heist + " - " + server_diff);
+        }
+
+        // ------------------------ \\
+        
         // Menus, pre-planning
         TArray<SDK::UUserWidget*> FoundWidgets;
 
@@ -202,9 +247,16 @@ DWORD WINAPI MainThread(HMODULE Module)
 
             //PrintConsole("Found Preplanning Widget!");
 
-            if (PreplanningWidget->IsAsyncLoadingDone())
+            if(PreplanningWidget->IsAsyncLoadingDone())
             {
                 StateDetails = "In Pre-planning";
+
+                StateDetails+= ": " + server_browser_heist;
+                StateStatus = server_browser_diff;
+
+                // images
+                LargePic = ToDiscordRPCKey(ToLower(server_browser_heist));
+                LargePicText = tactic;
             }
         }
 
@@ -219,7 +271,8 @@ DWORD WINAPI MainThread(HMODULE Module)
             std::string HeistDisplayName = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistDisplayName).ToWString());
             //std::string HeistLocationName = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistLocation).ToWString());
 
-            tactic = GetTacticName(HeistData->HeistPlaystyle);
+            if (tactic.empty()) // fall back
+                tactic = GetTacticName(HeistData->HeistPlaystyle);
 
             // update heist
             StateDetails = "In " + HeistDisplayName;
@@ -252,8 +305,8 @@ DWORD WINAPI MainThread(HMODULE Module)
             }
 
             // lol
-            if(HeistData->bIsSmashAndGrab)
-                StateDetails += " (Smash and Grab)";
+            //if(HeistData->bIsSmashAndGrab)
+                //StateDetails += " (Smash and Grab)";
 
             //PrintConsole(ToDiscordRPCKey(ToLower(HeistDisplayName)));
         }
@@ -342,9 +395,9 @@ DWORD WINAPI MainThread(HMODULE Module)
 
     PrintConsole("[Discord] Deleted Core!");
 
-    //fclose(stdin);
-    //fclose(stdout);
-    //FreeConsole();
+    fclose(stdin);
+    fclose(stdout);
+    FreeConsole();
 
     // Unload DLL
     FreeLibraryAndExitThread(Module, 0);
