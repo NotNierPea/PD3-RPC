@@ -170,7 +170,7 @@ DWORD WINAPI MainThread(HMODULE Module)
 
         // Large Image
         std::string LargePic = "game_logo";
-        std::string LargePicText = "Payday 3";
+        std::string LargePicText = "PAYDAY 3";
 
         // Small Image
         std::string SmallPic = "player_info";
@@ -185,59 +185,26 @@ DWORD WINAPI MainThread(HMODULE Module)
 
         // Info from SDK
         // Menus, pre-planning
-        // i dont know how to get widgets, so scanning them i guess
-        for(int i = 0; i < SDK::UObject::GObjects->Num(); ++i)
+        TArray<SDK::UUserWidget*> FoundWidgets;
+
+        SDK::UWidgetBlueprintLibrary::GetAllWidgetsOfClass(
+            World,
+            &FoundWidgets,
+            SDK::UWBP_UI_Preplanning_MainMenu_C::StaticClass(),
+            false
+        );
+
+        for(auto* Widget : FoundWidgets)
         {
-            SDK::UObject* obj = SDK::UObject::GObjects->GetByIndex(i);
-            if(!obj) continue;
+            auto* PreplanningWidget = static_cast<SDK::UWBP_UI_Preplanning_MainMenu_C*>(Widget);
 
-            // don't check for blueprints, too much useage, never mind
-            if(obj->IsA(SDK::USBZMainMenuPrePlanningWidget::StaticClass()) && obj->IsA(SDK::UWBP_UI_Preplanning_MainMenu_C::StaticClass()))
+            if(!IsValid(PreplanningWidget)) continue;
+
+            //PrintConsole("Found Preplanning Widget!");
+
+            if (PreplanningWidget->IsAsyncLoadingDone())
             {
-                auto PrePlanningWidget = static_cast<SDK::UWBP_UI_Preplanning_MainMenu_C*>(obj);
-
-                /*
-                // if its active, PrePlanningWidget->IsAsyncLoadingDone() -> means if ready loading is completed, good way to check if you are in the screen.
-                if (
-                    IsValid(PrePlanningWidget) 
-                    && PrePlanningWidget->IsAsyncLoadingDone()
-                    && IsValid(PrePlanningWidget->Text_Difficulty) 
-                    && IsValid(PrePlanningWidget->TacticType_T) 
-                    && IsValid(PrePlanningWidget->WBP_ScreenTitle))
-                {
-                    PrintConsole("got preplanning, updating..");
-
-                    StateDetails = "In Pre-Planning";
-                    
-                    // get heist + tactic
-                    std::string HeistDisplayName_Preplanning = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->WBP_ScreenTitle->TitleText).ToWString());
-                    tactic = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->TacticType_T->Text).ToWString());
-
-                    // Starbreeze.. what the fuck?
-                    if (EqualsIgnoreCase(HeistDisplayName_Preplanning, "Heist name"))
-                    {
-                        // either joining or hosting, i dont fucking know, we will leave it to joining..
-                        StateDetails = "Joining a heist";
-                    }
-                    else
-                    {
-                        StateDetails += ": " + HeistDisplayName_Preplanning;
-
-                        LargePic = ToDiscordRPCKey(ToLower(HeistDisplayName_Preplanning));
-                        LargePicText = tactic;
-
-                        // get diff
-                        diff = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(PrePlanningWidget->Text_Difficulty->Text).ToWString());
-                        StateStatus = diff;
-                    }
-                }
-                */
-
-                // sooo, if you use a mod, it fucking changes the offsets a lot, so support for preplanning is later i guess.
-                if(IsValid(PrePlanningWidget) && PrePlanningWidget->IsAsyncLoadingDone())
-                {
-                    StateDetails = "In Pre-Planning";
-                }
+                StateDetails = "In Pre-planning";
             }
         }
 
@@ -326,7 +293,7 @@ DWORD WINAPI MainThread(HMODULE Module)
 
         discord::Activity activity{ };
 
-        activity.SetName("Payday 3");
+        activity.SetName("PAYDAY 3");
 
         activity.GetAssets().SetLargeImage(LargePic.c_str());
         activity.GetAssets().SetLargeText(LargePicText.c_str());
