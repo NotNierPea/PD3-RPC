@@ -21,7 +21,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C
-// 0x0098 (0x0630 - 0x0598)
+// 0x0088 (0x0620 - 0x0598)
 class UWBP_UI_MainMenu_BlackMarketVendors_C final : public USBZBlackMarketVendorsWidget
 {
 public:
@@ -43,9 +43,6 @@ public:
 	int32                                         NumOfShopItemsPerRow;                              // 0x0610(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_614[0x4];                                      // 0x0614(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class USBZMenuButton*                         LastActiveButton;                                  // 0x0618(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	ESBZBlackMarketVendorType                     OpenedFromLocation;                                // 0x0620(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_621[0x3];                                      // 0x0621(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   PreviousStack;                                     // 0x0624(0x000C)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_MainMenu_BlackMarketVendors(int32 EntryPoint);
@@ -68,8 +65,6 @@ public:
 	void OpenPaydayStore();
 	class UWidget* CustomBoundryNavigation(EUINavigation Navigation_0);
 	void SetActiveButton(class USBZMenuButton* NewButton);
-	void NavToPreviousScreen();
-	void OpenInventoryScreen();
 
 public:
 	static class UClass* StaticClass()
@@ -82,7 +77,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_MainMenu_BlackMarketVendors_C) == 0x000008, "Wrong alignment on UWBP_UI_MainMenu_BlackMarketVendors_C");
-static_assert(sizeof(UWBP_UI_MainMenu_BlackMarketVendors_C) == 0x000630, "Wrong size on UWBP_UI_MainMenu_BlackMarketVendors_C");
+static_assert(sizeof(UWBP_UI_MainMenu_BlackMarketVendors_C) == 0x000620, "Wrong size on UWBP_UI_MainMenu_BlackMarketVendors_C");
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, UberGraphFrame) == 0x000598, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, Tab_Change) == 0x0005A0, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::Tab_Change' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, Intro) == 0x0005A8, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::Intro' has a wrong offset!");
@@ -100,8 +95,6 @@ static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, ActiveButton) == 0
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, CurrentVendorData) == 0x000608, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::CurrentVendorData' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, NumOfShopItemsPerRow) == 0x000610, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::NumOfShopItemsPerRow' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, LastActiveButton) == 0x000618, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::LastActiveButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, OpenedFromLocation) == 0x000620, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::OpenedFromLocation' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_MainMenu_BlackMarketVendors_C, PreviousStack) == 0x000624, "Member 'UWBP_UI_MainMenu_BlackMarketVendors_C::PreviousStack' has a wrong offset!");
 
 }
 

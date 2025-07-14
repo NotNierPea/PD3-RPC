@@ -17,7 +17,7 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass BP_DefaultProgressionSaveGame.BP_DefaultProgressionSaveGame_C
-// 0x0000 (0x0438 - 0x0438)
+// 0x0000 (0x0440 - 0x0440)
 class UBP_DefaultProgressionSaveGame_C final : public USBZProgressionSaveGame
 {
 public:
@@ -31,7 +31,7 @@ public:
 	}
 };
 static_assert(alignof(UBP_DefaultProgressionSaveGame_C) == 0x000008, "Wrong alignment on UBP_DefaultProgressionSaveGame_C");
-static_assert(sizeof(UBP_DefaultProgressionSaveGame_C) == 0x000438, "Wrong size on UBP_DefaultProgressionSaveGame_C");
+static_assert(sizeof(UBP_DefaultProgressionSaveGame_C) == 0x000440, "Wrong size on UBP_DefaultProgressionSaveGame_C");
 
 }
 

@@ -19,7 +19,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C
-// 0x0050 (0x0450 - 0x0400)
+// 0x0048 (0x0448 - 0x0400)
 class UWBP_UI_ItemInventoryScreen_C final : public USBZMainMenuItemInventoryScreen
 {
 public:
@@ -31,13 +31,10 @@ public:
 	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UI_Inventory_ItemDescriptionBox_C* WBP_UI_Inventory_ItemDescriptionBox;               // 0x0430(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class USBZMenuButton*                         FocusedButton;                                     // 0x0438(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Debug_IsArmorCustomizable;                         // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_441[0x7];                                      // 0x0441(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Inventory_ItemSlotButton_C*     ArmorVendorBtn;                                    // 0x0448(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          Debug_IsTest;                                      // 0x0440(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WBP_UI_ItemInventoryScreen(int32 EntryPoint);
-	void OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled_0);
 	void OnItemSlotsUpdated();
 	void OnItemSlotButtonSelected(class USBZMenuButton* SelectedButton);
 	void OnItemSlotButtonFocusedChanged(class USBZMenuButton* SelectedButton, bool bIsFocused);
@@ -46,9 +43,6 @@ public:
 	void OnGainedStackFocused(const class FName& PreviousValue);
 	void OnItemSlotScreenDisplayed();
 	void OnPressCustomize();
-	void OpenArmorVendor(class USBZMenuButton* Button);
-	void SetControlReferences();
-	void HandleVendorButton();
 
 public:
 	static class UClass* StaticClass()
@@ -61,7 +55,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_ItemInventoryScreen_C) == 0x000008, "Wrong alignment on UWBP_UI_ItemInventoryScreen_C");
-static_assert(sizeof(UWBP_UI_ItemInventoryScreen_C) == 0x000450, "Wrong size on UWBP_UI_ItemInventoryScreen_C");
+static_assert(sizeof(UWBP_UI_ItemInventoryScreen_C) == 0x000448, "Wrong size on UWBP_UI_ItemInventoryScreen_C");
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, UberGraphFrame) == 0x000400, "Member 'UWBP_UI_ItemInventoryScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, Intro) == 0x000408, "Member 'UWBP_UI_ItemInventoryScreen_C::Intro' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, Overlay_Desc_Box) == 0x000410, "Member 'UWBP_UI_ItemInventoryScreen_C::Overlay_Desc_Box' has a wrong offset!");
@@ -70,8 +64,7 @@ static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, Text_ItemSlot) == 0x000420
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, WBP_UI_ContentBackground) == 0x000428, "Member 'UWBP_UI_ItemInventoryScreen_C::WBP_UI_ContentBackground' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, WBP_UI_Inventory_ItemDescriptionBox) == 0x000430, "Member 'UWBP_UI_ItemInventoryScreen_C::WBP_UI_Inventory_ItemDescriptionBox' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, FocusedButton) == 0x000438, "Member 'UWBP_UI_ItemInventoryScreen_C::FocusedButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, Debug_IsArmorCustomizable) == 0x000440, "Member 'UWBP_UI_ItemInventoryScreen_C::Debug_IsArmorCustomizable' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, ArmorVendorBtn) == 0x000448, "Member 'UWBP_UI_ItemInventoryScreen_C::ArmorVendorBtn' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_ItemInventoryScreen_C, Debug_IsTest) == 0x000440, "Member 'UWBP_UI_ItemInventoryScreen_C::Debug_IsTest' has a wrong offset!");
 
 }
 

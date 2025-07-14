@@ -40,12 +40,12 @@ public:
 	class UTimelineComponent*                     Timeline_0;                                        // 0x0310(0x0008)(BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void ExecuteUbergraph_MM_BPL_Neon_Flickering(int32 EntryPoint);
-	void ReceiveBeginPlay();
-	void Timeline_0__Spark__EventFunc();
-	void Timeline_0__SoundTrigger__EventFunc();
-	void Timeline_0__UpdateFunc();
 	void Timeline_0__FinishedFunc();
+	void Timeline_0__UpdateFunc();
+	void Timeline_0__SoundTrigger__EventFunc();
+	void Timeline_0__Spark__EventFunc();
+	void ReceiveBeginPlay();
+	void ExecuteUbergraph_MM_BPL_Neon_Flickering(int32 EntryPoint);
 
 public:
 	static class UClass* StaticClass()

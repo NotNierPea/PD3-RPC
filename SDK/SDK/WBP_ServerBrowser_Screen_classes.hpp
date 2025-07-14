@@ -22,108 +22,101 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C
-// 0x0390 (0x07B0 - 0x0420)
+// 0x03A8 (0x07C8 - 0x0420)
 class UWBP_ServerBrowser_Screen_C final : public USBZServerBrowserScreen
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0420(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UWidgetAnimation*                       Spectrum;                                          // 0x0428(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FilterOff;                                         // 0x0430(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       DescriptionIntro;                                  // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       FilterOn;                                          // 0x0440(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       ListChange;                                        // 0x0448(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       TabChange;                                         // 0x0450(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       Intro;                                             // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       NoHeistBlink;                                      // 0x0460(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       OutroVideoLockedPressed;                           // 0x0468(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UWidgetAnimation*                       IntroVideoLockedPressed;                           // 0x0470(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 BackdropImage_I;                                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_GenericContainerButton_C*       Button_ContractorSoundContainer;                   // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistIntroStory;                            // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistOutroStory;                            // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     CancelMm_Button;                                   // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Character_Comms;                                   // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_ContractorSelector_C* ContractorSelector;                               // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultySelector;                                // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               EQ_Overlay;                                        // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_FilterBar_C*         FilterBar;                                         // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_ContractorOptions_C* FilterBox;                                         // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               FilterBox_O;                                       // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 FiltersBlackout_I;                                 // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 HeistBackground_I;                                 // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     HeistDetails_Button;                               // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         HostDetails_Hb;                                    // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     HostHeist_Button;                                  // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Icon_Host;                                         // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_351;                                         // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_1332;                                        // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Image_HeistBanner;                                 // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     JoinHeist_Button;                                  // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Navbar_C*            Navbar_Collections;                                // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Navbar_C*            Navbar_HeistModes;                                 // 0x0530(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_InspectButton_C*     NeedDcl_Button;                                    // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoHeistFound_O;                                    // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoMods_O;                                          // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               NoModsPopUp_O;                                     // 0x0550(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_HeistDetailsPopup;                         // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_HeistInspectPanel;                         // 0x0560(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  PermissionSelector;                                // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               PopupBackDrop_O;                                   // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  PopUpDifficulty;                                   // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        PopUpDifficutly_T;                                 // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UCanvasPanel*                           Root_Canvas;                                       // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        ScreenTitle_T;                                     // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Smash_And_Grab_Title;                              // 0x0598(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Smash_And_Grab_Title_Description;                  // 0x05A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SoundIconOFF;                                      // 0x05A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 SoundIconOn;                                       // 0x05B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticSelector;                                    // 0x05B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_ContractorName;                               // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_DifficultyDescription;                        // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Host;                                         // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelDescription;                             // 0x05D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelName;                                    // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelName_1;                                  // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_LevelName_InPopup_1;                          // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_NoModifiers;                                  // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PayoutMax;                                    // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PayoutMax_InPopup;                            // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PayoutMin;                                    // 0x0610(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_PayoutMin_InPopup;                            // 0x0618(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_PeopleNum;                                    // 0x0620(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Playstyle;                                    // 0x0628(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_HeistList;                             // 0x0630(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SecurityCompanies;                     // 0x0638(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SecurityCompanies_InPopup;             // 0x0640(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_IntroMotion_C*       WBP_ServerBrowser_IntroMotion;                     // 0x0648(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        WidgetSwitcher_LeftPanel;                          // 0x0650(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0658(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         CurrentlyPlayedSoundID;                            // 0x0660(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_664[0x4];                                      // 0x0664(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x0668(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          RT_HeistDetailsPopupOpened;                        // 0x0670(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_671[0x7];                                      // 0x0671(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<ESBZDifficulty, class FText>             DifficultyDescriptions;                            // 0x0678(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class UWBP_ServerBrowser_Popup_C*             JoinFailPopUp;                                     // 0x06C8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	TArray<int32>                                 UsedIndices;                                       // 0x06D0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<int32>                                 SavedIndices;                                      // 0x06E0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	bool                                          ReadyToPlacePins;                                  // 0x06F0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_6F1[0x7];                                      // 0x06F1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class USBZServerBrowserHeistMapWidget*, class USBZServerBrowserHeistButton*> PinsToBePlaced; // 0x06F8(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
-	class ABP_MapPinManager_C*                    MapPinManagerRef;                                  // 0x0748(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FVector2D                              MapPinOffset;                                      // 0x0750(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class UWBP_ServerBrowser_Popup_C*             SoloInPartyPopup;                                  // 0x0758(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   PreviousCollectionFilter;                          // 0x0760(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
-	struct FTimerHandle                           FilterSettingsTimer;                               // 0x0778(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	struct FTimerHandle                           ServerRefreshCooldown;                             // 0x0780(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
-	class FString                                 PreviousLanguage;                                  // 0x0788(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
-	bool                                          WillPlacePins;                                     // 0x0798(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_799[0x7];                                      // 0x0799(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZServerBrowserHeistCollection> collection;                                      // 0x07A0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWidgetAnimation*                       FilterOff;                                         // 0x0428(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       DescriptionIntro;                                  // 0x0430(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       FilterOn;                                          // 0x0438(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       ListChange;                                        // 0x0440(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       TabChange;                                         // 0x0448(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       Intro;                                             // 0x0450(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       NoHeistBlink;                                      // 0x0458(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       OutroVideoLockedPressed;                           // 0x0460(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UWidgetAnimation*                       IntroVideoLockedPressed;                           // 0x0468(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 BackdropImage_I;                                   // 0x0470(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_GenericContainerButton_C*       Button_ContractorSoundContainer;                   // 0x0478(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistIntroStory;                            // 0x0480(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_StoryButton_C*       Button_HeistOutroStory;                            // 0x0488(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     CancelMm_Button;                                   // 0x0490(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  DifficultySelector;                                // 0x0498(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_FilterBar_C*         FilterBar;                                         // 0x04A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_ContractorOptions_C* FilterBox;                                         // 0x04A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               FilterBox_O;                                       // 0x04B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 FiltersBlackout_I;                                 // 0x04B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 HeistBackground_I;                                 // 0x04C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     HeistDetails_Button;                               // 0x04C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         HostDetails_Hb;                                    // 0x04D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     HostHeist_Button;                                  // 0x04D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Icon_Host;                                         // 0x04E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_144;                                         // 0x04E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_265;                                         // 0x04F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_HeistBanner;                                 // 0x04F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     JoinHeist_Button;                                  // 0x0500(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Navbar_C*            Navbar_Collections;                                // 0x0508(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Navbar_C*            Navbar_HeistModes;                                 // 0x0510(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_InspectButton_C*     NeedDcl_Button;                                    // 0x0518(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoHeistFound_O;                                    // 0x0520(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoMods_O;                                          // 0x0528(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               NoModsPopUp_O;                                     // 0x0530(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_HeistDetailsPopup;                         // 0x0538(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_HeistInspectPanel;                         // 0x0540(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  PermissionSelector;                                // 0x0548(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               PopupBackDrop_O;                                   // 0x0550(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  PopUpDifficulty;                                   // 0x0558(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        PopUpDifficutly_T;                                 // 0x0560(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UCanvasPanel*                           Root_Canvas;                                       // 0x0568(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        ScreenTitle_T;                                     // 0x0570(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SoundIconOFF;                                      // 0x0578(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 SoundIconOn;                                       // 0x0580(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_DifficultyFilter_C*  TacticSelector;                                    // 0x0588(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_ContractorName;                               // 0x0590(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_DifficultyDescription;                        // 0x0598(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Host;                                         // 0x05A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelDescription;                             // 0x05A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelName;                                    // 0x05B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_LevelName_InPopup;                            // 0x05B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_NoModifiers;                                  // 0x05C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PayoutMax;                                    // 0x05C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PayoutMax_InPopup;                            // 0x05D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PayoutMin;                                    // 0x05D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_PayoutMin_InPopup;                            // 0x05E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_PeopleNum;                                    // 0x05E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Playstyle;                                    // 0x05F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_HeistList;                             // 0x05F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SecurityCompanies;                     // 0x0600(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SecurityCompanies_InPopup;             // 0x0608(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_IntroMotion_C*       WBP_ServerBrowser_IntroMotion;                     // 0x0610(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        WidgetSwitcher_LeftPanel;                          // 0x0618(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         RT_FocusedButton;                                  // 0x0620(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CurrentlyPlayedSoundID;                            // 0x0628(0x0004)(Edit, BlueprintVisible, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_62C[0x4];                                      // 0x062C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UPD3HeistDataAsset*                     Heist_Data;                                        // 0x0630(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TMap<class UPD3HeistDataAsset*, class FText>  HeistDescriptions;                                 // 0x0638(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          RT_HeistDetailsPopupOpened;                        // 0x0688(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_689[0x7];                                      // 0x0689(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<ESBZDifficulty, class FText>             DifficultyDescriptions;                            // 0x0690(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class UWBP_ServerBrowser_Popup_C*             JoinFailPopUp;                                     // 0x06E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	TArray<int32>                                 UsedIndices;                                       // 0x06E8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<int32>                                 SavedIndices;                                      // 0x06F8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	bool                                          ReadyToPlacePins;                                  // 0x0708(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_709[0x7];                                      // 0x0709(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TMap<class USBZServerBrowserHeistMapWidget*, class USBZServerBrowserHeistButton*> PinsToBePlaced; // 0x0710(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance, ContainsInstancedReference)
+	class ABP_MapPinManager_C*                    MapPinManagerRef;                                  // 0x0760(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnTemplate, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FVector2D                              MapPinOffset;                                      // 0x0768(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UWBP_ServerBrowser_Popup_C*             SoloInPartyPopup;                                  // 0x0770(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   PreviousCollectionFilter;                          // 0x0778(0x0018)(Edit, BlueprintVisible, DisableEditOnInstance)
+	struct FTimerHandle                           FilterSettingsTimer;                               // 0x0790(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	struct FTimerHandle                           ServerRefreshCooldown;                             // 0x0798(0x0008)(Edit, BlueprintVisible, DisableEditOnInstance, NoDestructor, HasGetValueTypeHash)
+	class FString                                 PreviousLanguage;                                  // 0x07A0(0x0010)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, HasGetValueTypeHash)
+	bool                                          WillPlacePins;                                     // 0x07B0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_7B1[0x7];                                      // 0x07B1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZServerBrowserHeistCollection> collection;                                      // 0x07B8(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
 
 public:
 	void ExecuteUbergraph_WBP_ServerBrowser_Screen(int32 EntryPoint);
-	void OnServerBrowserJoinError();
 	void OnStateMachineEnteredGameStart();
 	void BndEvt__WBP_ServerBrowser_Screen_NeedDcl_Button_K2Node_ComponentBoundEvent_12_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button);
 	void ReenableRefresh();
@@ -216,8 +209,6 @@ public:
 	void ServerRefreshTimeout();
 	bool CanInteractWithMatchmakingButtons();
 	void BindSoloModeReentry();
-	void Check_New_Player();
-	void OnPinsPlacementFinished();
 	void SequenceEvent__ENTRYPOINTWBP_ServerBrowser_Screen_0();
 
 public:
@@ -231,97 +222,91 @@ public:
 	}
 };
 static_assert(alignof(UWBP_ServerBrowser_Screen_C) == 0x000008, "Wrong alignment on UWBP_ServerBrowser_Screen_C");
-static_assert(sizeof(UWBP_ServerBrowser_Screen_C) == 0x0007B0, "Wrong size on UWBP_ServerBrowser_Screen_C");
+static_assert(sizeof(UWBP_ServerBrowser_Screen_C) == 0x0007C8, "Wrong size on UWBP_ServerBrowser_Screen_C");
 static_assert(offsetof(UWBP_ServerBrowser_Screen_C, UberGraphFrame) == 0x000420, "Member 'UWBP_ServerBrowser_Screen_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Spectrum) == 0x000428, "Member 'UWBP_ServerBrowser_Screen_C::Spectrum' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterOff) == 0x000430, "Member 'UWBP_ServerBrowser_Screen_C::FilterOff' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DescriptionIntro) == 0x000438, "Member 'UWBP_ServerBrowser_Screen_C::DescriptionIntro' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterOn) == 0x000440, "Member 'UWBP_ServerBrowser_Screen_C::FilterOn' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ListChange) == 0x000448, "Member 'UWBP_ServerBrowser_Screen_C::ListChange' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, TabChange) == 0x000450, "Member 'UWBP_ServerBrowser_Screen_C::TabChange' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Intro) == 0x000458, "Member 'UWBP_ServerBrowser_Screen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoHeistBlink) == 0x000460, "Member 'UWBP_ServerBrowser_Screen_C::NoHeistBlink' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, OutroVideoLockedPressed) == 0x000468, "Member 'UWBP_ServerBrowser_Screen_C::OutroVideoLockedPressed' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, IntroVideoLockedPressed) == 0x000470, "Member 'UWBP_ServerBrowser_Screen_C::IntroVideoLockedPressed' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, BackdropImage_I) == 0x000478, "Member 'UWBP_ServerBrowser_Screen_C::BackdropImage_I' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_ContractorSoundContainer) == 0x000480, "Member 'UWBP_ServerBrowser_Screen_C::Button_ContractorSoundContainer' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_HeistIntroStory) == 0x000488, "Member 'UWBP_ServerBrowser_Screen_C::Button_HeistIntroStory' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_HeistOutroStory) == 0x000490, "Member 'UWBP_ServerBrowser_Screen_C::Button_HeistOutroStory' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, CancelMm_Button) == 0x000498, "Member 'UWBP_ServerBrowser_Screen_C::CancelMm_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Character_Comms) == 0x0004A0, "Member 'UWBP_ServerBrowser_Screen_C::Character_Comms' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ContractorSelector) == 0x0004A8, "Member 'UWBP_ServerBrowser_Screen_C::ContractorSelector' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DifficultySelector) == 0x0004B0, "Member 'UWBP_ServerBrowser_Screen_C::DifficultySelector' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, EQ_Overlay) == 0x0004B8, "Member 'UWBP_ServerBrowser_Screen_C::EQ_Overlay' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBar) == 0x0004C0, "Member 'UWBP_ServerBrowser_Screen_C::FilterBar' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBox) == 0x0004C8, "Member 'UWBP_ServerBrowser_Screen_C::FilterBox' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBox_O) == 0x0004D0, "Member 'UWBP_ServerBrowser_Screen_C::FilterBox_O' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FiltersBlackout_I) == 0x0004D8, "Member 'UWBP_ServerBrowser_Screen_C::FiltersBlackout_I' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HeistBackground_I) == 0x0004E0, "Member 'UWBP_ServerBrowser_Screen_C::HeistBackground_I' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HeistDetails_Button) == 0x0004E8, "Member 'UWBP_ServerBrowser_Screen_C::HeistDetails_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HostDetails_Hb) == 0x0004F0, "Member 'UWBP_ServerBrowser_Screen_C::HostDetails_Hb' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HostHeist_Button) == 0x0004F8, "Member 'UWBP_ServerBrowser_Screen_C::HostHeist_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Icon_Host) == 0x000500, "Member 'UWBP_ServerBrowser_Screen_C::Icon_Host' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_351) == 0x000508, "Member 'UWBP_ServerBrowser_Screen_C::Image_351' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_1332) == 0x000510, "Member 'UWBP_ServerBrowser_Screen_C::Image_1332' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_HeistBanner) == 0x000518, "Member 'UWBP_ServerBrowser_Screen_C::Image_HeistBanner' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, JoinHeist_Button) == 0x000520, "Member 'UWBP_ServerBrowser_Screen_C::JoinHeist_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Navbar_Collections) == 0x000528, "Member 'UWBP_ServerBrowser_Screen_C::Navbar_Collections' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Navbar_HeistModes) == 0x000530, "Member 'UWBP_ServerBrowser_Screen_C::Navbar_HeistModes' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NeedDcl_Button) == 0x000538, "Member 'UWBP_ServerBrowser_Screen_C::NeedDcl_Button' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoHeistFound_O) == 0x000540, "Member 'UWBP_ServerBrowser_Screen_C::NoHeistFound_O' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoMods_O) == 0x000548, "Member 'UWBP_ServerBrowser_Screen_C::NoMods_O' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoModsPopUp_O) == 0x000550, "Member 'UWBP_ServerBrowser_Screen_C::NoModsPopUp_O' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Overlay_HeistDetailsPopup) == 0x000558, "Member 'UWBP_ServerBrowser_Screen_C::Overlay_HeistDetailsPopup' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Overlay_HeistInspectPanel) == 0x000560, "Member 'UWBP_ServerBrowser_Screen_C::Overlay_HeistInspectPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PermissionSelector) == 0x000568, "Member 'UWBP_ServerBrowser_Screen_C::PermissionSelector' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopupBackDrop_O) == 0x000570, "Member 'UWBP_ServerBrowser_Screen_C::PopupBackDrop_O' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopUpDifficulty) == 0x000578, "Member 'UWBP_ServerBrowser_Screen_C::PopUpDifficulty' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopUpDifficutly_T) == 0x000580, "Member 'UWBP_ServerBrowser_Screen_C::PopUpDifficutly_T' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Root_Canvas) == 0x000588, "Member 'UWBP_ServerBrowser_Screen_C::Root_Canvas' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ScreenTitle_T) == 0x000590, "Member 'UWBP_ServerBrowser_Screen_C::ScreenTitle_T' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Smash_And_Grab_Title) == 0x000598, "Member 'UWBP_ServerBrowser_Screen_C::Smash_And_Grab_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Smash_And_Grab_Title_Description) == 0x0005A0, "Member 'UWBP_ServerBrowser_Screen_C::Smash_And_Grab_Title_Description' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoundIconOFF) == 0x0005A8, "Member 'UWBP_ServerBrowser_Screen_C::SoundIconOFF' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoundIconOn) == 0x0005B0, "Member 'UWBP_ServerBrowser_Screen_C::SoundIconOn' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, TacticSelector) == 0x0005B8, "Member 'UWBP_ServerBrowser_Screen_C::TacticSelector' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_ContractorName) == 0x0005C0, "Member 'UWBP_ServerBrowser_Screen_C::Text_ContractorName' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_DifficultyDescription) == 0x0005C8, "Member 'UWBP_ServerBrowser_Screen_C::Text_DifficultyDescription' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_Host) == 0x0005D0, "Member 'UWBP_ServerBrowser_Screen_C::Text_Host' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelDescription) == 0x0005D8, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelDescription' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelName) == 0x0005E0, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelName' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelName_1) == 0x0005E8, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelName_1' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelName_InPopup_1) == 0x0005F0, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelName_InPopup_1' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_NoModifiers) == 0x0005F8, "Member 'UWBP_ServerBrowser_Screen_C::Text_NoModifiers' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMax) == 0x000600, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMax' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMax_InPopup) == 0x000608, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMax_InPopup' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMin) == 0x000610, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMin' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMin_InPopup) == 0x000618, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMin_InPopup' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PeopleNum) == 0x000620, "Member 'UWBP_ServerBrowser_Screen_C::Text_PeopleNum' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_Playstyle) == 0x000628, "Member 'UWBP_ServerBrowser_Screen_C::Text_Playstyle' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_HeistList) == 0x000630, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_HeistList' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_SecurityCompanies) == 0x000638, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_SecurityCompanies' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_SecurityCompanies_InPopup) == 0x000640, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_SecurityCompanies_InPopup' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WBP_ServerBrowser_IntroMotion) == 0x000648, "Member 'UWBP_ServerBrowser_Screen_C::WBP_ServerBrowser_IntroMotion' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WidgetSwitcher_LeftPanel) == 0x000650, "Member 'UWBP_ServerBrowser_Screen_C::WidgetSwitcher_LeftPanel' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, RT_FocusedButton) == 0x000658, "Member 'UWBP_ServerBrowser_Screen_C::RT_FocusedButton' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, CurrentlyPlayedSoundID) == 0x000660, "Member 'UWBP_ServerBrowser_Screen_C::CurrentlyPlayedSoundID' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Heist_Data) == 0x000668, "Member 'UWBP_ServerBrowser_Screen_C::Heist_Data' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, RT_HeistDetailsPopupOpened) == 0x000670, "Member 'UWBP_ServerBrowser_Screen_C::RT_HeistDetailsPopupOpened' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DifficultyDescriptions) == 0x000678, "Member 'UWBP_ServerBrowser_Screen_C::DifficultyDescriptions' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, JoinFailPopUp) == 0x0006C8, "Member 'UWBP_ServerBrowser_Screen_C::JoinFailPopUp' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, UsedIndices) == 0x0006D0, "Member 'UWBP_ServerBrowser_Screen_C::UsedIndices' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SavedIndices) == 0x0006E0, "Member 'UWBP_ServerBrowser_Screen_C::SavedIndices' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ReadyToPlacePins) == 0x0006F0, "Member 'UWBP_ServerBrowser_Screen_C::ReadyToPlacePins' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PinsToBePlaced) == 0x0006F8, "Member 'UWBP_ServerBrowser_Screen_C::PinsToBePlaced' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, MapPinManagerRef) == 0x000748, "Member 'UWBP_ServerBrowser_Screen_C::MapPinManagerRef' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, MapPinOffset) == 0x000750, "Member 'UWBP_ServerBrowser_Screen_C::MapPinOffset' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoloInPartyPopup) == 0x000758, "Member 'UWBP_ServerBrowser_Screen_C::SoloInPartyPopup' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PreviousCollectionFilter) == 0x000760, "Member 'UWBP_ServerBrowser_Screen_C::PreviousCollectionFilter' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterSettingsTimer) == 0x000778, "Member 'UWBP_ServerBrowser_Screen_C::FilterSettingsTimer' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ServerRefreshCooldown) == 0x000780, "Member 'UWBP_ServerBrowser_Screen_C::ServerRefreshCooldown' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PreviousLanguage) == 0x000788, "Member 'UWBP_ServerBrowser_Screen_C::PreviousLanguage' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WillPlacePins) == 0x000798, "Member 'UWBP_ServerBrowser_Screen_C::WillPlacePins' has a wrong offset!");
-static_assert(offsetof(UWBP_ServerBrowser_Screen_C, collection) == 0x0007A0, "Member 'UWBP_ServerBrowser_Screen_C::collection' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterOff) == 0x000428, "Member 'UWBP_ServerBrowser_Screen_C::FilterOff' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DescriptionIntro) == 0x000430, "Member 'UWBP_ServerBrowser_Screen_C::DescriptionIntro' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterOn) == 0x000438, "Member 'UWBP_ServerBrowser_Screen_C::FilterOn' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ListChange) == 0x000440, "Member 'UWBP_ServerBrowser_Screen_C::ListChange' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, TabChange) == 0x000448, "Member 'UWBP_ServerBrowser_Screen_C::TabChange' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Intro) == 0x000450, "Member 'UWBP_ServerBrowser_Screen_C::Intro' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoHeistBlink) == 0x000458, "Member 'UWBP_ServerBrowser_Screen_C::NoHeistBlink' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, OutroVideoLockedPressed) == 0x000460, "Member 'UWBP_ServerBrowser_Screen_C::OutroVideoLockedPressed' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, IntroVideoLockedPressed) == 0x000468, "Member 'UWBP_ServerBrowser_Screen_C::IntroVideoLockedPressed' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, BackdropImage_I) == 0x000470, "Member 'UWBP_ServerBrowser_Screen_C::BackdropImage_I' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_ContractorSoundContainer) == 0x000478, "Member 'UWBP_ServerBrowser_Screen_C::Button_ContractorSoundContainer' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_HeistIntroStory) == 0x000480, "Member 'UWBP_ServerBrowser_Screen_C::Button_HeistIntroStory' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Button_HeistOutroStory) == 0x000488, "Member 'UWBP_ServerBrowser_Screen_C::Button_HeistOutroStory' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, CancelMm_Button) == 0x000490, "Member 'UWBP_ServerBrowser_Screen_C::CancelMm_Button' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DifficultySelector) == 0x000498, "Member 'UWBP_ServerBrowser_Screen_C::DifficultySelector' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBar) == 0x0004A0, "Member 'UWBP_ServerBrowser_Screen_C::FilterBar' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBox) == 0x0004A8, "Member 'UWBP_ServerBrowser_Screen_C::FilterBox' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterBox_O) == 0x0004B0, "Member 'UWBP_ServerBrowser_Screen_C::FilterBox_O' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FiltersBlackout_I) == 0x0004B8, "Member 'UWBP_ServerBrowser_Screen_C::FiltersBlackout_I' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HeistBackground_I) == 0x0004C0, "Member 'UWBP_ServerBrowser_Screen_C::HeistBackground_I' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HeistDetails_Button) == 0x0004C8, "Member 'UWBP_ServerBrowser_Screen_C::HeistDetails_Button' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HostDetails_Hb) == 0x0004D0, "Member 'UWBP_ServerBrowser_Screen_C::HostDetails_Hb' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HostHeist_Button) == 0x0004D8, "Member 'UWBP_ServerBrowser_Screen_C::HostHeist_Button' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Icon_Host) == 0x0004E0, "Member 'UWBP_ServerBrowser_Screen_C::Icon_Host' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_144) == 0x0004E8, "Member 'UWBP_ServerBrowser_Screen_C::Image_144' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_265) == 0x0004F0, "Member 'UWBP_ServerBrowser_Screen_C::Image_265' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Image_HeistBanner) == 0x0004F8, "Member 'UWBP_ServerBrowser_Screen_C::Image_HeistBanner' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, JoinHeist_Button) == 0x000500, "Member 'UWBP_ServerBrowser_Screen_C::JoinHeist_Button' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Navbar_Collections) == 0x000508, "Member 'UWBP_ServerBrowser_Screen_C::Navbar_Collections' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Navbar_HeistModes) == 0x000510, "Member 'UWBP_ServerBrowser_Screen_C::Navbar_HeistModes' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NeedDcl_Button) == 0x000518, "Member 'UWBP_ServerBrowser_Screen_C::NeedDcl_Button' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoHeistFound_O) == 0x000520, "Member 'UWBP_ServerBrowser_Screen_C::NoHeistFound_O' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoMods_O) == 0x000528, "Member 'UWBP_ServerBrowser_Screen_C::NoMods_O' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, NoModsPopUp_O) == 0x000530, "Member 'UWBP_ServerBrowser_Screen_C::NoModsPopUp_O' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Overlay_HeistDetailsPopup) == 0x000538, "Member 'UWBP_ServerBrowser_Screen_C::Overlay_HeistDetailsPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Overlay_HeistInspectPanel) == 0x000540, "Member 'UWBP_ServerBrowser_Screen_C::Overlay_HeistInspectPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PermissionSelector) == 0x000548, "Member 'UWBP_ServerBrowser_Screen_C::PermissionSelector' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopupBackDrop_O) == 0x000550, "Member 'UWBP_ServerBrowser_Screen_C::PopupBackDrop_O' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopUpDifficulty) == 0x000558, "Member 'UWBP_ServerBrowser_Screen_C::PopUpDifficulty' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PopUpDifficutly_T) == 0x000560, "Member 'UWBP_ServerBrowser_Screen_C::PopUpDifficutly_T' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Root_Canvas) == 0x000568, "Member 'UWBP_ServerBrowser_Screen_C::Root_Canvas' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ScreenTitle_T) == 0x000570, "Member 'UWBP_ServerBrowser_Screen_C::ScreenTitle_T' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoundIconOFF) == 0x000578, "Member 'UWBP_ServerBrowser_Screen_C::SoundIconOFF' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoundIconOn) == 0x000580, "Member 'UWBP_ServerBrowser_Screen_C::SoundIconOn' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, TacticSelector) == 0x000588, "Member 'UWBP_ServerBrowser_Screen_C::TacticSelector' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_ContractorName) == 0x000590, "Member 'UWBP_ServerBrowser_Screen_C::Text_ContractorName' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_DifficultyDescription) == 0x000598, "Member 'UWBP_ServerBrowser_Screen_C::Text_DifficultyDescription' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_Host) == 0x0005A0, "Member 'UWBP_ServerBrowser_Screen_C::Text_Host' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelDescription) == 0x0005A8, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelDescription' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelName) == 0x0005B0, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelName' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_LevelName_InPopup) == 0x0005B8, "Member 'UWBP_ServerBrowser_Screen_C::Text_LevelName_InPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_NoModifiers) == 0x0005C0, "Member 'UWBP_ServerBrowser_Screen_C::Text_NoModifiers' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMax) == 0x0005C8, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMax' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMax_InPopup) == 0x0005D0, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMax_InPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMin) == 0x0005D8, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMin' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PayoutMin_InPopup) == 0x0005E0, "Member 'UWBP_ServerBrowser_Screen_C::Text_PayoutMin_InPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_PeopleNum) == 0x0005E8, "Member 'UWBP_ServerBrowser_Screen_C::Text_PeopleNum' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Text_Playstyle) == 0x0005F0, "Member 'UWBP_ServerBrowser_Screen_C::Text_Playstyle' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_HeistList) == 0x0005F8, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_HeistList' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_SecurityCompanies) == 0x000600, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_SecurityCompanies' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, VerticalBox_SecurityCompanies_InPopup) == 0x000608, "Member 'UWBP_ServerBrowser_Screen_C::VerticalBox_SecurityCompanies_InPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WBP_ServerBrowser_IntroMotion) == 0x000610, "Member 'UWBP_ServerBrowser_Screen_C::WBP_ServerBrowser_IntroMotion' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WidgetSwitcher_LeftPanel) == 0x000618, "Member 'UWBP_ServerBrowser_Screen_C::WidgetSwitcher_LeftPanel' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, RT_FocusedButton) == 0x000620, "Member 'UWBP_ServerBrowser_Screen_C::RT_FocusedButton' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, CurrentlyPlayedSoundID) == 0x000628, "Member 'UWBP_ServerBrowser_Screen_C::CurrentlyPlayedSoundID' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, Heist_Data) == 0x000630, "Member 'UWBP_ServerBrowser_Screen_C::Heist_Data' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, HeistDescriptions) == 0x000638, "Member 'UWBP_ServerBrowser_Screen_C::HeistDescriptions' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, RT_HeistDetailsPopupOpened) == 0x000688, "Member 'UWBP_ServerBrowser_Screen_C::RT_HeistDetailsPopupOpened' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, DifficultyDescriptions) == 0x000690, "Member 'UWBP_ServerBrowser_Screen_C::DifficultyDescriptions' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, JoinFailPopUp) == 0x0006E0, "Member 'UWBP_ServerBrowser_Screen_C::JoinFailPopUp' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, UsedIndices) == 0x0006E8, "Member 'UWBP_ServerBrowser_Screen_C::UsedIndices' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SavedIndices) == 0x0006F8, "Member 'UWBP_ServerBrowser_Screen_C::SavedIndices' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ReadyToPlacePins) == 0x000708, "Member 'UWBP_ServerBrowser_Screen_C::ReadyToPlacePins' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PinsToBePlaced) == 0x000710, "Member 'UWBP_ServerBrowser_Screen_C::PinsToBePlaced' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, MapPinManagerRef) == 0x000760, "Member 'UWBP_ServerBrowser_Screen_C::MapPinManagerRef' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, MapPinOffset) == 0x000768, "Member 'UWBP_ServerBrowser_Screen_C::MapPinOffset' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, SoloInPartyPopup) == 0x000770, "Member 'UWBP_ServerBrowser_Screen_C::SoloInPartyPopup' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PreviousCollectionFilter) == 0x000778, "Member 'UWBP_ServerBrowser_Screen_C::PreviousCollectionFilter' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, FilterSettingsTimer) == 0x000790, "Member 'UWBP_ServerBrowser_Screen_C::FilterSettingsTimer' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, ServerRefreshCooldown) == 0x000798, "Member 'UWBP_ServerBrowser_Screen_C::ServerRefreshCooldown' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, PreviousLanguage) == 0x0007A0, "Member 'UWBP_ServerBrowser_Screen_C::PreviousLanguage' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, WillPlacePins) == 0x0007B0, "Member 'UWBP_ServerBrowser_Screen_C::WillPlacePins' has a wrong offset!");
+static_assert(offsetof(UWBP_ServerBrowser_Screen_C, collection) == 0x0007B8, "Member 'UWBP_ServerBrowser_Screen_C::collection' has a wrong offset!");
 
 }
 

@@ -17,49 +17,15 @@
 namespace SDK
 {
 
-// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.ExecuteUbergraph_MM_BPL_Cable_Spark
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void AMM_BPL_Cable_Spark_C::ExecuteUbergraph_MM_BPL_Cable_Spark(int32 EntryPoint)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "ExecuteUbergraph_MM_BPL_Cable_Spark");
-
-	Params::MM_BPL_Cable_Spark_C_ExecuteUbergraph_MM_BPL_Cable_Spark Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
-
-void AMM_BPL_Cable_Spark_C::ReceiveBeginPlay()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "ReceiveBeginPlay");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__SparkTrigger__EventFunc
+// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__FinishedFunc
 // (BlueprintEvent)
 
-void AMM_BPL_Cable_Spark_C::Timeline_0__SparkTrigger__EventFunc()
+void AMM_BPL_Cable_Spark_C::Timeline_0__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__SparkTrigger__EventFunc");
+		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__FinishedFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -79,17 +45,51 @@ void AMM_BPL_Cable_Spark_C::Timeline_0__UpdateFunc()
 }
 
 
-// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__FinishedFunc
+// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.Timeline_0__SparkTrigger__EventFunc
 // (BlueprintEvent)
 
-void AMM_BPL_Cable_Spark_C::Timeline_0__FinishedFunc()
+void AMM_BPL_Cable_Spark_C::Timeline_0__SparkTrigger__EventFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__FinishedFunc");
+		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "Timeline_0__SparkTrigger__EventFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
+
+void AMM_BPL_Cable_Spark_C::ReceiveBeginPlay()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "ReceiveBeginPlay");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function MM_BPL_Cable_Spark.MM_BPL_Cable_Spark_C.ExecuteUbergraph_MM_BPL_Cable_Spark
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+
+void AMM_BPL_Cable_Spark_C::ExecuteUbergraph_MM_BPL_Cable_Spark(int32 EntryPoint)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("MM_BPL_Cable_Spark_C", "ExecuteUbergraph_MM_BPL_Cable_Spark");
+
+	Params::MM_BPL_Cable_Spark_C_ExecuteUbergraph_MM_BPL_Cable_Spark Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 }

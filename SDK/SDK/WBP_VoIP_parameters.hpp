@@ -161,9 +161,10 @@ public:
 	bool                                          CallFunc_EqualEqual_StrStr_ReturnValue;            // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
 	class UTLMVoiceChatSubsystem*                 CallFunc_GetGameInstanceSubsystem_ReturnValue;     // 0x0028(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_GetPlayerMuted_bIsMuted;                  // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetPlayerMuted_ReturnValue;               // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_GetPlayerBlocked_ReturnValue;             // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetAudioInputMute_ReturnValue;            // 0x0030(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetPlayerBlocked_ReturnValue;             // 0x0031(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetPlayerMuted_bIsMuted;                  // 0x0032(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_GetPlayerMuted_ReturnValue;               // 0x0033(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_VoIP_C_CheckState) == 0x000008, "Wrong alignment on WBP_VoIP_C_CheckState");
 static_assert(sizeof(WBP_VoIP_C_CheckState) == 0x000038, "Wrong size on WBP_VoIP_C_CheckState");
@@ -172,9 +173,10 @@ static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_IsPlayerInChannel_InVoice
 static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetEOSProductUserId_ReturnValue) == 0x000010, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetEOSProductUserId_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_EqualEqual_StrStr_ReturnValue) == 0x000020, "Member 'WBP_VoIP_C_CheckState::CallFunc_EqualEqual_StrStr_ReturnValue' has a wrong offset!");
 static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetGameInstanceSubsystem_ReturnValue) == 0x000028, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetGameInstanceSubsystem_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerMuted_bIsMuted) == 0x000030, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerMuted_bIsMuted' has a wrong offset!");
-static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerMuted_ReturnValue) == 0x000031, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerMuted_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerBlocked_ReturnValue) == 0x000032, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerBlocked_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetAudioInputMute_ReturnValue) == 0x000030, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetAudioInputMute_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerBlocked_ReturnValue) == 0x000031, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerBlocked_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerMuted_bIsMuted) == 0x000032, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerMuted_bIsMuted' has a wrong offset!");
+static_assert(offsetof(WBP_VoIP_C_CheckState, CallFunc_GetPlayerMuted_ReturnValue) == 0x000033, "Member 'WBP_VoIP_C_CheckState::CallFunc_GetPlayerMuted_ReturnValue' has a wrong offset!");
 
 // Function WBP_VoIP.WBP_VoIP_C.UpdateTalkingIndicator
 // 0x0018 (0x0018 - 0x0000)

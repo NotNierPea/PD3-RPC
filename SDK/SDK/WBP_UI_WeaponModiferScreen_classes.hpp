@@ -19,24 +19,25 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_WeaponModiferScreen.WBP_UI_WeaponModiferScreen_C
-// 0x0070 (0x0430 - 0x03C0)
+// 0x0078 (0x0438 - 0x03C0)
 class UWBP_UI_WeaponModiferScreen_C final : public USBZMainMenuWeaponModifierScreen
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x03C0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UWidgetAnimation*                       Intro;                                             // 0x03C8(0x0008)(BlueprintVisible, BlueprintReadOnly, ZeroConstructor, Transient, IsPlainOldData, RepSkip, NoDestructor, HasGetValueTypeHash)
-	class UImage*                                 Image_TransactionScreen;                           // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UOverlay*                               Overlay_PartDescription;                           // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_Blocking;                                     // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_UnlockLevel;                                  // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TitleHeader_T;                                     // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_WeaponStats_C*           WBP_UI_Widget_WeaponStats;                         // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        WeaponHeader_T;                                    // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ActionButton_C*                 Widget_BuyItemButton;                              // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Inventory_ItemDescription_C*    Widget_ItemDescription;                            // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_WeaponProgressionWidget_C*      Widget_WeaponProgressionDisplay;                   // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMainMenuWeaponPartProgressionButton* ActiveButton;                                     // 0x0428(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UImage*                                 Image_79;                                          // 0x03D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Image_TransactionScreen;                           // 0x03D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UOverlay*                               Overlay_PartDescription;                           // 0x03E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     ScreenTitle;                                       // 0x03E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_Blocking;                                     // 0x03F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_UnlockLevel;                                  // 0x03F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TitleHeader_T;                                     // 0x0400(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_WeaponStats_C*           WBP_UI_Widget_WeaponStats;                         // 0x0408(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        WeaponHeader_T;                                    // 0x0410(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ActionButton_C*                 Widget_BuyItemButton;                              // 0x0418(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Inventory_ItemDescription_C*    Widget_ItemDescription;                            // 0x0420(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_WeaponProgressionWidget_C*      Widget_WeaponProgressionDisplay;                   // 0x0428(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMainMenuWeaponPartProgressionButton* ActiveButton;                                     // 0x0430(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_WeaponModiferScreen(int32 EntryPoint);
@@ -65,21 +66,22 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_WeaponModiferScreen_C) == 0x000008, "Wrong alignment on UWBP_UI_WeaponModiferScreen_C");
-static_assert(sizeof(UWBP_UI_WeaponModiferScreen_C) == 0x000430, "Wrong size on UWBP_UI_WeaponModiferScreen_C");
+static_assert(sizeof(UWBP_UI_WeaponModiferScreen_C) == 0x000438, "Wrong size on UWBP_UI_WeaponModiferScreen_C");
 static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, UberGraphFrame) == 0x0003C0, "Member 'UWBP_UI_WeaponModiferScreen_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Intro) == 0x0003C8, "Member 'UWBP_UI_WeaponModiferScreen_C::Intro' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Image_TransactionScreen) == 0x0003D0, "Member 'UWBP_UI_WeaponModiferScreen_C::Image_TransactionScreen' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Overlay_PartDescription) == 0x0003D8, "Member 'UWBP_UI_WeaponModiferScreen_C::Overlay_PartDescription' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, ScreenTitle) == 0x0003E0, "Member 'UWBP_UI_WeaponModiferScreen_C::ScreenTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Text_Blocking) == 0x0003E8, "Member 'UWBP_UI_WeaponModiferScreen_C::Text_Blocking' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Text_UnlockLevel) == 0x0003F0, "Member 'UWBP_UI_WeaponModiferScreen_C::Text_UnlockLevel' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, TitleHeader_T) == 0x0003F8, "Member 'UWBP_UI_WeaponModiferScreen_C::TitleHeader_T' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, WBP_UI_Widget_WeaponStats) == 0x000400, "Member 'UWBP_UI_WeaponModiferScreen_C::WBP_UI_Widget_WeaponStats' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, WeaponHeader_T) == 0x000408, "Member 'UWBP_UI_WeaponModiferScreen_C::WeaponHeader_T' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_BuyItemButton) == 0x000410, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_BuyItemButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_ItemDescription) == 0x000418, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_ItemDescription' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_WeaponProgressionDisplay) == 0x000420, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_WeaponProgressionDisplay' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, ActiveButton) == 0x000428, "Member 'UWBP_UI_WeaponModiferScreen_C::ActiveButton' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Image_79) == 0x0003D0, "Member 'UWBP_UI_WeaponModiferScreen_C::Image_79' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Image_TransactionScreen) == 0x0003D8, "Member 'UWBP_UI_WeaponModiferScreen_C::Image_TransactionScreen' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Overlay_PartDescription) == 0x0003E0, "Member 'UWBP_UI_WeaponModiferScreen_C::Overlay_PartDescription' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, ScreenTitle) == 0x0003E8, "Member 'UWBP_UI_WeaponModiferScreen_C::ScreenTitle' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Text_Blocking) == 0x0003F0, "Member 'UWBP_UI_WeaponModiferScreen_C::Text_Blocking' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Text_UnlockLevel) == 0x0003F8, "Member 'UWBP_UI_WeaponModiferScreen_C::Text_UnlockLevel' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, TitleHeader_T) == 0x000400, "Member 'UWBP_UI_WeaponModiferScreen_C::TitleHeader_T' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, WBP_UI_Widget_WeaponStats) == 0x000408, "Member 'UWBP_UI_WeaponModiferScreen_C::WBP_UI_Widget_WeaponStats' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, WeaponHeader_T) == 0x000410, "Member 'UWBP_UI_WeaponModiferScreen_C::WeaponHeader_T' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_BuyItemButton) == 0x000418, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_BuyItemButton' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_ItemDescription) == 0x000420, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_ItemDescription' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, Widget_WeaponProgressionDisplay) == 0x000428, "Member 'UWBP_UI_WeaponModiferScreen_C::Widget_WeaponProgressionDisplay' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_WeaponModiferScreen_C, ActiveButton) == 0x000430, "Member 'UWBP_UI_WeaponModiferScreen_C::ActiveButton' has a wrong offset!");
 
 }
 

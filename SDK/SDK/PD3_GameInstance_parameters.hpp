@@ -23,15 +23,15 @@ struct PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance final
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZReplayInfo>                 K2Node_Event_Replays;                              // 0x0008(0x0010)(ConstParm, ReferenceParm)
-	TArray<class UWBP_UI_MainMenu_Replays_C*>     CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0018(0x0010)(ReferenceParm, ContainsInstancedReference)
+	TArray<class UWBP_UI_MainMenu_Replays_C*>     CallFunc_GetAllWidgetsOfClass_FoundWidgets;        // 0x0008(0x0010)(ReferenceParm, ContainsInstancedReference)
+	TArray<struct FSBZReplayInfo>                 K2Node_Event_Replays;                              // 0x0018(0x0010)(ConstParm, ReferenceParm)
 	class UWBP_UI_MainMenu_Replays_C*             CallFunc_Array_Get_Item;                           // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 };
 static_assert(alignof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance) == 0x000008, "Wrong alignment on PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance");
 static_assert(sizeof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance) == 0x000030, "Wrong size on PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance");
 static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, EntryPoint) == 0x000000, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::EntryPoint' has a wrong offset!");
-static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, K2Node_Event_Replays) == 0x000008, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::K2Node_Event_Replays' has a wrong offset!");
-static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000018, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
+static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, CallFunc_GetAllWidgetsOfClass_FoundWidgets) == 0x000008, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::CallFunc_GetAllWidgetsOfClass_FoundWidgets' has a wrong offset!");
+static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, K2Node_Event_Replays) == 0x000018, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::K2Node_Event_Replays' has a wrong offset!");
 static_assert(offsetof(PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance, CallFunc_Array_Get_Item) == 0x000028, "Member 'PD3_GameInstance_C_ExecuteUbergraph_PD3_GameInstance::CallFunc_Array_Get_Item' has a wrong offset!");
 
 // Function PD3_GameInstance.PD3_GameInstance_C.OnFindReplaysComplete

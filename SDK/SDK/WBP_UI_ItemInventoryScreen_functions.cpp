@@ -37,28 +37,6 @@ void UWBP_UI_ItemInventoryScreen_C::ExecuteUbergraph_WBP_UI_ItemInventoryScreen(
 }
 
 
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnEmptySlotFocus
-// (BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_ItemInventoryScreen_C::OnEmptySlotFocus(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnEmptySlotFocus");
-
-	Params::WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
 // Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotsUpdated
 // (Event, Protected, BlueprintEvent)
 
@@ -192,54 +170,6 @@ void UWBP_UI_ItemInventoryScreen_C::OnPressCustomize()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OnPressCustomize");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OpenArmorVendor
-// (Public, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_ItemInventoryScreen_C::OpenArmorVendor(class USBZMenuButton* Button)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "OpenArmorVendor");
-
-	Params::WBP_UI_ItemInventoryScreen_C_OpenArmorVendor Parms{};
-
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.SetControlReferences
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ItemInventoryScreen_C::SetControlReferences()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "SetControlReferences");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.HandleVendorButton
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_ItemInventoryScreen_C::HandleVendorButton()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_ItemInventoryScreen_C", "HandleVendorButton");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

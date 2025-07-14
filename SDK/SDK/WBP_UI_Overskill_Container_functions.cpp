@@ -37,77 +37,23 @@ void UWBP_UI_Overskill_Container_C::ExecuteUbergraph_WBP_UI_Overskill_Container(
 }
 
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_OverskillSwitch_ControllerPrompt_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature
-// (BlueprintEvent)
-
-void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_OverskillSwitch_ControllerPrompt_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_OverskillSwitch_ControllerPrompt_K2Node_ComponentBoundEvent_9_SBZOnActionChanged__DelegateSignature");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature
-// (BlueprintEvent)
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.OnOverskillChanged
+// (Event, Protected, BlueprintEvent)
 // Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature(class USBZMenuButton* Button)
+void UWBP_UI_Overskill_Container_C::OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "OnOverskillChanged");
 
-	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_Overkill_Switch_K2Node_ComponentBoundEvent_8_OnMenuButtonSelected__DelegateSignature Parms{};
+	Params::WBP_UI_Overskill_Container_C_OnOverskillChanged Parms{};
 
-	Parms.Button = Button;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// class USBZMenuButton*                   Button                                                 (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    bIsEnabled_0                                           (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
-
-void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature");
-
-	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_MenuButton_K2Node_ComponentBoundEvent_7_OnMenuButtonStateChanged__DelegateSignature Parms{};
-
-	Parms.Button = Button;
-	Parms.bIsEnabled_0 = bIsEnabled_0;
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
-// (BlueprintEvent)
-// Parameters:
-// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-
-void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
-
-	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
-
-	Parms.NewIndex = NewIndex;
+	Parms.InOverskillData = InOverskillData;
+	Parms.InProgress = InProgress;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -127,23 +73,21 @@ void UWBP_UI_Overskill_Container_C::OnInitialized()
 }
 
 
-// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.OnOverskillChanged
-// (Event, Protected, BlueprintEvent)
+// Function WBP_UI_Overskill_Container.WBP_UI_Overskill_Container_C.BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature
+// (BlueprintEvent)
 // Parameters:
-// const class USBZOverskillData*          InOverskillData                                        (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// float                                   InProgress                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// int32                                   NewIndex                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Overskill_Container_C::OnOverskillChanged(const class USBZOverskillData* InOverskillData, float InProgress)
+void UWBP_UI_Overskill_Container_C::BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature(int32 NewIndex)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "OnOverskillChanged");
+		Func = Class->GetFunction("WBP_UI_Overskill_Container_C", "BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature");
 
-	Params::WBP_UI_Overskill_Container_C_OnOverskillChanged Parms{};
+	Params::WBP_UI_Overskill_Container_C_BndEvt__WBP_UI_Overskill_Container_WBP_Overskill_NavBar_K2Node_ComponentBoundEvent_0_OnIndexChanged__DelegateSignature Parms{};
 
-	Parms.InOverskillData = InOverskillData;
-	Parms.InProgress = InProgress;
+	Parms.NewIndex = NewIndex;
 
 	UObject::ProcessEvent(Func, &Parms);
 }

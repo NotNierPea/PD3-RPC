@@ -37,20 +37,6 @@ void UWBP_ServerBrowser_Screen_C::ExecuteUbergraph_WBP_ServerBrowser_Screen(int3
 }
 
 
-// Function WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C.OnServerBrowserJoinError
-// (BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_Screen_C::OnServerBrowserJoinError()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Screen_C", "OnServerBrowserJoinError");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
 // Function WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C.OnStateMachineEnteredGameStart
 // (BlueprintCallable, BlueprintEvent)
 
@@ -1742,34 +1728,6 @@ void UWBP_ServerBrowser_Screen_C::BindSoloModeReentry()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_ServerBrowser_Screen_C", "BindSoloModeReentry");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C.Check New Player
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_Screen_C::Check_New_Player()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Screen_C", "Check New Player");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_ServerBrowser_Screen.WBP_ServerBrowser_Screen_C.OnPinsPlacementFinished
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_ServerBrowser_Screen_C::OnPinsPlacementFinished()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_ServerBrowser_Screen_C", "OnPinsPlacementFinished");
 
 	UObject::ProcessEvent(Func, nullptr);
 }

@@ -33,7 +33,6 @@ public:
 	float                                         HeistEndTime;                                      // 0x02BC(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         HostageCount;                                      // 0x02C0(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	ESBZNegotiationTradeType                      NegotiationTradeType;                              // 0x02C1(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bIsFBIActive;                                      // 0x02C2(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Widget_HeistState(int32 EntryPoint);
@@ -42,9 +41,9 @@ public:
 	void OnNegotiationTradeTypeChanged(ESBZNegotiationTradeType OldType, ESBZNegotiationTradeType NewType);
 	void OnHostageDemandChanged(uint8 OldNrHostages, uint8 NewNrHostages);
 	void OnInitialized();
-	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void OnHeistStateChanged(EPD3HeistState OldState, EPD3HeistState NewState);
 	void OnNegotiationTimeChanged(float OldTime, float NewTime);
+	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
 	void OnAssaultState();
 	void OnCasingState();
 	void OnNegotiationState();
@@ -57,8 +56,6 @@ public:
 	void OnFirstRespondersState();
 	void OnAlarmState();
 	void UpdateTradeCount();
-	void UpdateHeistStateText();
-	void OnFBIActive();
 
 public:
 	static class UClass* StaticClass()
@@ -81,7 +78,6 @@ static_assert(offsetof(UWBP_UI_Widget_HeistState_C, CurrentState) == 0x0002B8, "
 static_assert(offsetof(UWBP_UI_Widget_HeistState_C, HeistEndTime) == 0x0002BC, "Member 'UWBP_UI_Widget_HeistState_C::HeistEndTime' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Widget_HeistState_C, HostageCount) == 0x0002C0, "Member 'UWBP_UI_Widget_HeistState_C::HostageCount' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Widget_HeistState_C, NegotiationTradeType) == 0x0002C1, "Member 'UWBP_UI_Widget_HeistState_C::NegotiationTradeType' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Widget_HeistState_C, bIsFBIActive) == 0x0002C2, "Member 'UWBP_UI_Widget_HeistState_C::bIsFBIActive' has a wrong offset!");
 
 }
 

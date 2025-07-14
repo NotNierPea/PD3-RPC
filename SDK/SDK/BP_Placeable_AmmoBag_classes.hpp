@@ -21,7 +21,7 @@ namespace SDK
 
 // BlueprintGeneratedClass BP_Placeable_AmmoBag.BP_Placeable_AmmoBag_C
 // 0x0090 (0x05E0 - 0x0550)
-class ABP_Placeable_AmmoBag_C : public ASBZAmmoBag
+class ABP_Placeable_AmmoBag_C final : public ASBZAmmoBag
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x0550(0x0008)(ZeroConstructor, Transient, DuplicateTransient)

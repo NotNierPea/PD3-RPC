@@ -11,8 +11,8 @@
 #include "Basic.hpp"
 
 #include "CoreUObject_structs.hpp"
-#include "Engine_structs.hpp"
 #include "CH_BaseHumanAI_classes.hpp"
+#include "Engine_structs.hpp"
 
 
 namespace SDK
@@ -20,7 +20,7 @@ namespace SDK
 
 // BlueprintGeneratedClass CH_BaseCivilian.CH_BaseCivilian_C
 // 0x0050 (0x1CE0 - 0x1C90)
-class ACH_BaseCivilian_C : public ACH_BaseHumanAI_C
+class ACH_BaseCivilian_C final : public ACH_BaseHumanAI_C
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x1C90(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
