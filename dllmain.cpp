@@ -132,10 +132,10 @@ DWORD WINAPI MainThread(HMODULE Module)
     }
 
     // Open console
-    AllocConsole();
-    FILE* Dummy;
-    freopen_s(&Dummy, "CONOUT$", "w", stdout);
-    freopen_s(&Dummy, "CONIN$", "r", stdin);
+    //AllocConsole();
+    //FILE* Dummy;
+    //freopen_s(&Dummy, "CONOUT$", "w", stdout);
+    //freopen_s(&Dummy, "CONIN$", "r", stdin);
 
     std::cout << "starting.." << std::endl;
     //std::cout << "Press END to unload." << std::endl;
@@ -214,7 +214,18 @@ DWORD WINAPI MainThread(HMODULE Module)
         {
             auto* ServerBrowserScreen = static_cast<SDK::UWBP_ServerBrowser_Screen_C*>(Widget);
 
-            if(!IsValid(ServerBrowserScreen) || !IsValid(ServerBrowserScreen->Heist_Data))
+            if(!IsValid(ServerBrowserScreen))
+                continue;
+
+            // bIsOnStack -> if its visiable for some fucking reason?
+            if(ServerBrowserScreen->bIsOnStack)
+            {
+                //PrintConsole("Servers Browser..");
+
+                StateDetails = "Browsing Servers";
+            }
+
+            if (!IsValid(ServerBrowserScreen->Heist_Data))
                 continue;
 
             auto* HeistData = ServerBrowserScreen->Heist_Data;
@@ -223,8 +234,6 @@ DWORD WINAPI MainThread(HMODULE Module)
             server_browser_diff = GetDifficultyName(ServerBrowserScreen->GetDifficultyPerHeistType());
             
             tactic = GetTacticNameOnline(ServerBrowserScreen->GetTacticPerHeistType());
-
-            //PrintConsole(server_heist + " - " + server_diff);
         }
 
         // ------------------------ \\
@@ -247,8 +256,10 @@ DWORD WINAPI MainThread(HMODULE Module)
 
             //PrintConsole("Found Preplanning Widget!");
 
-            if(PreplanningWidget->IsAsyncLoadingDone())
+            if(PreplanningWidget->bIsOnStack)
             {
+                //PrintConsole("Preplanning..");
+
                 StateDetails = "In Pre-planning";
 
                 StateDetails+= ": " + server_browser_heist;
@@ -395,9 +406,9 @@ DWORD WINAPI MainThread(HMODULE Module)
 
     PrintConsole("[Discord] Deleted Core!");
 
-    fclose(stdin);
-    fclose(stdout);
-    FreeConsole();
+    //fclose(stdin);
+    //fclose(stdout);
+    //FreeConsole();
 
     // Unload DLL
     FreeLibraryAndExitThread(Module, 0);
