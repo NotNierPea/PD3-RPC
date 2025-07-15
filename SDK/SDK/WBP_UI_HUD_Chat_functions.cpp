@@ -37,28 +37,48 @@ void UWBP_UI_HUD_Chat_C::ExecuteUbergraph_WBP_UI_HUD_Chat(int32 EntryPoint)
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature
-// (HasOutParams, BlueprintEvent)
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnPlayerJoinedTheHeist
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
-// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+// const class FText&                      JoinedPlayerName                                       (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
-void UWBP_UI_HUD_Chat_C::BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+void UWBP_UI_HUD_Chat_C::OnPlayerJoinedTheHeist(const class FText& JoinedPlayerName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "OnPlayerJoinedTheHeist");
 
-	Params::WBP_UI_HUD_Chat_C_BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+	Params::WBP_UI_HUD_Chat_C_OnPlayerJoinedTheHeist Parms{};
 
-	Parms.Text = std::move(Text);
+	Parms.JoinedPlayerName = std::move(JoinedPlayerName);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnPlayerStateRemoved
+// (Event, Protected, HasOutParams, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayerStateRemovedEvent&PlayerStateRemovedData                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_HUD_Chat_C::OnPlayerStateRemoved(const struct FSBZPlayerStateRemovedEvent& PlayerStateRemovedData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "OnPlayerStateRemoved");
+
+	Params::WBP_UI_HUD_Chat_C_OnPlayerStateRemoved Parms{};
+
+	Parms.PlayerStateRemovedData = std::move(PlayerStateRemovedData);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.CallReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZPlayerCallEvent&       CallEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
@@ -78,7 +98,7 @@ void UWBP_UI_HUD_Chat_C::CallReceived(const struct FSBZPlayerCallEvent& CallEven
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.KeyItemCountChanged
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZKeyItemCountChangedEvent&KeyItemCountChangedEventData                           (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
@@ -98,7 +118,7 @@ void UWBP_UI_HUD_Chat_C::KeyItemCountChanged(const struct FSBZKeyItemCountChange
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.SystemMessageReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZSystemChatEvent&       ChatEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -118,7 +138,7 @@ void UWBP_UI_HUD_Chat_C::SystemMessageReceived(const struct FSBZSystemChatEvent&
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.CrewAIMessageReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZAICrewChatEvent&       ChatEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -138,7 +158,7 @@ void UWBP_UI_HUD_Chat_C::CrewAIMessageReceived(const struct FSBZAICrewChatEvent&
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.PingReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZPlayerPingEvent&       PingEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor, ContainsInstancedReference)
 
@@ -158,7 +178,7 @@ void UWBP_UI_HUD_Chat_C::PingReceived(const struct FSBZPlayerPingEvent& PingEven
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnAICrewDefeatStateChanged
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZAICrewDefeatStateChangedData&InData                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
@@ -178,7 +198,7 @@ void UWBP_UI_HUD_Chat_C::OnAICrewDefeatStateChanged(const struct FSBZAICrewDefea
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnPlayerDefeatStateChanged
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZPlayerDefeatStateChangedData&InData                                                 (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
 
@@ -198,7 +218,7 @@ void UWBP_UI_HUD_Chat_C::OnPlayerDefeatStateChanged(const struct FSBZPlayerDefea
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.VotingMessageReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZVotingChatEvent&       ChatEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -218,7 +238,7 @@ void UWBP_UI_HUD_Chat_C::VotingMessageReceived(const struct FSBZVotingChatEvent&
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.PlayerMessageReceived
-// (Event, Protected, HasOutParams, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, HasOutParams, BlueprintEvent)
 // Parameters:
 // const struct FSBZPlayerChatEvent&       ChatEventData                                          (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
 
@@ -238,7 +258,7 @@ void UWBP_UI_HUD_Chat_C::PlayerMessageReceived(const struct FSBZPlayerChatEvent&
 
 
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnChatDisabledChanged
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 // Parameters:
 // bool                                    bIsDisabled                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -271,8 +291,28 @@ void UWBP_UI_HUD_Chat_C::OnInitialized()
 }
 
 
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature
+// (HasOutParams, BlueprintEvent)
+// Parameters:
+// const class FText&                      Text                                                   (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm)
+
+void UWBP_UI_HUD_Chat_C::BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature");
+
+	Params::WBP_UI_HUD_Chat_C_BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature Parms{};
+
+	Parms.Text = std::move(Text);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.OnChatFocusChanged
-// (Event, Protected, BlueprintCallable, BlueprintEvent)
+// (Event, Protected, BlueprintEvent)
 // Parameters:
 // bool                                    bHasFocus                                              (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
@@ -313,49 +353,155 @@ void UWBP_UI_HUD_Chat_C::Tick(const struct FGeometry& MyGeometry, float InDeltaT
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessDefeatChange
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.Process Player Message
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// class APlayerState*                     PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// class ASBZAICrewState*                  AICrewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3DefeatState                         OldDefeatState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// EPD3DefeatState                         NewDefeatState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-// bool                                    IsInitialStateChange                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// const struct FSBZPlayerChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_HUD_Chat_C::ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange)
+void UWBP_UI_HUD_Chat_C::Process_Player_Message(const struct FSBZPlayerChatEvent& InMessageChat)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessDefeatChange");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "Process Player Message");
 
-	Params::WBP_UI_HUD_Chat_C_ProcessDefeatChange Parms{};
+	Params::WBP_UI_HUD_Chat_C_Process_Player_Message Parms{};
 
-	Parms.PlayerState = PlayerState;
-	Parms.AICrewState = AICrewState;
-	Parms.OldDefeatState = OldDefeatState;
-	Parms.NewDefeatState = NewDefeatState;
-	Parms.IsInitialStateChange = IsInitialStateChange;
+	Parms.InMessageChat = std::move(InMessageChat);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.AddText
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const class FText&                      NewMessage                                             (BlueprintVisible, BlueprintReadOnly, Parm)
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ResetTimer
+// (Public, BlueprintCallable, BlueprintEvent)
 
-void UWBP_UI_HUD_Chat_C::AddText(const class FText& NewMessage)
+void UWBP_UI_HUD_Chat_C::ResetTimer()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "AddText");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ResetTimer");
 
-	Params::WBP_UI_HUD_Chat_C_AddText Parms{};
+	UObject::ProcessEvent(Func, nullptr);
+}
 
-	Parms.NewMessage = std::move(NewMessage);
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessPing
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayerPingEvent&       PIngEvent                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, ContainsInstancedReference)
+
+void UWBP_UI_HUD_Chat_C::ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessPing");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessPing Parms{};
+
+	Parms.PIngEvent = std::move(PIngEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessKeyItemPickUp
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZKeyItemCountChangedEvent&InKeyItemEvent                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_UI_HUD_Chat_C::ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessKeyItemPickUp");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessKeyItemPickUp Parms{};
+
+	Parms.InKeyItemEvent = std::move(InKeyItemEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessCall
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZPlayerCallEvent&       CallEvent                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
+
+void UWBP_UI_HUD_Chat_C::ProcessCall(const struct FSBZPlayerCallEvent& CallEvent)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessCall");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessCall Parms{};
+
+	Parms.CallEvent = std::move(CallEvent);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessCrewAIMessage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZAICrewChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_HUD_Chat_C::ProcessCrewAIMessage(const struct FSBZAICrewChatEvent& InMessageChat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessCrewAIMessage");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessCrewAIMessage Parms{};
+
+	Parms.InMessageChat = std::move(InMessageChat);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessSystemMessage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZSystemChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_HUD_Chat_C::ProcessSystemMessage(const struct FSBZSystemChatEvent& InMessageChat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessSystemMessage");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessSystemMessage Parms{};
+
+	Parms.InMessageChat = std::move(InMessageChat);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessVotingMessage
+// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZVotingChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+
+void UWBP_UI_HUD_Chat_C::ProcessVotingMessage(const struct FSBZVotingChatEvent& InMessageChat)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessVotingMessage");
+
+	Params::WBP_UI_HUD_Chat_C_ProcessVotingMessage Parms{};
+
+	Parms.InMessageChat = std::move(InMessageChat);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -389,155 +535,69 @@ void UWBP_UI_HUD_Chat_C::GetMoodText(class FText& InText, bool IsGood, class FTe
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessVotingMessage
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.AddText
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZVotingChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      NewMessage                                             (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_HUD_Chat_C::ProcessVotingMessage(const struct FSBZVotingChatEvent& InMessageChat)
+void UWBP_UI_HUD_Chat_C::AddText(const class FText& NewMessage)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessVotingMessage");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "AddText");
 
-	Params::WBP_UI_HUD_Chat_C_ProcessVotingMessage Parms{};
+	Params::WBP_UI_HUD_Chat_C_AddText Parms{};
 
-	Parms.InMessageChat = std::move(InMessageChat);
+	Parms.NewMessage = std::move(NewMessage);
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessSystemMessage
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessDefeatChange
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZSystemChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// class APlayerState*                     PlayerState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// class ASBZAICrewState*                  AICrewState                                            (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3DefeatState                         OldDefeatState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// EPD3DefeatState                         NewDefeatState                                         (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// bool                                    IsInitialStateChange                                   (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
 
-void UWBP_UI_HUD_Chat_C::ProcessSystemMessage(const struct FSBZSystemChatEvent& InMessageChat)
+void UWBP_UI_HUD_Chat_C::ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessSystemMessage");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessDefeatChange");
 
-	Params::WBP_UI_HUD_Chat_C_ProcessSystemMessage Parms{};
+	Params::WBP_UI_HUD_Chat_C_ProcessDefeatChange Parms{};
 
-	Parms.InMessageChat = std::move(InMessageChat);
+	Parms.PlayerState = PlayerState;
+	Parms.AICrewState = AICrewState;
+	Parms.OldDefeatState = OldDefeatState;
+	Parms.NewDefeatState = NewDefeatState;
+	Parms.IsInitialStateChange = IsInitialStateChange;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessCrewAIMessage
+// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessPlayerJoinedHeist
 // (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
 // Parameters:
-// const struct FSBZAICrewChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
+// const class FText&                      InPlayerJoinedName                                     (BlueprintVisible, BlueprintReadOnly, Parm)
 
-void UWBP_UI_HUD_Chat_C::ProcessCrewAIMessage(const struct FSBZAICrewChatEvent& InMessageChat)
+void UWBP_UI_HUD_Chat_C::ProcessPlayerJoinedHeist(const class FText& InPlayerJoinedName)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessCrewAIMessage");
+		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessPlayerJoinedHeist");
 
-	Params::WBP_UI_HUD_Chat_C_ProcessCrewAIMessage Parms{};
+	Params::WBP_UI_HUD_Chat_C_ProcessPlayerJoinedHeist Parms{};
 
-	Parms.InMessageChat = std::move(InMessageChat);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessCall
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayerCallEvent&       CallEvent                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_UI_HUD_Chat_C::ProcessCall(const struct FSBZPlayerCallEvent& CallEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessCall");
-
-	Params::WBP_UI_HUD_Chat_C_ProcessCall Parms{};
-
-	Parms.CallEvent = std::move(CallEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessKeyItemPickUp
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZKeyItemCountChangedEvent&InKeyItemEvent                                         (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor)
-
-void UWBP_UI_HUD_Chat_C::ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessKeyItemPickUp");
-
-	Params::WBP_UI_HUD_Chat_C_ProcessKeyItemPickUp Parms{};
-
-	Parms.InKeyItemEvent = std::move(InKeyItemEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ProcessPing
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayerPingEvent&       PIngEvent                                              (BlueprintVisible, BlueprintReadOnly, Parm, NoDestructor, ContainsInstancedReference)
-
-void UWBP_UI_HUD_Chat_C::ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ProcessPing");
-
-	Params::WBP_UI_HUD_Chat_C_ProcessPing Parms{};
-
-	Parms.PIngEvent = std::move(PIngEvent);
-
-	UObject::ProcessEvent(Func, &Parms);
-}
-
-
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.ResetTimer
-// (Public, BlueprintCallable, BlueprintEvent)
-
-void UWBP_UI_HUD_Chat_C::ResetTimer()
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "ResetTimer");
-
-	UObject::ProcessEvent(Func, nullptr);
-}
-
-
-// Function WBP_UI_HUD_Chat.WBP_UI_HUD_Chat_C.Process Player Message
-// (Public, HasDefaults, BlueprintCallable, BlueprintEvent)
-// Parameters:
-// const struct FSBZPlayerChatEvent&       InMessageChat                                          (BlueprintVisible, BlueprintReadOnly, Parm)
-
-void UWBP_UI_HUD_Chat_C::Process_Player_Message(const struct FSBZPlayerChatEvent& InMessageChat)
-{
-	static class UFunction* Func = nullptr;
-
-	if (Func == nullptr)
-		Func = Class->GetFunction("WBP_UI_HUD_Chat_C", "Process Player Message");
-
-	Params::WBP_UI_HUD_Chat_C_Process_Player_Message Parms{};
-
-	Parms.InMessageChat = std::move(InMessageChat);
+	Parms.InPlayerJoinedName = std::move(InPlayerJoinedName);
 
 	UObject::ProcessEvent(Func, &Parms);
 }

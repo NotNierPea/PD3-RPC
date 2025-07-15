@@ -35,11 +35,11 @@ public:
 	class ACameraActor*                           PlayerCharacterCamera_EdGraph_1_RefProperty;       // 0x0330(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
-	void SetActiveCamera(class FName NewValue, class FName PreviousValue);
-	void TickRotation(float DeltaTime);
-	void ReceiveTick(float DeltaSeconds);
-	void ReceiveBeginPlay();
 	void ExecuteUbergraph_MainMenu(int32 EntryPoint);
+	void ReceiveBeginPlay();
+	void ReceiveTick(float DeltaSeconds);
+	void TickRotation(float DeltaTime);
+	void SetActiveCamera(class FName NewValue, class FName PreviousValue);
 
 public:
 	static class UClass* StaticClass()

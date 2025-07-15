@@ -37,6 +37,26 @@ void UWBP_UI_Preplanning_MainMenu_C::ExecuteUbergraph_WBP_UI_Preplanning_MainMen
 }
 
 
+// Function WBP_UI_Preplanning_MainMenu.WBP_UI_Preplanning_MainMenu_C.ShowLoadProgress
+// (HasOutParams, BlueprintCallable, BlueprintEvent)
+// Parameters:
+// const struct FSBZAsyncLoadingProgress&  AsyncLoadingProgressData                               (ConstParm, BlueprintVisible, BlueprintReadOnly, Parm, OutParm, ReferenceParm, NoDestructor)
+
+void UWBP_UI_Preplanning_MainMenu_C::ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData)
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Preplanning_MainMenu_C", "ShowLoadProgress");
+
+	Params::WBP_UI_Preplanning_MainMenu_C_ShowLoadProgress Parms{};
+
+	Parms.AsyncLoadingProgressData = std::move(AsyncLoadingProgressData);
+
+	UObject::ProcessEvent(Func, &Parms);
+}
+
+
 // Function WBP_UI_Preplanning_MainMenu.WBP_UI_Preplanning_MainMenu_C.CancelAction
 // (BlueprintCallable, BlueprintEvent)
 

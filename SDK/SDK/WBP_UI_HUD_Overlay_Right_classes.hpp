@@ -11,7 +11,6 @@
 #include "Basic.hpp"
 
 #include "Engine_structs.hpp"
-#include "ST_MissionPayout_structs.hpp"
 #include "Starbreeze_structs.hpp"
 #include "Starbreeze_classes.hpp"
 #include "UMG_structs.hpp"
@@ -21,54 +20,33 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_HUD_Overlay_Right.WBP_UI_HUD_Overlay_Right_C
-// 0x0218 (0x04B8 - 0x02A0)
+// 0x0078 (0x0318 - 0x02A0)
 class UWBP_UI_HUD_Overlay_Right_C final : public USBZHUDOverlayRight
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x02A0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
 	class UImage*                                 BackgroundColor;                                   // 0x02A8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             BagsAmountText;                                    // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             CashReductionAmountText;                           // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWrapBox*                               HorizontalBox_Bags;                                // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             LooseCashAmountText;                               // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             PayoutAmountText;                                  // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           SecurityModifiers_VB;                              // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_LevelName;                                    // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_SecurityCompany;                              // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UTextBlock*                             Text_Title;                                        // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_Favors;                                // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UVerticalBox*                           VerticalBox_SecurityModifiers;                     // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	TArray<class UPD3SecurityCompanyDataAsset*>   SecurityCompanyAssetArray;                         // 0x0308(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<ESBZSecurityCompany>                   SecurityCompanyTypeArray;                          // 0x0318(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
-	class USBZUIData*                             UIData;                                            // 0x0328(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TotalBags;                                         // 0x0330(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         SecuredBags;                                       // 0x0334(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	int32                                         TempSecuredBags;                                   // 0x0338(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_33C[0x4];                                      // 0x033C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	struct FST_MissionPayout                      PayoutData;                                        // 0x0340(0x0118)(Edit, BlueprintVisible, DisableEditOnInstance, HasGetValueTypeHash)
-	uint8                                         LvlDifficulty;                                     // 0x0458(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_459[0x7];                                      // 0x0459(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TMap<class FString, int32>                    LootedInstantLoot;                                 // 0x0460(0x0050)(Edit, BlueprintVisible, DisableEditOnInstance)
-	int32                                         CiviliansKilled;                                   // 0x04B0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class UVerticalBox*                           SecurityModifiers_VB;                              // 0x02B0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_Difficulty;                                   // 0x02B8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_LevelName;                                    // 0x02C0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_SecurityCompany;                              // 0x02C8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UTextBlock*                             Text_Title;                                        // 0x02D0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_Difficulity;                           // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_Favors;                                // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UVerticalBox*                           VerticalBox_SecurityModifiers;                     // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	TArray<class UPD3SecurityCompanyDataAsset*>   SecurityCompanyAssetArray;                         // 0x02F0(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<ESBZSecurityCompany>                   SecurityCompanyTypeArray;                          // 0x0300(0x0010)(Edit, BlueprintVisible, DisableEditOnInstance)
+	class USBZUIData*                             UIData;                                            // 0x0310(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_WBP_UI_HUD_Overlay_Right(int32 EntryPoint);
-	void OnLoaded_4C4FF35846BF292DCD0C939019476C7F(class UObject* Loaded);
-	void OnLoaded_45950CCB4250C2A3A91CA382B6A32B48(class UObject* Loaded);
-	void DamageTaken(const struct FSBZDamageEvent& DamageEventData);
-	void SetInstantLootDelegate();
-	void InstantLootLooted(class ASBZInstantLoot* InstantLoot, class ASBZPlayerCharacter* TakenByPlayer);
-	void UpdateBags();
 	void OnInitialized();
-	void OnLoaded_F1BFE66E47082A43C1363198541C1669(class UObject* Loaded);
-	void SetSecurityCompanies();
-	void UpdateFavorVisibility();
+	void OnLoaded_45950CCB4250C2A3A91CA382B6A32B48(class UObject* Loaded);
+	void SetDifficultyText();
+	void Set_Security_Companies();
+	void SetHeistName();
 	void UpdateDifficulityVisibility();
-	void SetBags(int32 TotalBags_0);
-	void SetCollectedBags(int32 TotalCollectedBags);
-	void RefreshBags();
-	void RefreshPayout();
-	void SetHeistNameAndDifficulty();
+	void UpdateFavorVisibility();
 
 public:
 	static class UClass* StaticClass()
@@ -81,30 +59,20 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_HUD_Overlay_Right_C) == 0x000008, "Wrong alignment on UWBP_UI_HUD_Overlay_Right_C");
-static_assert(sizeof(UWBP_UI_HUD_Overlay_Right_C) == 0x0004B8, "Wrong size on UWBP_UI_HUD_Overlay_Right_C");
+static_assert(sizeof(UWBP_UI_HUD_Overlay_Right_C) == 0x000318, "Wrong size on UWBP_UI_HUD_Overlay_Right_C");
 static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, UberGraphFrame) == 0x0002A0, "Member 'UWBP_UI_HUD_Overlay_Right_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, BackgroundColor) == 0x0002A8, "Member 'UWBP_UI_HUD_Overlay_Right_C::BackgroundColor' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, BagsAmountText) == 0x0002B0, "Member 'UWBP_UI_HUD_Overlay_Right_C::BagsAmountText' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, CashReductionAmountText) == 0x0002B8, "Member 'UWBP_UI_HUD_Overlay_Right_C::CashReductionAmountText' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, HorizontalBox_Bags) == 0x0002C0, "Member 'UWBP_UI_HUD_Overlay_Right_C::HorizontalBox_Bags' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, LooseCashAmountText) == 0x0002C8, "Member 'UWBP_UI_HUD_Overlay_Right_C::LooseCashAmountText' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, PayoutAmountText) == 0x0002D0, "Member 'UWBP_UI_HUD_Overlay_Right_C::PayoutAmountText' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityModifiers_VB) == 0x0002D8, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityModifiers_VB' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_LevelName) == 0x0002E0, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_LevelName' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_SecurityCompany) == 0x0002E8, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_SecurityCompany' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_Title) == 0x0002F0, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_Title' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, VerticalBox_Favors) == 0x0002F8, "Member 'UWBP_UI_HUD_Overlay_Right_C::VerticalBox_Favors' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, VerticalBox_SecurityModifiers) == 0x000300, "Member 'UWBP_UI_HUD_Overlay_Right_C::VerticalBox_SecurityModifiers' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityCompanyAssetArray) == 0x000308, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityCompanyAssetArray' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityCompanyTypeArray) == 0x000318, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityCompanyTypeArray' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, UIData) == 0x000328, "Member 'UWBP_UI_HUD_Overlay_Right_C::UIData' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, TotalBags) == 0x000330, "Member 'UWBP_UI_HUD_Overlay_Right_C::TotalBags' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecuredBags) == 0x000334, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecuredBags' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, TempSecuredBags) == 0x000338, "Member 'UWBP_UI_HUD_Overlay_Right_C::TempSecuredBags' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, PayoutData) == 0x000340, "Member 'UWBP_UI_HUD_Overlay_Right_C::PayoutData' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, LvlDifficulty) == 0x000458, "Member 'UWBP_UI_HUD_Overlay_Right_C::LvlDifficulty' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, LootedInstantLoot) == 0x000460, "Member 'UWBP_UI_HUD_Overlay_Right_C::LootedInstantLoot' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, CiviliansKilled) == 0x0004B0, "Member 'UWBP_UI_HUD_Overlay_Right_C::CiviliansKilled' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityModifiers_VB) == 0x0002B0, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityModifiers_VB' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_Difficulty) == 0x0002B8, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_Difficulty' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_LevelName) == 0x0002C0, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_LevelName' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_SecurityCompany) == 0x0002C8, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_SecurityCompany' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, Text_Title) == 0x0002D0, "Member 'UWBP_UI_HUD_Overlay_Right_C::Text_Title' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, VerticalBox_Difficulity) == 0x0002D8, "Member 'UWBP_UI_HUD_Overlay_Right_C::VerticalBox_Difficulity' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, VerticalBox_Favors) == 0x0002E0, "Member 'UWBP_UI_HUD_Overlay_Right_C::VerticalBox_Favors' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, VerticalBox_SecurityModifiers) == 0x0002E8, "Member 'UWBP_UI_HUD_Overlay_Right_C::VerticalBox_SecurityModifiers' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityCompanyAssetArray) == 0x0002F0, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityCompanyAssetArray' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, SecurityCompanyTypeArray) == 0x000300, "Member 'UWBP_UI_HUD_Overlay_Right_C::SecurityCompanyTypeArray' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_HUD_Overlay_Right_C, UIData) == 0x000310, "Member 'UWBP_UI_HUD_Overlay_Right_C::UIData' has a wrong offset!");
 
 }
 

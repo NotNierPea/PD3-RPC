@@ -20,7 +20,7 @@ namespace SDK
 {
 
 // WidgetBlueprintGeneratedClass WBP_UI_Preplanning_MainMenu.WBP_UI_Preplanning_MainMenu_C
-// 0x0158 (0x03F8 - 0x02A0)
+// 0x0160 (0x0400 - 0x02A0)
 class UWBP_UI_Preplanning_MainMenu_C final : public USBZMainMenuPrePlanningWidget
 {
 public:
@@ -34,40 +34,42 @@ public:
 	class UImage*                                 Image_273;                                         // 0x02D8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_MenuButton_C*                      LoadingButton;                                     // 0x02E0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
 	class UWBP_UI_Preplanning_MainMenu_LoadoutButton_C* LoadoutSelectionButton;                      // 0x02E8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_LobbyChat_C*                       LobbyChat;                                         // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        LobbyType_T;                                       // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 Outline_I;                                         // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player1_ReadyStatus;                     // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player2_ReadyStatus;                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player3_ReadyStatus;                     // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player4_ReadyStatus;                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UHorizontalBox*                         Players_HB;                                        // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_PreplanningItemSelection_C*     PreplanningItemSelection;                          // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_UnifiedButton_C*                ReadyButton;                                       // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWidgetSwitcher*                        ReadyStatus_WS;                                    // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Hard_I;                                  // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Normal_I;                                // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_Overkill_I;                              // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UImage*                                 RiskLevel_VeryHard_I;                              // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        SoloMode_T;                                        // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        TacticType_T;                                      // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_UnifiedButton_C*                UnreadyButton;                                     // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_ScreenTitle_C*                     WBP_ScreenTitle;                                   // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
-	class USBZMenuButton*                         ActiveButton;                                      // 0x03A0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03A8(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
-	TArray<struct FSBZButtonControlReference>     TempControlRefArray;                               // 0x03D0(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
-	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* FocusedPlayerStatusWidget;               // 0x03E0(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	float                                         PreMatchReadyNotifyValue;                          // 0x03E8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasSetReadyTimerLowDurationLeft;                  // 0x03EC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_3ED[0x3];                                      // 0x03ED(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	float                                         PreMatchTimerDisableReadyButtons;                  // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          bHasReachedLockedReadyTimeState;                   // 0x03F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	class UProgressBar*                           LoadProgress;                                      // 0x02F0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_LobbyChat_C*                       LobbyChat;                                         // 0x02F8(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        LobbyType_T;                                       // 0x0300(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 Outline_I;                                         // 0x0308(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player1_ReadyStatus;                     // 0x0310(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player2_ReadyStatus;                     // 0x0318(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player3_ReadyStatus;                     // 0x0320(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* Player4_ReadyStatus;                     // 0x0328(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UHorizontalBox*                         Players_HB;                                        // 0x0330(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_PreplanningItemSelection_C*     PreplanningItemSelection;                          // 0x0338(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_UnifiedButton_C*                ReadyButton;                                       // 0x0340(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWidgetSwitcher*                        ReadyStatus_WS;                                    // 0x0348(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Hard_I;                                  // 0x0350(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Normal_I;                                // 0x0358(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_Overkill_I;                              // 0x0360(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UImage*                                 RiskLevel_VeryHard_I;                              // 0x0368(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        SoloMode_T;                                        // 0x0370(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        TacticType_T;                                      // 0x0378(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZUITextBlock*                        Text_Difficulty;                                   // 0x0380(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_UnifiedButton_C*                UnreadyButton;                                     // 0x0388(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_ScreenTitle_C*                     WBP_ScreenTitle;                                   // 0x0390(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_ContentBackground_C*            WBP_UI_ContentBackground;                          // 0x0398(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class UWBP_UI_Widget_Loading_C*               Widget_Loading;                                    // 0x03A0(0x0008)(BlueprintVisible, ExportObject, ZeroConstructor, InstancedReference, IsPlainOldData, RepSkip, NoDestructor, PersistentInstance, HasGetValueTypeHash)
+	class USBZMenuButton*                         ActiveButton;                                      // 0x03A8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	struct FSBZButtonControlsReference            ConfirmButtonControlsReference;                    // 0x03B0(0x0028)(Edit, BlueprintVisible, DisableEditOnInstance)
+	TArray<struct FSBZButtonControlReference>     TempControlRefArray;                               // 0x03D8(0x0010)(Edit, BlueprintVisible, Transient, DisableEditOnInstance)
+	class UWBP_UI_Preplanning_MainMenu_PlayerReadyStatus_C* FocusedPlayerStatusWidget;               // 0x03E8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	float                                         PreMatchReadyNotifyValue;                          // 0x03F0(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasSetReadyTimerLowDurationLeft;                  // 0x03F4(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_3F5[0x3];                                      // 0x03F5(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	float                                         PreMatchTimerDisableReadyButtons;                  // 0x03F8(0x0004)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bHasReachedLockedReadyTimeState;                   // 0x03FC(0x0001)(Edit, BlueprintVisible, ZeroConstructor, DisableEditOnInstance, IsPlainOldData, NoDestructor)
 
 public:
 	void ExecuteUbergraph_WBP_UI_Preplanning_MainMenu(int32 EntryPoint);
+	void ShowLoadProgress(const struct FSBZAsyncLoadingProgress& AsyncLoadingProgressData);
 	void CancelAction();
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadoutSelectionButton_K2Node_ComponentBoundEvent_6_OnPlayerLoadoutConfigChanged__DelegateSignature(const struct FSBZPlayerLoadoutConfig& PlayerLoadout, int32 PlayerLoadoutIndex);
 	void BndEvt__WBP_UI_Preplanning_MainMenu_LoadingButton_K2Node_ComponentBoundEvent_0_OnMenuButtonStateChanged__DelegateSignature(class USBZMenuButton* Button, bool bIsEnabled_0);
@@ -118,7 +120,7 @@ public:
 	}
 };
 static_assert(alignof(UWBP_UI_Preplanning_MainMenu_C) == 0x000008, "Wrong alignment on UWBP_UI_Preplanning_MainMenu_C");
-static_assert(sizeof(UWBP_UI_Preplanning_MainMenu_C) == 0x0003F8, "Wrong size on UWBP_UI_Preplanning_MainMenu_C");
+static_assert(sizeof(UWBP_UI_Preplanning_MainMenu_C) == 0x000400, "Wrong size on UWBP_UI_Preplanning_MainMenu_C");
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, UberGraphFrame) == 0x0002A0, "Member 'UWBP_UI_Preplanning_MainMenu_C::UberGraphFrame' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Intro) == 0x0002A8, "Member 'UWBP_UI_Preplanning_MainMenu_C::Intro' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Han_Solo_Message) == 0x0002B0, "Member 'UWBP_UI_Preplanning_MainMenu_C::Han_Solo_Message' has a wrong offset!");
@@ -129,36 +131,37 @@ static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Image_191) == 0x0002D0, "
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Image_273) == 0x0002D8, "Member 'UWBP_UI_Preplanning_MainMenu_C::Image_273' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LoadingButton) == 0x0002E0, "Member 'UWBP_UI_Preplanning_MainMenu_C::LoadingButton' has a wrong offset!");
 static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LoadoutSelectionButton) == 0x0002E8, "Member 'UWBP_UI_Preplanning_MainMenu_C::LoadoutSelectionButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LobbyChat) == 0x0002F0, "Member 'UWBP_UI_Preplanning_MainMenu_C::LobbyChat' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LobbyType_T) == 0x0002F8, "Member 'UWBP_UI_Preplanning_MainMenu_C::LobbyType_T' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Outline_I) == 0x000300, "Member 'UWBP_UI_Preplanning_MainMenu_C::Outline_I' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player1_ReadyStatus) == 0x000308, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player1_ReadyStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player2_ReadyStatus) == 0x000310, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player2_ReadyStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player3_ReadyStatus) == 0x000318, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player3_ReadyStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player4_ReadyStatus) == 0x000320, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player4_ReadyStatus' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Players_HB) == 0x000328, "Member 'UWBP_UI_Preplanning_MainMenu_C::Players_HB' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreplanningItemSelection) == 0x000330, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreplanningItemSelection' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ReadyButton) == 0x000338, "Member 'UWBP_UI_Preplanning_MainMenu_C::ReadyButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ReadyStatus_WS) == 0x000340, "Member 'UWBP_UI_Preplanning_MainMenu_C::ReadyStatus_WS' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Hard_I) == 0x000348, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Hard_I' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Normal_I) == 0x000350, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Normal_I' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Overkill_I) == 0x000358, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Overkill_I' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_VeryHard_I) == 0x000360, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_VeryHard_I' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, SoloMode_T) == 0x000368, "Member 'UWBP_UI_Preplanning_MainMenu_C::SoloMode_T' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, TacticType_T) == 0x000370, "Member 'UWBP_UI_Preplanning_MainMenu_C::TacticType_T' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Text_Difficulty) == 0x000378, "Member 'UWBP_UI_Preplanning_MainMenu_C::Text_Difficulty' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, UnreadyButton) == 0x000380, "Member 'UWBP_UI_Preplanning_MainMenu_C::UnreadyButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, WBP_ScreenTitle) == 0x000388, "Member 'UWBP_UI_Preplanning_MainMenu_C::WBP_ScreenTitle' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, WBP_UI_ContentBackground) == 0x000390, "Member 'UWBP_UI_Preplanning_MainMenu_C::WBP_UI_ContentBackground' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Widget_Loading) == 0x000398, "Member 'UWBP_UI_Preplanning_MainMenu_C::Widget_Loading' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ActiveButton) == 0x0003A0, "Member 'UWBP_UI_Preplanning_MainMenu_C::ActiveButton' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ConfirmButtonControlsReference) == 0x0003A8, "Member 'UWBP_UI_Preplanning_MainMenu_C::ConfirmButtonControlsReference' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, TempControlRefArray) == 0x0003D0, "Member 'UWBP_UI_Preplanning_MainMenu_C::TempControlRefArray' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, FocusedPlayerStatusWidget) == 0x0003E0, "Member 'UWBP_UI_Preplanning_MainMenu_C::FocusedPlayerStatusWidget' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreMatchReadyNotifyValue) == 0x0003E8, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreMatchReadyNotifyValue' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, bHasSetReadyTimerLowDurationLeft) == 0x0003EC, "Member 'UWBP_UI_Preplanning_MainMenu_C::bHasSetReadyTimerLowDurationLeft' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreMatchTimerDisableReadyButtons) == 0x0003F0, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreMatchTimerDisableReadyButtons' has a wrong offset!");
-static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, bHasReachedLockedReadyTimeState) == 0x0003F4, "Member 'UWBP_UI_Preplanning_MainMenu_C::bHasReachedLockedReadyTimeState' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LoadProgress) == 0x0002F0, "Member 'UWBP_UI_Preplanning_MainMenu_C::LoadProgress' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LobbyChat) == 0x0002F8, "Member 'UWBP_UI_Preplanning_MainMenu_C::LobbyChat' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, LobbyType_T) == 0x000300, "Member 'UWBP_UI_Preplanning_MainMenu_C::LobbyType_T' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Outline_I) == 0x000308, "Member 'UWBP_UI_Preplanning_MainMenu_C::Outline_I' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player1_ReadyStatus) == 0x000310, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player1_ReadyStatus' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player2_ReadyStatus) == 0x000318, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player2_ReadyStatus' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player3_ReadyStatus) == 0x000320, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player3_ReadyStatus' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Player4_ReadyStatus) == 0x000328, "Member 'UWBP_UI_Preplanning_MainMenu_C::Player4_ReadyStatus' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Players_HB) == 0x000330, "Member 'UWBP_UI_Preplanning_MainMenu_C::Players_HB' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreplanningItemSelection) == 0x000338, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreplanningItemSelection' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ReadyButton) == 0x000340, "Member 'UWBP_UI_Preplanning_MainMenu_C::ReadyButton' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ReadyStatus_WS) == 0x000348, "Member 'UWBP_UI_Preplanning_MainMenu_C::ReadyStatus_WS' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Hard_I) == 0x000350, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Hard_I' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Normal_I) == 0x000358, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Normal_I' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_Overkill_I) == 0x000360, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_Overkill_I' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, RiskLevel_VeryHard_I) == 0x000368, "Member 'UWBP_UI_Preplanning_MainMenu_C::RiskLevel_VeryHard_I' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, SoloMode_T) == 0x000370, "Member 'UWBP_UI_Preplanning_MainMenu_C::SoloMode_T' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, TacticType_T) == 0x000378, "Member 'UWBP_UI_Preplanning_MainMenu_C::TacticType_T' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Text_Difficulty) == 0x000380, "Member 'UWBP_UI_Preplanning_MainMenu_C::Text_Difficulty' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, UnreadyButton) == 0x000388, "Member 'UWBP_UI_Preplanning_MainMenu_C::UnreadyButton' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, WBP_ScreenTitle) == 0x000390, "Member 'UWBP_UI_Preplanning_MainMenu_C::WBP_ScreenTitle' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, WBP_UI_ContentBackground) == 0x000398, "Member 'UWBP_UI_Preplanning_MainMenu_C::WBP_UI_ContentBackground' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, Widget_Loading) == 0x0003A0, "Member 'UWBP_UI_Preplanning_MainMenu_C::Widget_Loading' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ActiveButton) == 0x0003A8, "Member 'UWBP_UI_Preplanning_MainMenu_C::ActiveButton' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, ConfirmButtonControlsReference) == 0x0003B0, "Member 'UWBP_UI_Preplanning_MainMenu_C::ConfirmButtonControlsReference' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, TempControlRefArray) == 0x0003D8, "Member 'UWBP_UI_Preplanning_MainMenu_C::TempControlRefArray' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, FocusedPlayerStatusWidget) == 0x0003E8, "Member 'UWBP_UI_Preplanning_MainMenu_C::FocusedPlayerStatusWidget' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreMatchReadyNotifyValue) == 0x0003F0, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreMatchReadyNotifyValue' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, bHasSetReadyTimerLowDurationLeft) == 0x0003F4, "Member 'UWBP_UI_Preplanning_MainMenu_C::bHasSetReadyTimerLowDurationLeft' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, PreMatchTimerDisableReadyButtons) == 0x0003F8, "Member 'UWBP_UI_Preplanning_MainMenu_C::PreMatchTimerDisableReadyButtons' has a wrong offset!");
+static_assert(offsetof(UWBP_UI_Preplanning_MainMenu_C, bHasReachedLockedReadyTimeState) == 0x0003FC, "Member 'UWBP_UI_Preplanning_MainMenu_C::bHasReachedLockedReadyTimeState' has a wrong offset!");
 
 }
 

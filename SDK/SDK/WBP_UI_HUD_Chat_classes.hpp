@@ -37,7 +37,8 @@ public:
 
 public:
 	void ExecuteUbergraph_WBP_UI_HUD_Chat(int32 EntryPoint);
-	void BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
+	void OnPlayerJoinedTheHeist(const class FText& JoinedPlayerName);
+	void OnPlayerStateRemoved(const struct FSBZPlayerStateRemovedEvent& PlayerStateRemovedData);
 	void CallReceived(const struct FSBZPlayerCallEvent& CallEventData);
 	void KeyItemCountChanged(const struct FSBZKeyItemCountChangedEvent& KeyItemCountChangedEventData);
 	void SystemMessageReceived(const struct FSBZSystemChatEvent& ChatEventData);
@@ -49,19 +50,21 @@ public:
 	void PlayerMessageReceived(const struct FSBZPlayerChatEvent& ChatEventData);
 	void OnChatDisabledChanged(bool bIsDisabled);
 	void OnInitialized();
+	void BndEvt__WBP_UI_HUD_Chat_Text_InputText_K2Node_ComponentBoundEvent_0_OnEditableTextBoxChangedEvent__DelegateSignature(const class FText& Text);
 	void OnChatFocusChanged(bool bHasFocus);
 	void Tick(const struct FGeometry& MyGeometry, float InDeltaTime);
-	void ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange);
-	void AddText(const class FText& NewMessage);
-	void GetMoodText(class FText& InText, bool IsGood, class FText* OutText);
-	void ProcessVotingMessage(const struct FSBZVotingChatEvent& InMessageChat);
-	void ProcessSystemMessage(const struct FSBZSystemChatEvent& InMessageChat);
-	void ProcessCrewAIMessage(const struct FSBZAICrewChatEvent& InMessageChat);
-	void ProcessCall(const struct FSBZPlayerCallEvent& CallEvent);
-	void ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent);
-	void ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent);
-	void ResetTimer();
 	void Process_Player_Message(const struct FSBZPlayerChatEvent& InMessageChat);
+	void ResetTimer();
+	void ProcessPing(const struct FSBZPlayerPingEvent& PIngEvent);
+	void ProcessKeyItemPickUp(const struct FSBZKeyItemCountChangedEvent& InKeyItemEvent);
+	void ProcessCall(const struct FSBZPlayerCallEvent& CallEvent);
+	void ProcessCrewAIMessage(const struct FSBZAICrewChatEvent& InMessageChat);
+	void ProcessSystemMessage(const struct FSBZSystemChatEvent& InMessageChat);
+	void ProcessVotingMessage(const struct FSBZVotingChatEvent& InMessageChat);
+	void GetMoodText(class FText& InText, bool IsGood, class FText* OutText);
+	void AddText(const class FText& NewMessage);
+	void ProcessDefeatChange(class APlayerState* PlayerState, class ASBZAICrewState* AICrewState, EPD3DefeatState OldDefeatState, EPD3DefeatState NewDefeatState, bool IsInitialStateChange);
+	void ProcessPlayerJoinedHeist(const class FText& InPlayerJoinedName);
 
 public:
 	static class UClass* StaticClass()

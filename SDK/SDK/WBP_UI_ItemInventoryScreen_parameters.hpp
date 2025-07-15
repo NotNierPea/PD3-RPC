@@ -17,112 +17,107 @@ namespace SDK::Params
 {
 
 // Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.ExecuteUbergraph_WBP_UI_ItemInventoryScreen
-// 0x02B8 (0x02B8 - 0x0000)
+// 0x01B0 (0x01B0 - 0x0000)
 struct WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen final
 {
 public:
 	int32                                         EntryPoint;                                        // 0x0000(0x0004)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 	uint8                                         Pad_4[0x4];                                        // 0x0004(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
 	class FText                                   Temp_text_Variable;                                // 0x0008(0x0018)()
-	class FText                                   Temp_text_Variable_1;                              // 0x0020(0x0018)()
-	bool                                          Temp_bool_Variable;                                // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class UWBP_UI_Inventory_ItemSlotButton_C*     K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button; // 0x0040(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0048(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Temp_byte_Variable;                                // 0x0049(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_4A[0x6];                                       // 0x004A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	const class USBZInventoryBaseData*            CallFunc_GetItemData_ReturnValue;                  // 0x0050(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Temp_byte_Variable_1;                              // 0x0058(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          Temp_bool_Variable_1;                              // 0x0059(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_5A[0x2];                                       // 0x005A(0x0002)(Fixing Size After Last Property [ Dumper-7 ])
-	class FName                                   K2Node_Event_PreviousValue;                        // 0x005C(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0070(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x007C(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_2;                              // 0x0088(0x0018)()
-	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x00A0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_A1[0x3];                                       // 0x00A1(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x00A4(0x0014)(ZeroConstructor, NoDestructor)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00B8(0x0030)()
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x00E8(0x0030)()
-	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate_1;            // 0x0118(0x0014)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_12C[0x4];                                      // 0x012C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0130(0x0010)(ReferenceParm)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_2;     // 0x0140(0x0030)()
-	class USBZMenuButton*                         K2Node_Event_SelectedButton_1;                     // 0x0170(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          K2Node_Event_bIsFocused;                           // 0x0178(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_179[0x7];                                      // 0x0179(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_1;                          // 0x0180(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0190(0x0028)()
-	class FText                                   Temp_text_Variable_3;                              // 0x01B8(0x0018)()
-	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x01D0(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1D1[0x7];                                      // 0x01D1(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
-	class USBZMenuButton*                         K2Node_Event_SelectedButton;                       // 0x01D8(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	class FText                                   Temp_text_Variable_4;                              // 0x01E0(0x0018)()
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x01F8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x01F9(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x01FA(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	ESBZItemLoadoutSlot                           Temp_byte_Variable_2;                              // 0x01FB(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x01FC(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
-	uint8                                         Pad_1FD[0x3];                                      // 0x01FD(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
-	class FText                                   K2Node_Select_Default;                             // 0x0200(0x0018)()
-	uint8                                         K2Node_Select_Default_1;                           // 0x0218(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0219(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	uint8                                         Pad_21A[0x6];                                      // 0x021A(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
-	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0220(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
-	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_3;     // 0x0228(0x0030)()
-	TDelegate<void()>                             K2Node_CreateDelegate_OutputDelegate_2;            // 0x0258(0x0014)(ZeroConstructor, NoDestructor)
-	uint8                                         Pad_26C[0x4];                                      // 0x026C(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
-	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array_2;                          // 0x0270(0x0010)(ReferenceParm)
-	TArray<struct FSBZButtonControlReference>     K2Node_Select_Default_2;                           // 0x0280(0x0010)(ReferenceParm)
-	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference_1;    // 0x0290(0x0028)()
+	class UWBP_UI_Inventory_ItemSlotButton_C*     K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button; // 0x0020(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0028(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_29[0x7];                                       // 0x0029(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	const class USBZInventoryBaseData*            CallFunc_GetItemData_ReturnValue;                  // 0x0030(0x0008)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_1;                              // 0x0038(0x0018)()
+	bool                                          Temp_bool_Variable;                                // 0x0050(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Temp_byte_Variable;                                // 0x0051(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Temp_byte_Variable_1;                              // 0x0052(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_53[0x1];                                       // 0x0053(0x0001)(Fixing Size After Last Property [ Dumper-7 ])
+	class FName                                   K2Node_Event_PreviousValue;                        // 0x0054(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0060(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0068(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   K2Node_CustomEvent_InActionInput;                  // 0x0074(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FText                                   Temp_text_Variable_2;                              // 0x0080(0x0018)()
+	bool                                          K2Node_SwitchName_CmpSuccess;                      // 0x0098(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_99[0x3];                                       // 0x0099(0x0003)(Fixing Size After Last Property [ Dumper-7 ])
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x009C(0x0014)(ZeroConstructor, NoDestructor)
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x00B0(0x0030)()
+	class USBZMenuButton*                         K2Node_Event_SelectedButton_1;                     // 0x00E0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_Event_bIsFocused;                           // 0x00E8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_E9[0x7];                                       // 0x00E9(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x00F0(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0100(0x0028)()
+	class FText                                   Temp_text_Variable_3;                              // 0x0128(0x0018)()
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0140(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_141[0x7];                                      // 0x0141(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZMenuButton*                         K2Node_Event_SelectedButton;                       // 0x0148(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0150(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_1;        // 0x0151(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_152[0x6];                                      // 0x0152(0x0006)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   Temp_text_Variable_4;                              // 0x0158(0x0018)()
+	bool                                          CallFunc_IsValid_ReturnValue_1;                    // 0x0170(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue_2;        // 0x0171(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	ESBZItemLoadoutSlot                           Temp_byte_Variable_2;                              // 0x0172(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         K2Node_Select_Default;                             // 0x0173(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_174[0x4];                                      // 0x0174(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class FText                                   K2Node_Select_Default_1;                           // 0x0178(0x0018)()
+	uint8                                         CallFunc_GetValidValue_ReturnValue;                // 0x0190(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_191[0x7];                                      // 0x0191(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class UUMGSequencePlayer*                     CallFunc_PlayAnimationForward_ReturnValue;         // 0x0198(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMenuButton*                         K2Node_CustomEvent_Button;                         // 0x01A0(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_CustomEvent_bIsEnabled;                     // 0x01A8(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
 };
 static_assert(alignof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen) == 0x000008, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen");
-static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen) == 0x0002B8, "Wrong size on WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen) == 0x0001B0, "Wrong size on WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen");
 static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, EntryPoint) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::EntryPoint' has a wrong offset!");
 static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable) == 0x000008, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_1) == 0x000020, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_bool_Variable) == 0x000038, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_bool_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button) == 0x000040, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_DynamicCast_bSuccess) == 0x000048, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable) == 0x000049, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetItemData_ReturnValue) == 0x000050, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetItemData_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable_1) == 0x000058, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_bool_Variable_1) == 0x000059, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_bool_Variable_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_PreviousValue) == 0x00005C, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_PreviousValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetUIManager_ReturnValue) == 0x000068, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_PopStack_ReturnValue) == 0x000070, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_PopStack_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CustomEvent_InActionInput) == 0x00007C, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CustomEvent_InActionInput' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_2) == 0x000088, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_SwitchName_CmpSuccess) == 0x0000A0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CreateDelegate_OutputDelegate) == 0x0000A4, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlReference) == 0x0000B8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlReference' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlReference_1) == 0x0000E8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlReference_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CreateDelegate_OutputDelegate_1) == 0x000118, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CreateDelegate_OutputDelegate_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeArray_Array) == 0x000130, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeArray_Array' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlReference_2) == 0x000140, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlReference_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_SelectedButton_1) == 0x000170, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_SelectedButton_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_bIsFocused) == 0x000178, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_bIsFocused' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeArray_Array_1) == 0x000180, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeArray_Array_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlsReference) == 0x000190, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlsReference' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_3) == 0x0001B8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_3' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_IsValid_ReturnValue) == 0x0001D0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_SelectedButton) == 0x0001D8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_SelectedButton' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_4) == 0x0001E0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_4' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x0001F8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x0001F9, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_IsValid_ReturnValue_1) == 0x0001FA, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable_2) == 0x0001FB, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x0001FC, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Select_Default) == 0x000200, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Select_Default' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Select_Default_1) == 0x000218, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Select_Default_1' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetValidValue_ReturnValue) == 0x000219, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_PlayAnimationForward_ReturnValue) == 0x000220, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlReference_3) == 0x000228, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlReference_3' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CreateDelegate_OutputDelegate_2) == 0x000258, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CreateDelegate_OutputDelegate_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeArray_Array_2) == 0x000270, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeArray_Array_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Select_Default_2) == 0x000280, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Select_Default_2' has a wrong offset!");
-static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlsReference_1) == 0x000290, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlsReference_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button) == 0x000020, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_DynamicCast_bSuccess) == 0x000028, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetItemData_ReturnValue) == 0x000030, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetItemData_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_1) == 0x000038, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_bool_Variable) == 0x000050, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_bool_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable) == 0x000051, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable_1) == 0x000052, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_PreviousValue) == 0x000054, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_PreviousValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetUIManager_ReturnValue) == 0x000060, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_PopStack_ReturnValue) == 0x000068, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_PopStack_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CustomEvent_InActionInput) == 0x000074, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CustomEvent_InActionInput' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_2) == 0x000080, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_SwitchName_CmpSuccess) == 0x000098, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_SwitchName_CmpSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CreateDelegate_OutputDelegate) == 0x00009C, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlReference) == 0x0000B0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlReference' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_SelectedButton_1) == 0x0000E0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_SelectedButton_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_bIsFocused) == 0x0000E8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_bIsFocused' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeArray_Array) == 0x0000F0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_MakeStruct_SBZButtonControlsReference) == 0x000100, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_MakeStruct_SBZButtonControlsReference' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_3) == 0x000128, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_3' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_IsValid_ReturnValue) == 0x000140, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_IsValid_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Event_SelectedButton) == 0x000148, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Event_SelectedButton' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000150, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_1) == 0x000151, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_text_Variable_4) == 0x000158, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_text_Variable_4' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_IsValid_ReturnValue_1) == 0x000170, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_IsValid_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_EqualEqual_ByteByte_ReturnValue_2) == 0x000171, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_EqualEqual_ByteByte_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, Temp_byte_Variable_2) == 0x000172, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::Temp_byte_Variable_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Select_Default) == 0x000173, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Select_Default' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_Select_Default_1) == 0x000178, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_Select_Default_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_GetValidValue_ReturnValue) == 0x000190, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_GetValidValue_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, CallFunc_PlayAnimationForward_ReturnValue) == 0x000198, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::CallFunc_PlayAnimationForward_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CustomEvent_Button) == 0x0001A0, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CustomEvent_Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen, K2Node_CustomEvent_bIsEnabled) == 0x0001A8, "Member 'WBP_UI_ItemInventoryScreen_C_ExecuteUbergraph_WBP_UI_ItemInventoryScreen::K2Node_CustomEvent_bIsEnabled' has a wrong offset!");
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnEmptySlotFocus
+// 0x0010 (0x0010 - 0x0000)
+struct WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          bIsEnabled_0;                                      // 0x0008(0x0001)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus) == 0x000008, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus) == 0x000010, "Wrong size on WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus, Button) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus::Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus, bIsEnabled_0) == 0x000008, "Member 'WBP_UI_ItemInventoryScreen_C_OnEmptySlotFocus::bIsEnabled_0' has a wrong offset!");
 
 // Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnItemSlotButtonSelected
 // 0x0008 (0x0008 - 0x0000)
@@ -169,6 +164,107 @@ public:
 static_assert(alignof(WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused) == 0x000004, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused");
 static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused) == 0x00000C, "Wrong size on WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused");
 static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused, PreviousValue) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_OnGainedStackFocused::PreviousValue' has a wrong offset!");
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OnPressCustomize
+// 0x0088 (0x0088 - 0x0000)
+struct WBP_UI_ItemInventoryScreen_C_OnPressCustomize final
+{
+public:
+	class USBZLoadoutManager*                     CallFunc_GetLoadoutManager_ReturnValue;            // 0x0000(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetChildIndex_ReturnValue;                // 0x0008(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	int32                                         CallFunc_GetActiveLoadoutIndex_ReturnValue;        // 0x000C(0x0004)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue;             // 0x0010(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Conv_IntToString_ReturnValue_1;           // 0x0020(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue;                // 0x0030(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	bool                                          CallFunc_EqualEqual_ByteByte_ReturnValue;          // 0x0040(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_41[0x7];                                       // 0x0041(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_1;              // 0x0048(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class FString                                 CallFunc_Concat_StrStr_ReturnValue_2;              // 0x0058(0x0010)(ZeroConstructor, HasGetValueTypeHash)
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0068(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZBaseMenuWidget*                     CallFunc_GetMenuWidget_ReturnValue;                // 0x0070(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMainMenuWidget*                     K2Node_DynamicCast_AsSBZMain_Menu_Widget;          // 0x0078(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0080(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	bool                                          CallFunc_CustomizeArmorInSlot_ReturnValue;         // 0x0081(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize) == 0x000008, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_OnPressCustomize");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize) == 0x000088, "Wrong size on WBP_UI_ItemInventoryScreen_C_OnPressCustomize");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_GetLoadoutManager_ReturnValue) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_GetLoadoutManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_GetChildIndex_ReturnValue) == 0x000008, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_GetChildIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_GetActiveLoadoutIndex_ReturnValue) == 0x00000C, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_GetActiveLoadoutIndex_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_Conv_IntToString_ReturnValue) == 0x000010, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_Conv_IntToString_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_Conv_IntToString_ReturnValue_1) == 0x000020, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_Conv_IntToString_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_Concat_StrStr_ReturnValue) == 0x000030, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_Concat_StrStr_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_EqualEqual_ByteByte_ReturnValue) == 0x000040, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_EqualEqual_ByteByte_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_Concat_StrStr_ReturnValue_1) == 0x000048, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_Concat_StrStr_ReturnValue_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_Concat_StrStr_ReturnValue_2) == 0x000058, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_Concat_StrStr_ReturnValue_2' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_GetUIManager_ReturnValue) == 0x000068, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_GetMenuWidget_ReturnValue) == 0x000070, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, K2Node_DynamicCast_AsSBZMain_Menu_Widget) == 0x000078, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::K2Node_DynamicCast_AsSBZMain_Menu_Widget' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, K2Node_DynamicCast_bSuccess) == 0x000080, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OnPressCustomize, CallFunc_CustomizeArmorInSlot_ReturnValue) == 0x000081, "Member 'WBP_UI_ItemInventoryScreen_C_OnPressCustomize::CallFunc_CustomizeArmorInSlot_ReturnValue' has a wrong offset!");
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.OpenArmorVendor
+// 0x0058 (0x0058 - 0x0000)
+struct WBP_UI_ItemInventoryScreen_C_OpenArmorVendor final
+{
+public:
+	class USBZMenuButton*                         Button;                                            // 0x0000(0x0008)(BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_MakeLiteralName_ReturnValue;              // 0x0008(0x000C)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	class UWBP_UI_Inventory_ItemSlotButton_C*     K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button; // 0x0018(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess;                       // 0x0020(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_21[0x7];                                       // 0x0021(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZBaseMenuWidget*                     CallFunc_GetMenuWidget_ReturnValue;                // 0x0028(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class USBZMainMenuWidget*                     K2Node_DynamicCast_AsSBZMain_Menu_Widget;          // 0x0030(0x0008)(ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          K2Node_DynamicCast_bSuccess_1;                     // 0x0038(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+	uint8                                         Pad_39[0x7];                                       // 0x0039(0x0007)(Fixing Size After Last Property [ Dumper-7 ])
+	class USBZUIManager*                          CallFunc_GetUIManager_ReturnValue;                 // 0x0040(0x0008)(ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	class FName                                   CallFunc_PopStack_ReturnValue;                     // 0x0048(0x000C)(ConstParm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+	bool                                          CallFunc_BooleanAND_ReturnValue;                   // 0x0054(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor) == 0x000008, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_OpenArmorVendor");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor) == 0x000058, "Wrong size on WBP_UI_ItemInventoryScreen_C_OpenArmorVendor");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, Button) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, CallFunc_MakeLiteralName_ReturnValue) == 0x000008, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::CallFunc_MakeLiteralName_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button) == 0x000018, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::K2Node_DynamicCast_AsWBP_UI_Inventory_Item_Slot_Button' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, K2Node_DynamicCast_bSuccess) == 0x000020, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::K2Node_DynamicCast_bSuccess' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, CallFunc_GetMenuWidget_ReturnValue) == 0x000028, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::CallFunc_GetMenuWidget_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, K2Node_DynamicCast_AsSBZMain_Menu_Widget) == 0x000030, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::K2Node_DynamicCast_AsSBZMain_Menu_Widget' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, K2Node_DynamicCast_bSuccess_1) == 0x000038, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::K2Node_DynamicCast_bSuccess_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, CallFunc_GetUIManager_ReturnValue) == 0x000040, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::CallFunc_GetUIManager_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, CallFunc_PopStack_ReturnValue) == 0x000048, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::CallFunc_PopStack_ReturnValue' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_OpenArmorVendor, CallFunc_BooleanAND_ReturnValue) == 0x000054, "Member 'WBP_UI_ItemInventoryScreen_C_OpenArmorVendor::CallFunc_BooleanAND_ReturnValue' has a wrong offset!");
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.SetControlReferences
+// 0x00B0 (0x00B0 - 0x0000)
+struct WBP_UI_ItemInventoryScreen_C_SetControlReferences final
+{
+public:
+	TDelegate<void(class FName ActionName)>       K2Node_CreateDelegate_OutputDelegate;              // 0x0000(0x0014)(ZeroConstructor, NoDestructor)
+	uint8                                         Pad_14[0x4];                                       // 0x0014(0x0004)(Fixing Size After Last Property [ Dumper-7 ])
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference;       // 0x0018(0x0030)()
+	struct FSBZButtonControlReference             K2Node_MakeStruct_SBZButtonControlReference_1;     // 0x0048(0x0030)()
+	TArray<struct FSBZButtonControlReference>     K2Node_MakeArray_Array;                            // 0x0078(0x0010)(ReferenceParm)
+	struct FSBZButtonControlsReference            K2Node_MakeStruct_SBZButtonControlsReference;      // 0x0088(0x0028)()
+};
+static_assert(alignof(WBP_UI_ItemInventoryScreen_C_SetControlReferences) == 0x000008, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_SetControlReferences");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_SetControlReferences) == 0x0000B0, "Wrong size on WBP_UI_ItemInventoryScreen_C_SetControlReferences");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_SetControlReferences, K2Node_CreateDelegate_OutputDelegate) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_SetControlReferences::K2Node_CreateDelegate_OutputDelegate' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_SetControlReferences, K2Node_MakeStruct_SBZButtonControlReference) == 0x000018, "Member 'WBP_UI_ItemInventoryScreen_C_SetControlReferences::K2Node_MakeStruct_SBZButtonControlReference' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_SetControlReferences, K2Node_MakeStruct_SBZButtonControlReference_1) == 0x000048, "Member 'WBP_UI_ItemInventoryScreen_C_SetControlReferences::K2Node_MakeStruct_SBZButtonControlReference_1' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_SetControlReferences, K2Node_MakeArray_Array) == 0x000078, "Member 'WBP_UI_ItemInventoryScreen_C_SetControlReferences::K2Node_MakeArray_Array' has a wrong offset!");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_SetControlReferences, K2Node_MakeStruct_SBZButtonControlsReference) == 0x000088, "Member 'WBP_UI_ItemInventoryScreen_C_SetControlReferences::K2Node_MakeStruct_SBZButtonControlsReference' has a wrong offset!");
+
+// Function WBP_UI_ItemInventoryScreen.WBP_UI_ItemInventoryScreen_C.HandleVendorButton
+// 0x0001 (0x0001 - 0x0000)
+struct WBP_UI_ItemInventoryScreen_C_HandleVendorButton final
+{
+public:
+	bool                                          CallFunc_IsValid_ReturnValue;                      // 0x0000(0x0001)(ZeroConstructor, IsPlainOldData, NoDestructor)
+};
+static_assert(alignof(WBP_UI_ItemInventoryScreen_C_HandleVendorButton) == 0x000001, "Wrong alignment on WBP_UI_ItemInventoryScreen_C_HandleVendorButton");
+static_assert(sizeof(WBP_UI_ItemInventoryScreen_C_HandleVendorButton) == 0x000001, "Wrong size on WBP_UI_ItemInventoryScreen_C_HandleVendorButton");
+static_assert(offsetof(WBP_UI_ItemInventoryScreen_C_HandleVendorButton, CallFunc_IsValid_ReturnValue) == 0x000000, "Member 'WBP_UI_ItemInventoryScreen_C_HandleVendorButton::CallFunc_IsValid_ReturnValue' has a wrong offset!");
 
 }
 

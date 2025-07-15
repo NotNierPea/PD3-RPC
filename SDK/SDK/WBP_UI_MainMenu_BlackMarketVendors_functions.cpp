@@ -393,5 +393,33 @@ void UWBP_UI_MainMenu_BlackMarketVendors_C::SetActiveButton(class USBZMenuButton
 	UObject::ProcessEvent(Func, &Parms);
 }
 
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.NavToPreviousScreen
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::NavToPreviousScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "NavToPreviousScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_MainMenu_BlackMarketVendors.WBP_UI_MainMenu_BlackMarketVendors_C.OpenInventoryScreen
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_MainMenu_BlackMarketVendors_C::OpenInventoryScreen()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_MainMenu_BlackMarketVendors_C", "OpenInventoryScreen");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
 }
 

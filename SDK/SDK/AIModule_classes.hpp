@@ -3619,7 +3619,7 @@ static_assert(sizeof(UEnvQueryContext) == 0x000030, "Wrong size on UEnvQueryCont
 
 // Class AIModule.EnvQueryContext_BlueprintBase
 // 0x0008 (0x0038 - 0x0030)
-class UEnvQueryContext_BlueprintBase : public UEnvQueryContext
+class UEnvQueryContext_BlueprintBase final : public UEnvQueryContext
 {
 public:
 	uint8                                         Pad_30[0x8];                                       // 0x0030(0x0008)(Fixing Struct Size After Last Property [ Dumper-7 ])

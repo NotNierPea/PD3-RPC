@@ -90,6 +90,9 @@
     <ClInclude Include="DiscordSDK\c\discord_game_sdk.h">
       <Filter>Source Files\DiscordSDK\c</Filter>
     </ClInclude>
+    <ClInclude Include="SDK\UtfN.hpp">
+      <Filter>Source Files\SDK</Filter>
+    </ClInclude>
     <ClInclude Include="SDK\PropertyFixup.hpp">
       <Filter>Source Files\SDK</Filter>
     </ClInclude>
@@ -98,24 +101,6 @@
     </ClInclude>
     <ClInclude Include="SDK\UnrealContainers.hpp">
       <Filter>Source Files\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\UtfN.hpp">
-      <Filter>Source Files\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_DoctorBag_EQP_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_FPPlayerBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_FPPlayerBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_HandCuffsAnimation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_HandCuffsAnimation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_Mask_Base_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
@@ -129,19 +114,7 @@
     <ClInclude Include="SDK\SDK\ABP_PlayerMenu_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_SentryGun_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_SentryGun_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_TPPlayerBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_TPPlayerBase_Moneybag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_TPPlayerBase_Moneybag_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_TPPlayerBase_parameters.hpp">
@@ -214,9 +187,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\AIModule_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\AITaserBattery_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\AkAudio_classes.hpp">
@@ -342,19 +312,10 @@
     <ClInclude Include="SDK\SDK\BinkMediaPlayer_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Action_FollowOrder_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Action_Surrender_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Action_SwatSurrender_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Action_TradeHostage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Action_TradeHostageForPlayer_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_AdaptableArmorDamageFeedback_classes.hpp">
@@ -366,127 +327,16 @@
     <ClInclude Include="SDK\SDK\BP_AdaptiveChunkReplenishFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_AmmoPickup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_AmmoPickupLarge_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ArmorDamageFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ArmorDepletedFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ArmorRepairKit_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ArmorRepairKit_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ArmorReplenishedFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItem_DegradingTech_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItem_DegradingTech_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemBagBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemBagBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemCleaned_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemGoldBag_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemHardCase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemMethBagBurnt_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemMethBagPure_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemMethBagPure_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BackItemMoneyBag_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseBagSecured_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseInteractionRequirement_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseInteractionRequirement_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseValuableBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BaseValuableBag_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BlueKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BlueKeycard_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BlueKeycardRequirement_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_BP_Overskill_DamageFeedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BreachingEquipmentFuelTank_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BreachingEquipmentFuelTank_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_BUS_CocainePile_01_Boxed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarKeys_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedBlueKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedBlueKeycard_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedFakeID_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedHackablePhone_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedHackablePhone_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedInteractableBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedInteractableBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedRedKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CarriedRedKeycard_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ChallengeCategoryManager_classes.hpp">
@@ -499,63 +349,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Charm_Crystal_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Chus_CarriedPressBadge_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Chus_Evidence_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Chus_Evidence_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Chus_FlammableLiquid_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Chus_FlammableLiquid_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CivilianController_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CivilianController_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CleanedServerBagWorldItem_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CloakerAttributeSet_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CloakerController_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CloakerController_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CocaineBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CocaineBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CocainePile_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CocainePile_01_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CombinedBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CombinedBagWorldItem_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CopController_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CopController_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_CosmeticAmmoPickup_classes.hpp">
@@ -681,12 +474,6 @@
     <ClInclude Include="SDK\SDK\BP_CosmeticWrench_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CryptoWalletBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_CryptoWalletBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Customizable_Mask_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -703,12 +490,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_CuttingTool_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DamagePopup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DamagePopup_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_DamageType_AssaultRifle_CAR4_classes.hpp">
@@ -732,12 +513,6 @@
     <ClInclude Include="SDK\SDK\BP_DamageType_ThrowableKnife_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DAT_C4Explosive_01_Pickup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DAT_C4Explosive_01_Pickup_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_DefaultMeleeImpactFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -750,22 +525,10 @@
     <ClInclude Include="SDK\SDK\BP_DefeatFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DegradingTechBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_DegradingTechBag_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_EnvQueryContext_TargetBBKey_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_EnvQueryContext_TargetBBKey_parameters.hpp">
+    <ClInclude Include="SDK\SDK\BP_DSChallengeManager_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Equippable_HandCuffs_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_EvidenceBag_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_FireWeaponFeedback_AssaultRifle_CAR4_classes.hpp">
@@ -879,49 +642,19 @@
     <ClInclude Include="SDK\SDK\BP_FlashBangFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FloatingText_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FloatingText_Base_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FloatingText_Damage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FloatingText_Damage_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_FloorHeightCameraSmootherModifier_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FOR_USBDrive_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FOR_USBDrive_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_FragGrenadeFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FuelRequirement_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_FuelRequirement_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_GameModeMainMenu_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_GenericEvidenceBag_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_GlobalItemDatabase_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_GlobalQuickStartItemDatabase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_GoldBag_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_HeadbobCameraModifier_classes.hpp">
@@ -939,121 +672,13 @@
     <ClInclude Include="SDK\SDK\BP_InfamyManager_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InstantLoot_MoneyBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InstantLoot_MoneyBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Interactable_RareStone_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableCocaine_LowValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDataCenterServer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDataCenterServer_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDegradableTech_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDegradableTech_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDegradableTechPrePlanning_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableDegradableTechPrePlanning_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableGold_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableGold_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableJewelry_HighValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableJewelry_LowValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableMoneyPile_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableMoneyPile_LowValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableMoneyPile_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableOpal_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractablePainting_MediumValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractablePainting_MediumValue_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableRareMinerals_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableSatellitePart_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableSatellitePart_LowValue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableSatellitePrototype_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableServer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_InteractableServer_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_JewelryBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_JewerlyBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Jumbotron_01_1024_2048_01_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_JumpFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_KeycardBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_KeycardBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_KillCounter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_KillCounter_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_LandFeedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_LiquidNitrogenCanister_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_LiquidNitrogenCanister_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_LocationBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_LocationBase_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Lockpicking_Feedback_classes.hpp">
@@ -1083,106 +708,7 @@
     <ClInclude Include="SDK\SDK\BP_Master_Light_Fixture_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MaxSaturation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MaxSaturation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_MenuArmor_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MenuMaxSaturation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MenuMaxSaturation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MeshCode_01_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MeshCode_01_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_CausticSoda_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_ExplosionFeedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_HydrogenChloride_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_MuriaticAcid_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_CausticSoda_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_CausticSoda_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_HydrogenChloride_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_HydrogenChloride_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_MuriaticAcid_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Meth_Req_MuriaticAcid_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethBag_Burnt_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethBag_BurntSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethBag_Pure_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethBag_PureSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethCookingStation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethCookingStation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethIngredientBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MethIngredientBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLChildSave_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLChildSave_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLExtension_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLExtension_Base_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLPrimarySave_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MLSaveGame_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MoneyBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_MoneyBagSecured_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_NormalChunkDepletedFeedback_classes.hpp">
@@ -1191,40 +717,13 @@
     <ClInclude Include="SDK\SDK\BP_NormalChunkReplenishFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Civilian_CallInvestigator_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Civilian_CallInvestigator_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Civilian_ObserveCorpse_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Civilian_ObserveCorpse_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Order_CloakerSabotage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_DropOfBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Escalate_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Order_FirstResponder_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Follow_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_FollowShield_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Order_FreeHostage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_Investigate_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Order_LookAndComment_classes.hpp">
@@ -1245,15 +744,6 @@
     <ClInclude Include="SDK\SDK\BP_Order_ScriptedLifeAction_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_SecureBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_TradeHostage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Order_TradeHostageForPlayer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_OverhealDamageFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -1263,15 +753,6 @@
     <ClInclude Include="SDK\SDK\BP_OverhealRestoredFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Painting_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_PaintingBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_PaintingBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_PhoneToolClickable_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -1279,15 +760,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_PivotPoint_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_AmmoBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_AmmoBag_Destroyed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_AmmoBag_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Placeable_ArmorBag_classes.hpp">
@@ -1302,45 +774,6 @@
     <ClInclude Include="SDK\SDK\BP_Placeable_ArmorBag_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_DoctorBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_DoctorBag_Destroyed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Placeable_DoctorBag_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Plankspile_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Plankspile_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_PlayerState_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_POI_DeadBody_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_POI_Hostage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_POI_HumanShield_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_PortableSSD_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_PortableSSD_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_QRPhone_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_QRPhone_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_RangedWeapon_OVK_ARGES_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -1350,82 +783,10 @@
     <ClInclude Include="SDK\SDK\BP_RangedWeapon_Shotgun_FSA12_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RappellingRope_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RareMineralsBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RareMineralsBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RareStoneBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RareStoneBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ReactionPredicate_CivilianScream_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RedKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RedKeycard_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RedKeycardRequirement_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RefractorShield_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RefractorShield_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ReplicatedBinaryActorPoisonBottle_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ReplicatedBinaryActorPoisonBottle_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RFIDTagBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RFIDTagBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RFIDTagBlue_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RFIDTagRed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RinoHud_Savegame_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RinoHud_SaveManager_Utils_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_RinoHud_SaveManager_Utils_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_RoomStatus_Feedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Run_Feedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SatellitePartBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SatellitePartBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SatellitePrototypeBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SatellitePrototypeBagSecured_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_SBZMainMenuCameraManager_classes.hpp">
@@ -1435,27 +796,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\bp_screen_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SentryGun_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SentryGun_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SentryGunController_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ServerBag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ServerBagSecured_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ServerDecrypter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ServerDecrypter_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ShieldChunkDepletedFeedback_classes.hpp">
@@ -1470,52 +810,13 @@
     <ClInclude Include="SDK\SDK\BP_ShockGrenadeFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SimpleHealthBar_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SimpleHealthBar_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SingleBagGeneratorBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Skybox_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SleepGas_Req_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SleepGas_Req_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SleepingGasCanister_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SleepingGasCanister_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Slide_Feedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_SmokeGrenadeFeedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SniperController_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SniperController_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Spikes_Pickup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_Spikes_Pickup_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SpikesRequirement_Pickup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_SpikesRequirement_Pickup_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_SubduedDamageCameraFeedback_classes.hpp">
@@ -1525,12 +826,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_SuitRotateComponent_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_TankAttributeSet_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_TargetFinderSorted_Civilian_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_TargetFinderSorted_CommonEnemy_classes.hpp">
@@ -1543,15 +838,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_TasedUncontrolledCameraShakeFeedback_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_TaserMine_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_TaserMine_Destroyed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ToastNoInteraction_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_Tool_Base_Ghost_classes.hpp">
@@ -1569,12 +855,6 @@
     <ClInclude Include="SDK\SDK\BP_TripperLaserGhost_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_USBDrive_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_USBDrive_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_VolumeManager_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -1587,40 +867,16 @@
     <ClInclude Include="SDK\SDK\BP_WhizzbyFeedback_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_WoodenCrate_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_WoodenCrate_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BP_ZiplineMotor_Bag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ZiplineMotor_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BP_ZiplineMotor_Player_FP_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\BPFL_ModLoader_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BPFL_ModLoader_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\BPFL_VOIPCalls_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BPFL_VOIPCalls_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BPI_MLExtensions_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BPI_ModActor_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\BPI_ModObject_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\BPL_UI_MainMenu_classes.hpp">
@@ -1647,31 +903,7 @@
     <ClInclude Include="SDK\SDK\CableComponent_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_BaseCivilian_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_BaseCivilian_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_BaseCop_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_BaseHumanAI_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Cloaker_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Cloaker_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\CH_Dallas_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Dozer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Grenadier_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\CH_Hoxton_classes.hpp">
@@ -1681,24 +913,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\CH_PlayerBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Sniper_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_SWAT_SHIELD_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_SWAT_SHIELD_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Taser_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Tower_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\CH_Tower_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\CH_UI_MM_PlayerCharacter_classes.hpp">
@@ -1756,24 +970,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\ClothingSystemRuntimeNv_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\COHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\COHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\COMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\COMenuObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\component_screen_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\component_screen_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\ConstructionSystemRuntime_classes.hpp">
@@ -1923,9 +1119,6 @@
     <ClInclude Include="SDK\SDK\CS_Land_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\CS_Meth_Explosion_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\CS_SubduedDamage_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -1995,27 +1188,6 @@
     <ClInclude Include="SDK\SDK\DeveloperSettings_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\DiaDistHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DiaDistHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DiaDistMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DIHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DIHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DIMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DIMenuObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\DLSS_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2035,12 +1207,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\DT_GrenadeProjectile_Mamba_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DT_SentryGun_Explosion_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\DT_Taser_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\DT_Throwable_FragGrenade_classes.hpp">
@@ -2085,12 +1251,6 @@
     <ClInclude Include="SDK\SDK\EngineSettings_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\Enum_LocationBase_DefaultState_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ERinoHud_IconRow_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\ESBZSkillEquipResult_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2130,73 +1290,13 @@
     <ClInclude Include="SDK\SDK\Foliage_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\FWBHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\FWBHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\FWBMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\FWBMenuObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_AnticipateExplosion_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_CloakerRun_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Fire_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_LifeAction_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Run_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Run_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Shove_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Slide_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_TaserFire_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_ThrowItem_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AI_Traverse_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GA_AnimatedInteraction_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_AvoidVehicle_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_BleedOut_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Carry_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Cloaker_Melee_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_CloakerFlail_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Crouch_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Crouch_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_CuttingTool_classes.hpp">
@@ -2241,9 +1341,6 @@
     <ClInclude Include="SDK\SDK\GA_Hacker_SecuredLoop_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_HitByVehicle_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GA_HumanShieldInstigator_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2254,9 +1351,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Interact_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Jump_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Land_classes.hpp">
@@ -2343,9 +1437,6 @@
     <ClInclude Include="SDK\SDK\GA_Run_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Sentry_Fire_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Shout_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2353,9 +1444,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Tackle_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GA_Target_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GA_Tased_classes.hpp">
@@ -2430,55 +1518,10 @@
     <ClInclude Include="SDK\SDK\GameplayTasks_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GAndSHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GAndSHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GAndSMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\Gauntlet_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_AI_Shove_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_BlueKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_BlueRFIDTag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_BreachingEquipmentFuelTank_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_CarKeys_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_Chus_PressBadge_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Escapist_BatteringRam_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_Explosives_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_ExplosiveTrapEffect_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_FakeID_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_FlammableLiquid_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_GrenadeBelt_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_GrenadeBelt_Stagger_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Hacker_HackerAced_classes.hpp">
@@ -2490,40 +1533,10 @@
     <ClInclude Include="SDK\SDK\GE_Hacker_SecureLoop_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_HeavyBag_NoRunning_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Melee_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_Meth_CausticSoda_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_Meth_HydrogenChloride_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_Meth_MuriaticAcid_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_PenthousePoison_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_PlanksPile_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_PortableSSD_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_RedKeycard_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_RedRFIDTag_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Scrambler_WeaponEffect_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_SentryGun_Explosion_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GE_ShockGrenade_Damage_classes.hpp">
@@ -2535,16 +1548,7 @@
     <ClInclude Include="SDK\SDK\GE_ShockGrenade_Stunned_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_SleepGas_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_SpikeStrip_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Tank_Disengage_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_TaserBattery_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GE_Throwable_Flashbang_classes.hpp">
@@ -2557,9 +1561,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GE_TripMine_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\GE_USBStick_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\GeometryCache_classes.hpp">
@@ -2619,30 +1620,6 @@
     <ClInclude Include="SDK\SDK\HoudiniEngineRuntime_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\HudMenu_KillCounter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HudMenu_KillCounter_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_Base_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoText_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoText_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoTextHeader_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoTextHeader_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\ImageWrapper_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2674,9 +1651,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\JsonUtilities_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\KillCounterSaveGame_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\Landmass_structs.hpp">
@@ -2754,12 +1728,6 @@
     <ClInclude Include="SDK\SDK\MaterialShaderQualitySettings_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\MaxSaturation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MaxSaturationMenuMeta_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\MediaAssets_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -2770,18 +1738,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\MediaUtils_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\Menu_KillCounter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\Menu_KillCounter_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\Menu_SimpleHealthBar_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\Menu_SimpleHealthBar_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\MeshDescription_classes.hpp">
@@ -2812,84 +1768,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\MM_BPL_Neon_Flickering_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModActorBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModActorBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModLoaderManager_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModLoaderManager_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_CO_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_DamagePopup_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_DI_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_DiamondDistrict_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_GAndS_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_KillCounter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_NRFTW_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_Penthouse_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_RR_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_SimpleHealthBar_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_WeatherTimeBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModMeta_WFB_Weather_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModPersistentObjectBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModPersistentObjectBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModUserWidgetBase_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ModUserWidgetBase_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmospherePersistent_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmospherePersistent_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmoVarObjectHeist_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmoVarObjectHeist_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmoVarObjectMenu_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\MoreHeistAtmoVarObjectMenu_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\MotoSynth_classes.hpp">
@@ -3015,37 +1893,16 @@
     <ClInclude Include="SDK\SDK\NISBlueprint_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\NQF_Agile_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\NQF_BaseAI_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\NQF_Crew_Combat_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\NQF_Heavy_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\NQF_Ninja_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\NQF_NoAgility_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\NQF_Normal_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\NQF_Patrol_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\NRFTWAtmoVarHeist_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\NRFTWAtmoVarHeist_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\NRFTWAtmoVarMenu_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\OnlineSubsystem_classes.hpp">
@@ -3123,18 +1980,6 @@
     <ClInclude Include="SDK\SDK\PD3_UIManager_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\PDA_ModMeta_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\PenthouseHeistObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\PenthouseHeistObject_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\PenthouseMenuObject_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\PhysicsCore_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -3177,12 +2022,6 @@
     <ClInclude Include="SDK\SDK\PropertyPath_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\RainActor_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\RainActor_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\Renderer_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -3202,18 +2041,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\RigVM_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\RinoHud_SaveGame_Struct_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\RRAtmoVarHeist_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\RRAtmoVarHeist_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\RRAtmoVarMenu_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\S_ContractorHeists_structs.hpp">
@@ -3285,9 +2112,6 @@
     <ClInclude Include="SDK\SDK\SignificanceManager_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\SkyMaterials_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\Slate_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -3301,27 +2125,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\SoundFields_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_DifficultyBasedValue_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_InstantLootValue_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_MissionPayout_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_RinoHud_BagAdjustments_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_RinoHud_CounterIcon_ActorInclusion_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_RinoHud_CounterIcon_BagGeneratorInclusion_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ST_RinoHud_CounterIcon_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\Starbreeze_classes.hpp">
@@ -3432,49 +2235,16 @@
     <ClInclude Include="SDK\SDK\TimeManagement_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\TimeSettings_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\TimeType_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\TLMVoiceChat_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\TLMVoiceChat_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\UDE_ModEnvironment_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UDE_ModSpawnTiming_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\UdpMessaging_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\UdpMessaging_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UDS_ModActorStruct_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UDS_ModActorTransforms_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UDS_ModSaveData_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UI_DamageText_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UI_DamageText_Base_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UI_KillCount_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UI_KillCount_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\UI_WeaponStatsBlueprint_classes.hpp">
@@ -3498,135 +2268,6 @@
     <ClInclude Include="SDK\SDK\UObjectPlugin_structs.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_AnticipateExplosion_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Attack_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Attack_Cloaker_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Attack_Dozer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_BoundStay_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Cloaker_Sneak_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_CloakerArrest_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_CloakerCharge_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_CoverInFear_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Flee_Civilian_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_GiveWay_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Idle_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_IdleLookAround_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_InformPolice_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Reposition_Melee_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionDefensive_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionDefensive_Secondary_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionDefensive_ShieldAgainstGrenade_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_Cover_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_Open_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_Open_Dozer_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_ShieldCover_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_ShieldNoCover_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_RepositionOffensive_Taser_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_ReturnToStart_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_ReturnToStart_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_SecondaryAttack_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Sniper_Attack_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Sniper_Attack_Secondary_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Sniper_RepositionOffensive_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_StayAndHide_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_StayDown_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_StreetFlee_Civilian_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_TaserAttack_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_ThrowGrenade_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTD_Tower_Hide_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_Commit_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_Commit_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_Constant_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_Constant_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_LastAgilityTime_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\UTS_LastAgilityTime_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\VariantManagerContent_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -3637,12 +2278,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\VectorVM_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_ActorSpawner_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_ActorSpawner_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_ArmorChunk_EquippedDisplay_classes.hpp">
@@ -3954,12 +2589,6 @@
     <ClInclude Include="SDK\SDK\WBP_MenuRoot_SecondaryTextButton_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_MLExtensionWidget_Base_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_MLExtensionWidget_Base_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_MouseOnly_TextButton_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -4051,12 +2680,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_PocketDrillWidget_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_PrintWidget_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_PrintWidget_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_PSOCompilationScreen_classes.hpp">
@@ -4197,12 +2820,6 @@
     <ClInclude Include="SDK\SDK\WBP_ServerBrowserButton_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_ServerDecrypter_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_ServerDecrypter_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_ActionClickButton_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -4213,12 +2830,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_AntiAliasingModeChoiceButton_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_ColorSelector_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_ColorSelector_RinoHud_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_FrameInterpolatorChoiceButton_classes.hpp">
@@ -4302,22 +2913,10 @@
     <ClInclude Include="SDK\SDK\WBP_Settings_SliderButton_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_SliderButton_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_SliderButton_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_TwoChoiceButton_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_TwoChoiceButton_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_TwoChoiceButton_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_Settings_TwoChoiceButton_RinoHud_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_Settings_UpscalerChoiceButton_classes.hpp">
@@ -5124,12 +3723,6 @@
     <ClInclude Include="SDK\SDK\WBP_UI_PagerWidget_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_PagerWidget_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_PagerWidget_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Player_Customization_Mask_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -5541,60 +4134,6 @@
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_AxisInput_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseBagCounter_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseBagCounter_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseCounter_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseCounter_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseDistanceCount_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseDistanceCount_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseDistancePercentage_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseDistancePercentage_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseGroupedCounters_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseGroupedCounters_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedAction_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedAction_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzFuel_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzFuel_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedSkill_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_BaseTimedSkill_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_CircularIcon_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -5665,18 +4204,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_EscapeCounter_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Groups_Deployed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Groups_Deployed_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Groups_Timed_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Groups_Timed_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_HeistState_classes.hpp">
@@ -5787,12 +4314,6 @@
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_Ping_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Ping_RinoHud_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_Ping_RinoHud_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_PlayerCarryStatus_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
@@ -5845,21 +4366,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_Revive_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_RinoHud_Main_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_RinoHud_Main_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_RinoHud_TopLeftSide_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_RinoHud_TopRightSide_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WBP_UI_Widget_RinoHud_TopRightSide_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\WBP_UI_Widget_RiskLevel_classes.hpp">
@@ -5997,19 +4503,7 @@
     <ClInclude Include="SDK\SDK\WBP_YesNo_LineItem_MenuButton_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\WeatherSettings_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WeatherType_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\WidgetCarousel_structs.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WP_VariationSelector_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\WP_VariationSelector_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\XeFGBlueprint_classes.hpp">
@@ -6042,31 +4536,28 @@
     <ClInclude Include="SDK\SDK\XeSSCore_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_AIArmedLinkedAnimation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_AIArmedLinkedAnimation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_AICivilianLinkedAnimation_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_AICivilianLinkedAnimation_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_Charm_Base_classes.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_Charm_Base_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_DeadBody_classes.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
-    <ClInclude Include="SDK\SDK\ABP_DeadBody_parameters.hpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClInclude>
     <ClInclude Include="SDK\SDK\ABP_DoctorBag_EQP_classes.hpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\ABP_DoctorBag_EQP_parameters.hpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\ABP_FPPlayerBase_classes.hpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\ABP_FPPlayerBase_parameters.hpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\ABP_HandCuffsAnimation_classes.hpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClInclude>
+    <ClInclude Include="SDK\SDK\ABP_HandCuffsAnimation_parameters.hpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClInclude>
   </ItemGroup>
@@ -6116,25 +4607,13 @@
     <ClCompile Include="DiscordSDK\cpp\voice_manager.cpp">
       <Filter>Source Files\DiscordSDK\cpp</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_FPPlayerBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_HandCuffsAnimation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\ABP_Mask_Base_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\ABP_PlayerMenu_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_SentryGun_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\ABP_TPPlayerBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_TPPlayerBase_Moneybag_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\ABP_TPPlayerLinkedBase_functions.cpp">
@@ -6197,63 +4676,6 @@
     <ClCompile Include="SDK\SDK\BinkMediaPlayer_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_ArmorRepairKit_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BackItem_DegradingTech_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BackItemBagBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BackItemMethBagPure_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BaseBagSecured_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BaseInteractionRequirement_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BaseValuableBag_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BlueKeycard_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_BreachingEquipmentFuelTank_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CarriedBlueKeycard_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CarriedHackablePhone_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CarriedInteractableBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CarriedRedKeycard_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Chus_Evidence_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Chus_FlammableLiquid_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CivilianController_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CloakerController_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CocainePile_01_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_CopController_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_CosmeticBag_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6272,93 +4694,6 @@
     <ClCompile Include="SDK\SDK\BP_CuttingTool_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_DamagePopup_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_DAT_C4Explosive_01_Pickup_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_DegradingTechBag_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_EnvQueryContext_TargetBBKey_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_FloatingText_Base_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_FloatingText_Damage_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_FOR_USBDrive_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_FuelRequirement_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InstantLoot_MoneyBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableCocaine_LowValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableDataCenterServer_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableDegradableTech_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableDegradableTechPrePlanning_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableGold_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableJewelry_HighValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableJewelry_LowValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableMoneyPile_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableMoneyPile_LowValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableOpal_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractablePainting_MediumValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableRareMinerals_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableSatellitePart_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableSatellitePart_LowValue_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableSatellitePrototype_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_InteractableServer_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_KeycardBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_KillCounter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_LiquidNitrogenCanister_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_LocationBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_MapPinHelper_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6368,109 +4703,16 @@
     <ClCompile Include="SDK\SDK\BP_Master_Light_Fixture_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MaxSaturation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MenuMaxSaturation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MeshCode_01_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Meth_Req_CausticSoda_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Meth_Req_HydrogenChloride_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Meth_Req_MuriaticAcid_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MethCookingStation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MethIngredientBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MLChildSave_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_MLExtension_Base_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Order_Civilian_CallInvestigator_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Order_Civilian_ObserveCorpse_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Order_Revive_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_PhoneToolClickable_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Placeable_AmmoBag_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Placeable_ArmorBag_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Placeable_DoctorBag_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Plankspile_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_PortableSSD_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_QRPhone_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_RedKeycard_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_RefractorShield_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_ReplicatedBinaryActorPoisonBottle_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_RFIDTagBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_RinoHud_SaveManager_Utils_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\bp_screen_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SentryGun_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_ServerDecrypter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SimpleHealthBar_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SleepGas_Req_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SleepingGasCanister_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SniperController_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_Spikes_Pickup_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_SpikesRequirement_Pickup_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_TaserMine_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BP_Tool_Base_Ghost_functions.cpp">
@@ -6479,22 +4721,7 @@
     <ClCompile Include="SDK\SDK\BP_TripperLaser_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_USBDrive_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BP_WoodenCrate_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BPFL_ModLoader_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\BPFL_VOIPCalls_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BPI_MLExtensions_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\BPI_ModObject_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\BPL_UI_MainMenu_functions.cpp">
@@ -6506,19 +4733,7 @@
     <ClCompile Include="SDK\SDK\CableComponent_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\CH_BaseCivilian_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\CH_Cloaker_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\CH_PlayerBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\CH_SWAT_SHIELD_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\CH_Tower_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\ChaosSolverEngine_functions.cpp">
@@ -6536,15 +4751,6 @@
     <ClCompile Include="SDK\SDK\ClothingSystemRuntimeNv_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\COHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\COMenuObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\component_screen_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\ConstructionSystemRuntime_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6558,15 +4764,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\DataRegistry_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\DiaDistHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\DIHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\DIMenuObject_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\DLSSBlueprint_functions.cpp">
@@ -6588,18 +4785,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\Foliage_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\FWBHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\FWBMenuObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\GA_AI_Run_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\GA_Crouch_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\GA_Interact_functions.cpp">
@@ -6632,9 +4817,6 @@
     <ClCompile Include="SDK\SDK\GameplayTasks_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\GAndSHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\GeometryCache_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6651,18 +4833,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\HoudiniEngineRuntime_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\HudMenu_KillCounter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\HW12DEV_WeaponStats_Entry_Base_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoText_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\HW12DEV_WeaponStats_Entry_TwoTextHeader_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\ImageWriteQueue_functions.cpp">
@@ -6689,12 +4859,6 @@
     <ClCompile Include="SDK\SDK\MediaAssets_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\Menu_KillCounter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\Menu_SimpleHealthBar_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\MeshDescription_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6705,27 +4869,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\MM_BPL_Neon_Flickering_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ModActorBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ModLoaderManager_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ModPersistentObjectBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ModUserWidgetBase_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\MoreHeistAtmospherePersistent_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\MoreHeistAtmoVarObjectHeist_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\MoreHeistAtmoVarObjectMenu_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\MotoSynth_functions.cpp">
@@ -6761,9 +4904,6 @@
     <ClCompile Include="SDK\SDK\NISBlueprint_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\NRFTWAtmoVarHeist_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\OnlineSubsystem_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6779,9 +4919,6 @@
     <ClCompile Include="SDK\SDK\PD3_GameInstance_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\PenthouseHeistObject_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\PhysXVehicles_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -6791,16 +4928,10 @@
     <ClCompile Include="SDK\SDK\ProceduralMeshComponent_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\RainActor_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\ReplicationGraph_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\RigVM_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\RRAtmoVarHeist_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\SBZUtilityPlugin_functions.cpp">
@@ -6842,34 +4973,13 @@
     <ClCompile Include="SDK\SDK\TLMVoiceChat_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\UI_DamageText_Base_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\UI_KillCount_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\UI_WeaponStatsBlueprint_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\UMG_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\UTD_ReturnToStart_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\UTS_Commit_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\UTS_Constant_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\UTS_LastAgilityTime_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\VariantManagerContent_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_ActorSpawner_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_ArmorChunk_EquippedDisplay_functions.cpp">
@@ -7019,9 +5129,6 @@
     <ClCompile Include="SDK\SDK\WBP_MenuRoot_SecondaryTextButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_MLExtensionWidget_Base_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_MouseOnly_TextButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -7065,9 +5172,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_PocketDrillWidget_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_PrintWidget_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_PSOCompilationScreen_functions.cpp">
@@ -7139,16 +5243,10 @@
     <ClCompile Include="SDK\SDK\WBP_ServerBrowserButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_ServerDecrypter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_Settings_ActionClickButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_Settings_AntiAliasingModeChoiceButton_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_Settings_ColorSelector_RinoHud_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_Settings_FrameInterpolatorChoiceButton_functions.cpp">
@@ -7190,13 +5288,7 @@
     <ClCompile Include="SDK\SDK\WBP_Settings_SliderButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_Settings_SliderButton_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_Settings_TwoChoiceButton_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_Settings_TwoChoiceButton_RinoHud_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_Settings_UpscalerChoiceButton_functions.cpp">
@@ -7577,9 +5669,6 @@
     <ClCompile Include="SDK\SDK\WBP_UI_PagerWidget_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_PagerWidget_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Player_Customization_Mask_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -7784,33 +5873,6 @@
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_AxisInput_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseBagCounter_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseCounter_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseDistanceCount_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseDistancePercentage_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseGroupedCounters_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseTimedAction_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzCount_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseTimedActionWzFuel_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_BaseTimedSkill_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_CircularIcon_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -7839,12 +5901,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_EscapeCounter_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_Groups_Deployed_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_Groups_Timed_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_HeistState_functions.cpp">
@@ -7898,9 +5954,6 @@
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_Ping_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_Ping_RinoHud_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_PlayerCarryStatus_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -7923,12 +5976,6 @@
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_Revive_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_RinoHud_Main_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\WBP_UI_Widget_RinoHud_TopRightSide_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
     <ClCompile Include="SDK\SDK\WBP_UI_Widget_RiskLevel_functions.cpp">
@@ -7994,9 +6041,6 @@
     <ClCompile Include="SDK\SDK\WBP_YesNo_LineItem_MenuButton_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\WP_VariationSelector_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\XeFGBlueprint_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
@@ -8006,19 +6050,16 @@
     <ClCompile Include="SDK\SDK\XeSSBlueprint_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_AIArmedLinkedAnimation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_AICivilianLinkedAnimation_functions.cpp">
-      <Filter>Source Files\SDK\SDK</Filter>
-    </ClCompile>
     <ClCompile Include="SDK\SDK\ABP_Charm_Base_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_DeadBody_functions.cpp">
+    <ClCompile Include="SDK\SDK\ABP_DoctorBag_EQP_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
-    <ClCompile Include="SDK\SDK\ABP_DoctorBag_EQP_functions.cpp">
+    <ClCompile Include="SDK\SDK\ABP_FPPlayerBase_functions.cpp">
+      <Filter>Source Files\SDK\SDK</Filter>
+    </ClCompile>
+    <ClCompile Include="SDK\SDK\ABP_HandCuffsAnimation_functions.cpp">
       <Filter>Source Files\SDK\SDK</Filter>
     </ClCompile>
   </ItemGroup>

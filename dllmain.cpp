@@ -201,18 +201,18 @@ DWORD WINAPI MainThread(HMODULE Module)
 
         // Info from SDK
         // Menus, Server browser info to pre-planning
-        TArray<SDK::UUserWidget*> FoundWidgetsW;
+        TArray<SDK::UUserWidget*> FoundWidgetsServer;
 
         SDK::UWidgetBlueprintLibrary::GetAllWidgetsOfClass(
             World,
-            &FoundWidgetsW,
-            SDK::UWBP_ServerBrowser_Screen_C::StaticClass(),
+            &FoundWidgetsServer,
+            SDK::USBZServerBrowserScreen::StaticClass(),
             false
         );
 
-        for(auto* Widget : FoundWidgetsW)
+        for(auto* Widget : FoundWidgetsServer)
         {
-            auto* ServerBrowserScreen = static_cast<SDK::UWBP_ServerBrowser_Screen_C*>(Widget);
+            auto* ServerBrowserScreen = static_cast<SDK::USBZServerBrowserScreen*>(Widget);
 
             if(!IsValid(ServerBrowserScreen))
                 continue;
@@ -220,35 +220,23 @@ DWORD WINAPI MainThread(HMODULE Module)
             // bIsOnStack -> if its visiable for some fucking reason?
             if(ServerBrowserScreen->bIsOnStack)
             {
-                //PrintConsole("Servers Browser..");
-
                 StateDetails = "Browsing Servers";
             }
-
-            if (!IsValid(ServerBrowserScreen->Heist_Data))
-                continue;
-
-            auto* HeistData = ServerBrowserScreen->Heist_Data;
-
-            server_browser_heist = utf8_encode(SDK::UKismetTextLibrary::Conv_TextToString(HeistData->HeistDisplayName).ToWString());
-            server_browser_diff = GetDifficultyName(ServerBrowserScreen->GetDifficultyPerHeistType());
-            
-            tactic = GetTacticNameOnline(ServerBrowserScreen->GetTacticPerHeistType());
         }
 
         // ------------------------ \\
         
         // Menus, pre-planning
-        TArray<SDK::UUserWidget*> FoundWidgets;
+        TArray<SDK::UUserWidget*> FoundWidgetsPrePlanning;
 
         SDK::UWidgetBlueprintLibrary::GetAllWidgetsOfClass(
             World,
-            &FoundWidgets,
+            &FoundWidgetsPrePlanning,
             SDK::UWBP_UI_Preplanning_MainMenu_C::StaticClass(),
             false
         );
 
-        for(auto* Widget : FoundWidgets)
+        for(auto* Widget : FoundWidgetsPrePlanning)
         {
             auto* PreplanningWidget = static_cast<SDK::UWBP_UI_Preplanning_MainMenu_C*>(Widget);
 
@@ -262,12 +250,12 @@ DWORD WINAPI MainThread(HMODULE Module)
 
                 StateDetails = "In Pre-planning";
 
-                StateDetails+= ": " + server_browser_heist;
-                StateStatus = server_browser_diff;
+                //StateDetails+= ": " + server_browser_heist;
+                //StateStatus = server_browser_diff;
 
                 // images
-                LargePic = ToDiscordRPCKey(ToLower(server_browser_heist));
-                LargePicText = tactic;
+                //LargePic = ToDiscordRPCKey(ToLower(server_browser_heist));
+                //LargePicText = tactic;
             }
         }
 

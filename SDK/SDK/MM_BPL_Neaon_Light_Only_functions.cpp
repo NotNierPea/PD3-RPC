@@ -17,29 +17,35 @@
 namespace SDK
 {
 
-// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.Timeline_0__FinishedFunc
-// (BlueprintEvent)
+// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.ExecuteUbergraph_MM_BPL_Neaon_Light_Only
+// (Final, UbergraphFunction)
+// Parameters:
+// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void AMM_BPL_Neaon_Light_Only_C::Timeline_0__FinishedFunc()
+void AMM_BPL_Neaon_Light_Only_C::ExecuteUbergraph_MM_BPL_Neaon_Light_Only(int32 EntryPoint)
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "Timeline_0__FinishedFunc");
+		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "ExecuteUbergraph_MM_BPL_Neaon_Light_Only");
 
-	UObject::ProcessEvent(Func, nullptr);
+	Params::MM_BPL_Neaon_Light_Only_C_ExecuteUbergraph_MM_BPL_Neaon_Light_Only Parms{};
+
+	Parms.EntryPoint = EntryPoint;
+
+	UObject::ProcessEvent(Func, &Parms);
 }
 
 
-// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.Timeline_0__UpdateFunc
-// (BlueprintEvent)
+// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.ReceiveBeginPlay
+// (Event, Protected, BlueprintEvent)
 
-void AMM_BPL_Neaon_Light_Only_C::Timeline_0__UpdateFunc()
+void AMM_BPL_Neaon_Light_Only_C::ReceiveBeginPlay()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "Timeline_0__UpdateFunc");
+		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "ReceiveBeginPlay");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
@@ -59,37 +65,31 @@ void AMM_BPL_Neaon_Light_Only_C::Timeline_0__Spark__EventFunc()
 }
 
 
-// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.ReceiveBeginPlay
-// (Event, Protected, BlueprintEvent)
+// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.Timeline_0__UpdateFunc
+// (BlueprintEvent)
 
-void AMM_BPL_Neaon_Light_Only_C::ReceiveBeginPlay()
+void AMM_BPL_Neaon_Light_Only_C::Timeline_0__UpdateFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "ReceiveBeginPlay");
+		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "Timeline_0__UpdateFunc");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
 
 
-// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.ExecuteUbergraph_MM_BPL_Neaon_Light_Only
-// (Final, UbergraphFunction)
-// Parameters:
-// int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
+// Function MM_BPL_Neaon_Light_Only.MM_BPL_Neaon_Light_Only_C.Timeline_0__FinishedFunc
+// (BlueprintEvent)
 
-void AMM_BPL_Neaon_Light_Only_C::ExecuteUbergraph_MM_BPL_Neaon_Light_Only(int32 EntryPoint)
+void AMM_BPL_Neaon_Light_Only_C::Timeline_0__FinishedFunc()
 {
 	static class UFunction* Func = nullptr;
 
 	if (Func == nullptr)
-		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "ExecuteUbergraph_MM_BPL_Neaon_Light_Only");
+		Func = Class->GetFunction("MM_BPL_Neaon_Light_Only_C", "Timeline_0__FinishedFunc");
 
-	Params::MM_BPL_Neaon_Light_Only_C_ExecuteUbergraph_MM_BPL_Neaon_Light_Only Parms{};
-
-	Parms.EntryPoint = EntryPoint;
-
-	UObject::ProcessEvent(Func, &Parms);
+	UObject::ProcessEvent(Func, nullptr);
 }
 
 }

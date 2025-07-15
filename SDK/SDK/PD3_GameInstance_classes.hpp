@@ -18,17 +18,15 @@ namespace SDK
 {
 
 // BlueprintGeneratedClass PD3_GameInstance.PD3_GameInstance_C
-// 0x0010 (0x05E0 - 0x05D0)
+// 0x0008 (0x05D8 - 0x05D0)
 class UPD3_GameInstance_C final : public USBZGameInstance
 {
 public:
 	struct FPointerToUberGraphFrame               UberGraphFrame;                                    // 0x05D0(0x0008)(ZeroConstructor, Transient, DuplicateTransient)
-	class UModLoaderManager_C*                    ModLoaderManager;                                  // 0x05D8(0x0008)(Edit, BlueprintVisible, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, ExposeOnSpawn, HasGetValueTypeHash)
 
 public:
 	void ExecuteUbergraph_PD3_GameInstance(int32 EntryPoint);
 	void OnFindReplaysComplete(const TArray<struct FSBZReplayInfo>& Replays);
-	void ReceiveInit();
 
 public:
 	static class UClass* StaticClass()
@@ -41,9 +39,8 @@ public:
 	}
 };
 static_assert(alignof(UPD3_GameInstance_C) == 0x000008, "Wrong alignment on UPD3_GameInstance_C");
-static_assert(sizeof(UPD3_GameInstance_C) == 0x0005E0, "Wrong size on UPD3_GameInstance_C");
+static_assert(sizeof(UPD3_GameInstance_C) == 0x0005D8, "Wrong size on UPD3_GameInstance_C");
 static_assert(offsetof(UPD3_GameInstance_C, UberGraphFrame) == 0x0005D0, "Member 'UPD3_GameInstance_C::UberGraphFrame' has a wrong offset!");
-static_assert(offsetof(UPD3_GameInstance_C, ModLoaderManager) == 0x0005D8, "Member 'UPD3_GameInstance_C::ModLoaderManager' has a wrong offset!");
 
 }
 

@@ -18,7 +18,7 @@ namespace SDK
 {
 
 // Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.ExecuteUbergraph_WBP_UI_Skills_Line
-// (Final, UbergraphFunction)
+// (Final, UbergraphFunction, HasDefaults)
 // Parameters:
 // int32                                   EntryPoint                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
@@ -243,8 +243,9 @@ void UWBP_UI_Skills_Line_C::WBP_UI_Skills_Line_AutoGenFunc(EUINavigation Navigat
 // (Public, BlueprintCallable, BlueprintEvent)
 // Parameters:
 // bool                                    bInFocused                                             (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, IsPlainOldData, NoDestructor)
+// class USBZMenuButton*                   InButton                                               (BlueprintVisible, BlueprintReadOnly, Parm, ZeroConstructor, InstancedReference, IsPlainOldData, NoDestructor, HasGetValueTypeHash)
 
-void UWBP_UI_Skills_Line_C::SetSkillLineDescriptionEnabled(bool bInFocused)
+void UWBP_UI_Skills_Line_C::SetSkillLineDescriptionEnabled(bool bInFocused, class USBZMenuButton* InButton)
 {
 	static class UFunction* Func = nullptr;
 
@@ -254,6 +255,7 @@ void UWBP_UI_Skills_Line_C::SetSkillLineDescriptionEnabled(bool bInFocused)
 	Params::WBP_UI_Skills_Line_C_SetSkillLineDescriptionEnabled Parms{};
 
 	Parms.bInFocused = bInFocused;
+	Parms.InButton = InButton;
 
 	UObject::ProcessEvent(Func, &Parms);
 }
@@ -268,6 +270,20 @@ void UWBP_UI_Skills_Line_C::UpdateSkillLineDescription()
 
 	if (Func == nullptr)
 		Func = Class->GetFunction("WBP_UI_Skills_Line_C", "UpdateSkillLineDescription");
+
+	UObject::ProcessEvent(Func, nullptr);
+}
+
+
+// Function WBP_UI_Skills_Line.WBP_UI_Skills_Line_C.CheckLineStillFocused
+// (Public, BlueprintCallable, BlueprintEvent)
+
+void UWBP_UI_Skills_Line_C::CheckLineStillFocused()
+{
+	static class UFunction* Func = nullptr;
+
+	if (Func == nullptr)
+		Func = Class->GetFunction("WBP_UI_Skills_Line_C", "CheckLineStillFocused");
 
 	UObject::ProcessEvent(Func, nullptr);
 }
