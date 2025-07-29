@@ -140,7 +140,7 @@ DWORD WINAPI MainThread(HMODULE Module)
     std::cout << "starting.." << std::endl;
     //std::cout << "Press END to unload." << std::endl;
 
-    // create discord
+    // create discordm, DiscordCreateFlags_NoRequireDiscord -> no need for discord to be running, but will fail to create core if not.
     auto result = discord::Core::Create(1393544325111222334, DiscordCreateFlags_NoRequireDiscord, &core);
 
     if(result == discord::Result::Ok) {
@@ -148,6 +148,17 @@ DWORD WINAPI MainThread(HMODULE Module)
     }
     else {
         PrintConsole("[Discord] Failed to create core");
+
+        // msg
+        MessageBoxA(
+            nullptr,
+            "Discord is not running!, Rich presence will not work for now.",
+            "RPC Error",
+            MB_ICONERROR | MB_OK
+        );
+
+        // crash if not
+        return 0;
     }
 
     while(g_Running)
@@ -155,12 +166,12 @@ DWORD WINAPI MainThread(HMODULE Module)
         if(!g_Running)
             break;
 
-        if(GetAsyncKeyState(VK_END) & 1) // Press END to unhook
-        {
-            std::cout << "Unloading..." << std::endl;
-            g_Running = false;
-            break;
-        }
+        //if(GetAsyncKeyState(VK_END) & 1) // Press END to unhook
+        //{
+        //    std::cout << "Unloading..." << std::endl;
+        //    g_Running = false;
+        //    break;
+        //}
 
         SDK::UWorld* World = SDK::UWorld::GetWorld();
 
